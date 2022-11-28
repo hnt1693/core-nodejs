@@ -1,0 +1,135 @@
+2022-11-28 21:12:31:1231 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:12:31:1231 [http] ::1 POST /auth/register 403 100 - 13.538 ms
+
+2022-11-28 21:12:43:1243 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:12:43:1243 [http] ::1 POST /auth/register 403 100 - 1.256 ms
+
+2022-11-28 21:14:51:1451 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:14:51:1451 [http] ::1 POST /auth/register 403 100 - 13.688 ms
+
+2022-11-28 21:14:57:1457 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:14:57:1457 [http] ::1 POST /auth/register 403 100 - 1.165 ms
+
+2022-11-28 21:23:58:2358 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:23:58:2358 [http] ::1 POST /auth/register 403 100 - 14.063 ms
+
+2022-11-28 21:24:04:244 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:24:04:244 [http] ::1 POST /auth/register 403 100 - 1.146 ms
+
+2022-11-28 21:25:02 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:25:02 [http] ::1 POST /auth/register 403 100 - 13.800 ms
+
+2022-11-28 21:25:03 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:25:03 [http] ::1 POST /auth/register 403 100 - 1.101 ms
+
+2022-11-28 21:25:42 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:25:42 [http] ::1 POST /auth/register 403 100 - 13.015 ms
+
+2022-11-28 21:25:45 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:25:45 [http] ::1 POST /auth/register 403 100 - 1.392 ms
+
+2022-11-28 21:26:08 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:26:08 [http] ::1 POST /auth/register 403 100 - 14.965 ms
+
+2022-11-28 21:26:31 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:26:31 [http] ::1 POST /auth/register 403 100 - 12.650 ms
+
+2022-11-28 21:27:28 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:27:28 [http] ::1 POST /auth/register 403 100 - 16.189 ms
+
+2022-11-28 21:27:54 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:27:54 [http] ::1 POST /auth/register 403 100 - 13.167 ms
+
+2022-11-28 21:28:05 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:28:05 [http] ::1 POST /auth/register 403 100 - 14.021 ms
+
+2022-11-28 21:32:04 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:32:04 [info] ::1 POST /auth/register 403 100 - 16.963 ms
+2022-11-28 21:32:05 [error] [AuthException] : Not allowed to access this source
+2022-11-28 21:32:05 [info] ::1 POST /auth/register 403 100 - 1.123 ms
+2022-11-28 21:33:46 [error] Can not transaction. Need to rollback for exception: Data too long for column 'password' at row 1
+2022-11-28 21:33:46 [error] [Error] : Data too long for column 'password' at row 1
+2022-11-28 21:33:46 [info] ::1 POST /auth/register 500 103 - 190.630 ms
+2022-11-28 21:34:04 [info] ::1 POST /auth/register 200 12 - 154.856 ms
+2022-11-28 21:34:15 [error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1694@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:34:15 [error] [Error] : Duplicate entry 'hnt1694@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:34:15 [info] ::1 POST /auth/register 500 123 - 142.873 ms
+2022-11-28 21:34:48 [error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1694@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:34:48 [error] [Error] : Duplicate entry 'hnt1694@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:34:48 [info] ::1 POST /auth/register 500 123 - 183.448 ms
+2022-11-28 21:34:58 [error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1693@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:34:58 [error] [Error] : Duplicate entry 'hnt1693@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:34:58 [info] ::1 POST /auth/register 500 123 - 145.019 ms
+2022-11-28 21:35:08 [info] ::1 POST /auth/register 200 12 - 149.374 ms
+2022-11-28 21:36:34 [info] ::1 POST /auth/register 200 22 - 177.845 ms
+2022-11-28 21:37:12 [error] Can not transaction. Need to rollback for exception: rules is not defined
+2022-11-28 21:37:12 [error] [ReferenceError] : rules is not defined
+2022-11-28 21:37:12 [info] ::1 POST /auth/ 500 88 - 8.259 ms
+2022-11-28 21:37:26 [error] Can not transaction. Need to rollback for exception: Table 'predict.user' doesn't exist
+2022-11-28 21:37:26 [error] [Error] : Table 'predict.user' doesn't exist
+2022-11-28 21:37:26 [info] ::1 POST /auth/ 500 93 - 48.392 ms
+2022-11-28 21:37:36 [info] ::1 POST /auth/ 200 190 - 185.707 ms
+2022-11-28 21:38:31 [error] Can not transaction. Need to rollback for exception: Unknown column 'user_name' in 'field list'
+2022-11-28 21:38:31 [error] [Error] : Unknown column 'user_name' in 'field list'
+2022-11-28 21:38:31 [info] ::1 POST /auth/ 500 101 - 38.055 ms
+2022-11-28 21:38:41 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:38:41 [error] [AuthException] : Username or password not valid
+2022-11-28 21:38:41 [info] ::1 POST /auth/ 403 97 - 43.968 ms
+2022-11-28 21:39:08 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:39:08 [error] [AuthException] : Username or password not valid
+2022-11-28 21:39:08 [info] ::1 POST /auth/ 403 97 - 6.842 ms
+2022-11-28 21:39:17 [error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1692@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:39:17 [error] [Error] : Duplicate entry 'hnt1692@gmail.com' for key 'users.email_UNIQUE'
+2022-11-28 21:39:17 [info] ::1 POST /auth/register 500 123 - 156.823 ms
+2022-11-28 21:39:23 [info] ::1 POST /auth/register 200 22 - 153.285 ms
+2022-11-28 21:39:33 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:39:33 [error] [AuthException] : Username or password not valid
+2022-11-28 21:39:33 [info] ::1 POST /auth/ 403 97 - 9.327 ms
+2022-11-28 21:39:57 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:39:57 [error] [AuthException] : Username or password not valid
+2022-11-28 21:39:57 [info] ::1 POST /auth/ 403 97 - 4.075 ms
+2022-11-28 21:41:28 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:41:28 [error] [AuthException] : Username or password not valid
+2022-11-28 21:41:28 [info] ::1 POST /auth/ 403 97 - 43.013 ms
+2022-11-28 21:41:45 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:41:45 [error] [AuthException] : Username or password not valid
+2022-11-28 21:41:45 [info] ::1 POST /auth/ 403 97 - 48.784 ms
+2022-11-28 21:42:05 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:42:05 [error] [AuthException] : Username or password not valid
+2022-11-28 21:42:05 [info] ::1 POST /auth/ 403 97 - 47.499 ms
+2022-11-28 21:42:39 [error] Can not transaction. Need to rollback for exception: Username or password not valid
+2022-11-28 21:42:39 [error] [AuthException] : Username or password not valid
+2022-11-28 21:42:39 [info] ::1 POST /auth/ 403 97 - 48.782 ms
+2022-11-28 21:47:19 [error] [AuthException] : Username or password not valid
+2022-11-28 21:47:19 [info] ::1 POST /auth/ 403 97 - 38.093 ms
+2022-11-28 21:47:36 [error] [AuthException] : Username or password not valid
+2022-11-28 21:47:36 [info] ::1 POST /auth/ 403 97 - 42.593 ms
+2022-11-28 21:47:43 [error] [AuthException] : Username or password not valid
+2022-11-28 21:47:43 [info] ::1 POST /auth/ 403 97 - 43.734 ms
+2022-11-28 21:47:55 [error] [AuthException] : Username or password not valid
+2022-11-28 21:47:55 [info] ::1 POST /auth/ 403 97 - 42.520 ms
+2022-11-28 21:48:19 [error] [AuthException] : Username or password not valid
+2022-11-28 21:48:19 [info] ::1 POST /auth/ 403 97 - 45.377 ms
+2022-11-28 21:48:38 [error] [AuthException] : Username or password not valid
+2022-11-28 21:48:38 [info] ::1 POST /auth/ 403 97 - 42.681 ms
+2022-11-28 21:49:06 [error] [AuthException] : Username or password not valid
+2022-11-28 21:49:06 [info] ::1 POST /auth/ 403 97 - 42.110 ms
+2022-11-28 21:49:20 [info] ::1 POST /auth/ 200 81 - 199.089 ms
+2022-11-28 21:51:50 [info] ::1 POST /auth/ 200 81 - 192.182 ms
+2022-11-28 21:52:29 [info] ::1 POST /auth/ 200 81 - 177.230 ms
+2022-11-28 21:53:53 [info] ::1 POST /auth/ 200 81 - 201.737 ms
+2022-11-28 21:54:07 [info] ::1 POST /auth/ 200 81 - 195.613 ms
+2022-11-28 21:54:48 [info] ::1 POST /auth/ 200 81 - 202.837 ms
+2022-11-28 21:55:15 [info] ::1 POST /auth/ 200 81 - 188.689 ms
+2022-11-28 21:56:23 [error] [AuthException] : CORS
+2022-11-28 21:56:53 [info] ::1 POST /auth/ 200 81 - 197.357 ms
+2022-11-28 21:57:00 [error] [AuthException] : CORS
+2022-11-28 21:58:38 [error] [AuthException] : Origin not allowed
+2022-11-28 21:58:45 [info] ::1 POST /auth/ 200 81 - 191.577 ms
+2022-11-28 21:58:53 [error] [AuthException] : Method not allowed
+2022-11-28 22:01:28 [info] ::1 POST /auth/ 200 81 - 182.746 ms
+2022-11-28 22:01:34 [error] [Method not allowed] : CorsException
+2022-11-28 22:01:52 [error] [CorsException] : Method not allowed
+2022-11-28 22:02:34 [error] [CorsException] : Method not allowed
+2022-11-28 22:03:06 [error] [CorsException] : Method not allowed. Support only GET,POST,PUT,DELETE,OPTIONS
+2022-11-28 22:03:19 [error] [CorsException] : Method not allowed. Support only GET, POST, PUT, DELETE, OPTIONS
