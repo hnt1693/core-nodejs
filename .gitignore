@@ -2,5 +2,5 @@
 node_modules/
 mapping.iml
 package-lock.json
-/src/uploads/
+/storage/uploads/
 /logs/

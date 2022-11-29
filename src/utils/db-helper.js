@@ -1,4 +1,4 @@
-const logger = require('@utils/logger')
+const logger = require('./logger')
 const HOST = process.env.DATABASE_HOST
 const USERNAME = process.env.DATABASE_USERNAME
 const PASSWORD = process.env.DATABASE_PASSWORD

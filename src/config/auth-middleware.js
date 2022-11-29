@@ -1,5 +1,5 @@
 
-const {verify} = require("@service/jwt")
+const {verify} = require("../services/jwt")
 const ROLE = {
     IS_AUTHENTICATED: 0,
     ADMIN: 2,

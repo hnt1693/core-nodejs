@@ -1,5 +1,5 @@
 const morgan = require("morgan");
-const logger = require("@utils/logger");
+const logger = require("../utils/logger");
 const split = require('split');
 const stream = split().on('data', function (message) {
     logger.http(message);

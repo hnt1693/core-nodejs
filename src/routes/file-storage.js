@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 const multer = require("multer")
-const Exception = require("@exception/custom-exception")
-const {authWithAsync, ROLE} = require("@config/auth-middleware")
+const Exception = require("../exceptions/custom-exception")
+const {authWithAsync, ROLE} = require("../config/auth-middleware")
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'src/uploads')

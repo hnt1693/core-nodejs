@@ -1,4 +1,4 @@
-const Exception = require('@exception/custom-exception')
+const Exception = require('../exceptions/custom-exception')
 const API_TIMEOUT = 120 * 1000;
 
 const config = (req, res, next) => {

@@ -33,11 +33,11 @@
   },
   "_moduleAliases": {
     "@root": ".",
-    "@exception": "exceptions/",
-    "@utils": "utils/",
-    "@mapping": "mapping/",
-    "@routes": "routes/",
-    "@config": "config/",
-    "@service": "services/"
+    "@exception": "src/exceptions/",
+    "@utils": "src/utils/",
+    "@mapping": "src/mapping/",
+    "@routes": "src/routes/",
+    "@config": "src/config/",
+    "@service": "src/services/"
   }
 }

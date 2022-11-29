@@ -1,8 +1,8 @@
-const DBHelper = require("@utils/db-helper")
-const {UserMapping, getColumns} = require("@mapping/user-mapping");
-const AuthException = require("@exception/auth-exception");
-const Exception = require("@exception/custom-exception");
-const {hashPassword, verifyPasswordWithHash} = require("@utils/password-encrypt");
+const DBHelper = require("../utils/db-helper")
+const {UserMapping, getColumns} = require("../mapping/user-mapping");
+const AuthException = require("../exceptions/auth-exception");
+const Exception = require("../exceptions/custom-exception");
+const {hashPassword, verifyPasswordWithHash} = require("../utils/password-encrypt");
 const {make} = require('simple-body-validator');
 
 
