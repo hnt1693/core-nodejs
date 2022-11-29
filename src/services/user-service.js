@@ -17,11 +17,11 @@ const userRegisterRules = {
 };
 
 const getUsers = (page, limit, search, fields) => {
-    return DBHelper.executeQueryWithTransaction((connection) => {
-        return connection.query(`SELECT ${getColumns(fields, UserMapping)}
-                                 FROM user u
-                                 where u.user_name like ? limit ?
-                                 offset ?`, [`%${search}%`, limit, page * limit])
+    return DBHelper.executeQuery(async (connection) => {
+        return await connection.queryWithLog(`SELECT ${getColumns(fields, UserMapping)}
+                                 FROM users u
+                                 where u.username like ? limit ?
+                                 offset ?`, [`'%${search}%'`, limit, page * limit])
     })
 }
 

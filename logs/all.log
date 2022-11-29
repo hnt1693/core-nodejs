@@ -60,3 +60,178 @@
 2022-11-29 16:25:18 [info] Database connected successfully
 2022-11-29 16:25:18 [info] App is running at port 8080
 2022-11-29 16:25:19 [http] ::1 GET /files 200 149585 - 4.933 ms
+2022-11-29 16:45:20 [info] Database connected successfully
+2022-11-29 16:45:20 [info] App is running at port 3000
+2022-11-29 16:47:40 [info] Database connected successfully
+2022-11-29 16:47:40 [info] App is running at port 3000
+2022-11-29 16:48:19 [error] [CorsException] : Origin not allowed
+2022-11-29 16:48:41 [error] [CorsException] : Origin not allowed
+2022-11-29 16:48:45 [info] Database connected successfully
+2022-11-29 16:48:45 [info] App is running at port 8080
+2022-11-29 16:48:52 [error] Can not transaction. Need to rollback for exception: Cannot read properties of undefined (reading 'forEach')
+2022-11-29 16:48:52 [error] [TypeError] : Cannot read properties of undefined (reading 'forEach')
+2022-11-29 16:48:52 [http] ::1 GET /users 500 118 - 20.236 ms
+2022-11-29 16:49:06 [error] Can not transaction. Need to rollback for exception: fields.forEach is not a function
+2022-11-29 16:49:06 [error] [TypeError] : fields.forEach is not a function
+2022-11-29 16:49:06 [http] ::1 GET /users?fields=id 500 95 - 2.480 ms
+2022-11-29 16:49:25 [info] Database connected successfully
+2022-11-29 16:49:25 [info] App is running at port 8080
+2022-11-29 16:49:27 [error] Can not transaction. Need to rollback for exception: fields.forEach is not a function
+2022-11-29 16:49:27 [error] [TypeError] : fields.forEach is not a function
+2022-11-29 16:49:27 [http] ::1 GET /users?fields=id 500 95 - 24.150 ms
+2022-11-29 16:49:32 [info] Database connected successfully
+2022-11-29 16:49:32 [info] App is running at port 8080
+2022-11-29 16:49:33 [error] Can not transaction. Need to rollback for exception: fields.forEach is not a function
+2022-11-29 16:49:33 [error] [TypeError] : fields.forEach is not a function
+2022-11-29 16:49:33 [http] ::1 GET /users?fields=id 500 95 - 23.436 ms
+2022-11-29 16:50:04 [info] Database connected successfully
+2022-11-29 16:50:04 [info] App is running at port 8080
+2022-11-29 16:50:05 [error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null
+                                 FROM user u
+                              ' at line 1
+2022-11-29 16:50:05 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null
+                                 FROM user u
+                              ' at line 1
+2022-11-29 16:50:05 [http] ::1 GET /users?fields=id 500 287 - 20.420 ms
+2022-11-29 16:51:09 [error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null
+                                 FROM user u
+                              ' at line 1
+2022-11-29 16:51:09 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null
+                                 FROM user u
+                              ' at line 1
+2022-11-29 16:51:09 [http] ::1 GET /users?fields=id 500 287 - 3.103 ms
+2022-11-29 16:51:22 [error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null
+                                 FROM user u
+                              ' at line 1
+2022-11-29 16:51:22 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null
+                                 FROM user u
+                              ' at line 1
+2022-11-29 16:51:22 [http] ::1 GET /users?fields=id&page=1&limit=1 500 287 - 2.847 ms
+2022-11-29 16:53:02 [info] Database connected successfully
+2022-11-29 16:53:02 [info] App is running at port 8080
+2022-11-29 16:53:05 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'null
+                                 FROM user u
+                              ' at line 1
+2022-11-29 16:53:05 [http] ::1 GET /users?fields=id&page=1&limit=1 500 287 - 18.698 ms
+2022-11-29 16:53:47 [info] Database connected successfully
+2022-11-29 16:53:47 [info] App is running at port 8080
+2022-11-29 16:53:49 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? limit ?
+                                 offset ?' at line 3
+2022-11-29 16:53:49 [http] ::1 GET /users?fields=id&page=1&limit=1 500 257 - 19.489 ms
+2022-11-29 16:54:03 [info] Database connected successfully
+2022-11-29 16:54:03 [info] App is running at port 8080
+2022-11-29 16:54:04 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? limit ?
+                                 offset ?' at line 3
+2022-11-29 16:54:04 [http] ::1 GET /users?fields=id&page=1&limit=1 500 257 - 19.972 ms
+2022-11-29 16:54:38 [info] Database connected successfully
+2022-11-29 16:54:38 [info] App is running at port 8080
+2022-11-29 16:54:40 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? limit ?
+                                 offset ?' at line 3
+2022-11-29 16:54:40 [http] ::1 GET /users?fields=id&page=1&limit=1 500 257 - 18.660 ms
+2022-11-29 16:54:54 [info] Database connected successfully
+2022-11-29 16:54:54 [info] App is running at port 8080
+2022-11-29 16:54:55 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? limit ?
+                                 offset ?' at line 3
+2022-11-29 16:54:55 [http] ::1 GET /users?fields=id&page=1&limit=1 500 257 - 19.454 ms
+2022-11-29 16:56:07 [info] Database connected successfully
+2022-11-29 16:56:08 [info] App is running at port 8080
+2022-11-29 16:56:09 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? limit ?
+                                 offset ?' at line 3
+2022-11-29 16:56:09 [http] ::1 GET /users?fields=id&page=1&limit=1 500 257 - 17.779 ms
+2022-11-29 16:56:48 [info] Database connected successfully
+2022-11-29 16:56:48 [info] App is running at port 8080
+2022-11-29 16:56:50 [error] [TypeError] : Cannot read properties of undefined (reading 'replaceAll')
+2022-11-29 16:56:50 [http] ::1 GET /users?fields=id&page=1&limit=1 500 121 - 17.829 ms
+2022-11-29 16:57:23 [info] Database connected successfully
+2022-11-29 16:57:23 [info] App is running at port 8080
+2022-11-29 16:57:25 [error] [TypeError] : Cannot read properties of undefined (reading 'replaceAll')
+2022-11-29 16:57:25 [http] ::1 GET /users?fields=id&page=1&limit=1 500 121 - 17.927 ms
+2022-11-29 16:58:03 [info] Database connected successfully
+2022-11-29 16:58:03 [info] App is running at port 8080
+2022-11-29 16:58:04 [sql] [SELECT null as 'id' FROM users u where u.username like ? limit ? offset ?] => Binding => [undefined]
+2022-11-29 16:58:04 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? limit ?
+                                 offset ?' at line 3
+2022-11-29 16:58:04 [http] ::1 GET /users?fields=id&page=1&limit=1 500 257 - 19.609 ms
+2022-11-29 16:58:24 [info] Database connected successfully
+2022-11-29 16:58:24 [info] App is running at port 8080
+2022-11-29 16:58:27 [error] [TypeError] : params.replaceAll is not a function
+2022-11-29 16:58:27 [http] ::1 GET /users?fields=id&page=1&limit=1 500 98 - 17.313 ms
+2022-11-29 16:58:36 [info] Database connected successfully
+2022-11-29 16:58:36 [info] App is running at port 8080
+2022-11-29 16:58:37 [error] [TypeError] : params.replaceAll is not a function
+2022-11-29 16:58:37 [http] ::1 GET /users?fields=id&page=1&limit=1 500 98 - 25.930 ms
+2022-11-29 16:59:20 [info] Database connected successfully
+2022-11-29 16:59:20 [info] App is running at port 8080
+2022-11-29 16:59:22 [sql] [SELECT null as 'id' FROM users u where u.username like ? limit ? offset ?] => Binding => [%%,1,1
+2022-11-29 16:59:22 [error] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+2022-11-29 16:59:22 [http] ::1 GET /users?fields=id&page=1&limit=1 500 196 - 20.317 ms
+2022-11-29 16:59:58 [info] Database connected successfully
+2022-11-29 16:59:58 [info] App is running at port 8080
+2022-11-29 16:59:59 [sql] [SELECT null as 'id' FROM users u where u.username like ? limit ? offset ?] => Binding => [%%, 1, 1
+2022-11-29 16:59:59 [error] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+2022-11-29 16:59:59 [http] ::1 GET /users?fields=id&page=1&limit=1 500 196 - 20.432 ms
+2022-11-29 17:00:29 [info] Database connected successfully
+2022-11-29 17:00:29 [info] App is running at port 8080
+2022-11-29 17:00:31 [sql] [SELECT null as 'id' FROM users u where u.username like ? limit ? offset ?] => Binding => [%%, 1, 1]
+2022-11-29 17:00:31 [error] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+2022-11-29 17:00:31 [http] ::1 GET /users?fields=id&page=1&limit=1 500 196 - 19.391 ms
+2022-11-29 17:01:02 [info] Database connected successfully
+2022-11-29 17:01:02 [info] App is running at port 8080
+2022-11-29 17:01:03 [sql] [SELECT null as 'id' FROM users u where u.username like ? limit ? offset ?] => Binding => [%''%, 1, 1]
+2022-11-29 17:01:03 [error] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+2022-11-29 17:01:03 [http] ::1 GET /users?fields=id&page=1&limit=1 500 196 - 20.601 ms
+2022-11-29 17:01:11 [info] Database connected successfully
+2022-11-29 17:01:11 [info] App is running at port 8080
+2022-11-29 17:01:21 [sql] [SELECT email as email FROM users u where u.username like ? limit ? offset ?] => Binding => [%%, 1, 1]
+2022-11-29 17:01:21 [error] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+2022-11-29 17:01:21 [http] ::1 GET /users?fields=email&page=1&limit=1 500 196 - 20.002 ms
+2022-11-29 17:01:40 [info] Database connected successfully
+2022-11-29 17:01:40 [info] App is running at port 8080
+2022-11-29 17:01:42 [sql] [SELECT email as email FROM users u where u.username like ? limit ? offset ?] => Binding => [%honem223%, 1, 1]
+2022-11-29 17:01:42 [error] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+2022-11-29 17:01:42 [http] ::1 GET /users?fields=email&page=1&limit=1 500 196 - 19.231 ms
+2022-11-29 17:02:40 [info] Database connected successfully
+2022-11-29 17:02:40 [info] App is running at port 8080
+2022-11-29 17:02:42 [sql] [SELECT email as email FROM users u where u.username like ? limit ? offset ?] => Binding => ['%honem223%', 1, 1]
+2022-11-29 17:02:42 [error] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received undefined
+2022-11-29 17:02:42 [http] ::1 GET /users?fields=email&page=1&limit=1 500 196 - 19.135 ms
+2022-11-29 17:04:06 [info] Database connected successfully
+2022-11-29 17:04:06 [info] App is running at port 8080
+2022-11-29 17:04:09 [sql] [SELECT email as email FROM users u where u.username like ? limit ? offset ?] => Binding => ['%honem223%', 1, 1]
+2022-11-29 17:04:09 [error] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''1'
+                                 offset 1' at line 3
+2022-11-29 17:04:09 [http] ::1 GET /users?fields=email&page=1&limit=1 500 251 - 19.738 ms
+2022-11-29 17:04:25 [info] Database connected successfully
+2022-11-29 17:04:25 [info] App is running at port 8080
+2022-11-29 17:04:27 [error] [TypeError] : params[1].join is not a function
+2022-11-29 17:04:27 [http] ::1 GET /users?fields=email&page=1&limit=1 500 95 - 17.520 ms
+2022-11-29 17:05:15 [info] Database connected successfully
+2022-11-29 17:05:15 [info] App is running at port 8080
+2022-11-29 17:05:17 [error] [TypeError] : Cannot read properties of undefined (reading 'replaceAll')
+2022-11-29 17:05:17 [http] ::1 GET /users?fields=email&page=1&limit=1 500 121 - 17.571 ms
+2022-11-29 17:05:23 [info] Database connected successfully
+2022-11-29 17:05:24 [info] App is running at port 8080
+2022-11-29 17:05:25 [error] [TypeError] : Cannot read properties of undefined (reading 'replaceAll')
+2022-11-29 17:05:25 [http] ::1 GET /users?fields=email&page=1&limit=1 500 121 - 17.995 ms
+2022-11-29 17:05:33 [info] Database connected successfully
+2022-11-29 17:05:33 [info] App is running at port 8080
+2022-11-29 17:05:34 [error] [TypeError] : Cannot read properties of undefined (reading 'replaceAll')
+2022-11-29 17:05:34 [http] ::1 GET /users?fields=email&page=1&limit=1 500 121 - 17.508 ms
+2022-11-29 17:05:43 [info] Database connected successfully
+2022-11-29 17:05:43 [info] App is running at port 8080
+2022-11-29 17:05:45 [error] [TypeError] : Cannot read properties of undefined (reading 'replaceAll')
+2022-11-29 17:05:45 [http] ::1 GET /users?fields=email&page=1&limit=1 500 121 - 19.105 ms
+2022-11-29 17:06:17 [info] Database connected successfully
+2022-11-29 17:06:17 [info] App is running at port 8080
+2022-11-29 17:06:18 [error] [TypeError] : query.replaceAll is not a function
+2022-11-29 17:06:18 [http] ::1 GET /users?fields=email&page=1&limit=1 500 97 - 21.076 ms
+2022-11-29 17:06:30 [info] Database connected successfully
+2022-11-29 17:06:31 [info] App is running at port 8080
+2022-11-29 17:06:32 [error] [TypeError] : query.replaceAll is not a function
+2022-11-29 17:06:32 [http] ::1 GET /users?fields=email&page=1&limit=1 500 97 - 24.868 ms
+2022-11-29 17:07:01 [info] Database connected successfully
+2022-11-29 17:07:01 [info] App is running at port 8080
+2022-11-29 17:07:46 [info] Database connected successfully
+2022-11-29 17:07:46 [info] App is running at port 8080
+2022-11-29 17:07:48 [error] [TypeError] : params[1].values.join is not a function
+2022-11-29 17:07:48 [http] ::1 GET /users?fields=email&page=1&limit=1 500 102 - 17.521 ms

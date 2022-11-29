@@ -50,9 +50,10 @@ const executeQuery = async function (callback) {
 const pool = connection();
 
 function logSql(conn) {
-    conn.queryWithLog = async function (params) {
-        const [rows, fields] = await conn.query(params);
-        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + params.values + "]")
+    conn.queryWithLog = async function (...params) {
+
+        logger.sql("[" + params[0].replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params[1].join(", ")||'none') + "]")
+        const [rows, fields] = await conn.query(params[0],params[1]);
         return rows;
     }
 }

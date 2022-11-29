@@ -19,6 +19,10 @@ const getColumns = (fields, mapping) => {
             columns += mapping[f];
             columns += ' as';
             columns += ` ${f},`
+        }else{
+            columns += `null`;
+            columns += ' as';
+            columns += ` '${f}',`
         }
     })
     return columns.substr(0, columns.length - 1);
