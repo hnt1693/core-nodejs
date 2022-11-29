@@ -18,3 +18,5 @@
 2022-11-29 16:13:26 [http] ::1 POST /auth/2 500 84 - 2.823 ms
 2022-11-29 16:13:32 [sql] [SELECT * FROM users u where u.username = ?] => Binding => [honem223]
 2022-11-29 16:13:33 [http] ::1 POST /auth 200 79 - 164.516 ms
+2022-11-29 16:14:08 [info] Database connected successfully
+2022-11-29 16:14:08 [info] App is running at port 8080
