@@ -5,7 +5,7 @@ const Exception = require("../exceptions/custom-exception")
 const {authWithAsync, ROLE} = require("../config/auth-middleware")
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, 'src/uploads')
+        cb(null, 'storage/uploads')
     },
     filename: function (req, file, cb) {
 
@@ -27,9 +27,10 @@ router.post('/', authWithAsync(async function (req, res, next) {
             res.status(200).send({data: file, msg: "Upload file success"})
         }
     })
-}, [ROLE.ADMIN]));
-router.post('/', function (req, res, next) {
-    res.send(123)
+}, [ROLE.IS_AUTHENTICATED]));
+router.get('/', function (req, res, next) {
+    const file = `./storage/uploads/1669694518674-Trần-Văn-Thanh_ReactJS-Developer.pdf`;
+    res.download(file);
 });
 
 module.exports = router;

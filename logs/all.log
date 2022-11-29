@@ -20,3 +20,43 @@
 2022-11-29 16:13:33 [http] ::1 POST /auth 200 79 - 164.516 ms
 2022-11-29 16:14:08 [info] Database connected successfully
 2022-11-29 16:14:08 [info] App is running at port 8080
+2022-11-29 16:16:03 [http] ::1 GET /auth/info 200 22 - 22.621 ms
+2022-11-29 16:16:49 [http] ::1 GET /auth/info 200 22 - 4.057 ms
+2022-11-29 16:16:52 [http] ::1 GET /auth/info 200 22 - 2.902 ms
+2022-11-29 16:17:09 [info] Database connected successfully
+2022-11-29 16:17:09 [info] App is running at port 8080
+2022-11-29 16:17:12 [http] ::1 GET /auth/info 200 22 - 20.813 ms
+2022-11-29 16:17:29 [error] [NotFoundException] : API not found
+2022-11-29 16:17:29 [http] ::1 POST /auth/info 500 84 - 1.866 ms
+2022-11-29 16:17:38 [error] [AuthException] : Not allowed to access this source
+2022-11-29 16:17:38 [http] ::1 POST /files 403 100 - 1.263 ms
+2022-11-29 16:17:51 [sql] [SELECT * FROM users u where u.username = ?] => Binding => [honem223]
+2022-11-29 16:17:52 [http] ::1 POST /auth 200 79 - 146.662 ms
+2022-11-29 16:17:54 [error] [AuthException] : Not allowed to access this source
+2022-11-29 16:17:54 [http] ::1 POST /files 403 100 - 0.593 ms
+2022-11-29 16:18:01 [info] Database connected successfully
+2022-11-29 16:18:01 [info] App is running at port 8080
+2022-11-29 16:18:03 [error] [FileUploadException] : File too large
+2022-11-29 16:18:03 [http] ::1 POST /files 500 87 - 361.053 ms
+2022-11-29 16:18:13 [http] ::1 POST /files 200 358 - 2.880 ms
+2022-11-29 16:22:48 [info] Database connected successfully
+2022-11-29 16:22:49 [info] App is running at port 8080
+2022-11-29 16:23:52 [info] Database connected successfully
+2022-11-29 16:23:52 [info] App is running at port 8080
+2022-11-29 16:23:54 [error] [Error] : ENOENT: no such file or directory, stat 'D:\Study\mysql2\src\routes\storage\uploads\1669694518674-Trần-Văn-Thanh_ReactJS-Developer.pdf'
+2022-11-29 16:23:54 [http] ::1 GET /files 404 204 - 4.708 ms
+2022-11-29 16:24:38 [info] Database connected successfully
+2022-11-29 16:24:38 [info] App is running at port 8080
+2022-11-29 16:24:39 [error] [Error] : ENOENT: no such file or directory, stat 'D:\Study\D:\Study\mysql2\src\routes\storage\uploads\1669694518674-Trần-Văn-Thanh_ReactJS-Developer.pdf'
+2022-11-29 16:24:39 [http] ::1 GET /files 404 215 - 4.619 ms
+2022-11-29 16:25:00 [info] Database connected successfully
+2022-11-29 16:25:00 [info] App is running at port 8080
+2022-11-29 16:25:01 [error] [Error] : ENOENT: no such file or directory, stat 'D:\storage\uploads\1669694518674-Trần-Văn-Thanh_ReactJS-Developer.pdf'
+2022-11-29 16:25:01 [http] ::1 GET /files 404 176 - 4.825 ms
+2022-11-29 16:25:06 [info] Database connected successfully
+2022-11-29 16:25:07 [info] App is running at port 8080
+2022-11-29 16:25:08 [error] [Error] : ENOENT: no such file or directory, stat 'D:\Study\storage\uploads\1669694518674-Trần-Văn-Thanh_ReactJS-Developer.pdf'
+2022-11-29 16:25:08 [http] ::1 GET /files 404 183 - 4.418 ms
+2022-11-29 16:25:18 [info] Database connected successfully
+2022-11-29 16:25:18 [info] App is running at port 8080
+2022-11-29 16:25:19 [http] ::1 GET /files 200 149585 - 4.933 ms
