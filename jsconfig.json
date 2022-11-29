@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@exception/*": [
+        "./exceptions/*"
+      ],
+      "@config/*": [
+        "./config/*"
+      ],
+      "@mapping/*": [
+        "./mapping/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@routes/*": [
+        "./routes/*"
+      ],
+      "@service/*": [
+        "./services/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true
+  }
+}

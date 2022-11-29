@@ -1,18 +1,20 @@
-const DBHelper = require("../utils/db-helper")
-const {UserMapping, getColumns} = require("../mapping/user-mapping");
-const AuthException = require("../exceptions/auth-exception");
-const {hashPassword, verifyPasswordWithHash} = require("../utils/password-encrypt");
+const DBHelper = require("@utils/db-helper")
+const {UserMapping, getColumns} = require("@mapping/user-mapping");
+const AuthException = require("@exception/auth-exception");
+const Exception = require("@exception/custom-exception");
+const {hashPassword, verifyPasswordWithHash} = require("@utils/password-encrypt");
 const {make} = require('simple-body-validator');
-const userLogin = {
+
+
+const userLoginRules = {
     username: 'required|string|min:3',
     password: 'required|min:5'
 };
-const userRegister = {
+const userRegisterRules = {
     username: 'required|string|min:3',
     password: 'required|min:5',
     email: 'required'
 };
-const logger = require('./../utils/logger')
 
 const getUsers = (page, limit, search, fields) => {
     return DBHelper.executeQueryWithTransaction((connection) => {
@@ -25,12 +27,11 @@ const getUsers = (page, limit, search, fields) => {
 
 const login = (body) => {
     return DBHelper.executeQuery(async connection => {
-        const validator = make(body, userLogin);
+        const validator = make(body, userLoginRules);
         if (!validator.stopOnFirstFailure().validate()) {
             throw new AuthException(validator.errors().first());
         }
-
-        let [user] = await connection.query({
+        let user = await connection.queryWithLog({
             sql: `SELECT *
                   FROM users u
                   where u.username = ?`,
@@ -50,11 +51,11 @@ const login = (body) => {
 
 const register = (body) => {
     return DBHelper.executeQueryWithTransaction(async connection => {
-        const validator = make(body, userRegister);
+        const validator = make(body, userRegisterRules);
         if (!validator.stopOnFirstFailure().validate()) {
             throw new Error(validator.errors().first());
         }
-        let [user] = await connection.query({
+        let user = await connection.query({
             sql: `INSERT INTO users(username, password, email)
                       VALUE(?,?,?)`,
             rowsAsArray: false,
@@ -65,12 +66,15 @@ const register = (body) => {
 }
 
 const getInfo = async (username) => {
-    let [user] = await DBHelper.execute(`SELECT ${getColumns(["userId", "username", "email", "status", "customerId", "createdAt", "updatedAt"], UserMapping)}  FROm user WHERE user_name = ?`, [username])
-    user = user[0];
-    if (!user) {
-        throw new Error("Not found")
-    }
-    return user;
+    return DBHelper.executeQuery(async connection => {
+        let user = await connection.query(`SELECT ${getColumns(["id", "username", "email"], UserMapping)}  FROm users WHERE username = ?`, [username])
+        user = user[0];
+        if (!user) {
+            throw new Exception("User not found","NotFoundException")
+        }
+        return user;
+    })
+
 }
 
 

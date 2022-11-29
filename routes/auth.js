@@ -30,7 +30,7 @@ router.post("/", authWithAsync(async (req, res, next) => {
  */
 router.post("/register", authWithAsync(async (req, res, next) => {
     const data = await UserService.register(req.body);
-    res.send({data, "code": 200})
+    res.send({data, "code": 200, msg: "Register successfully!"})
 }, []))
 
 

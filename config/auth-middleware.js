@@ -1,11 +1,11 @@
-const {HttpConfig} = require("../config/http-config");
-const {verify} = require("../services/jwt")
+
+const {verify} = require("@service/jwt")
 const ROLE = {
     IS_AUTHENTICATED: 0,
     ADMIN: 2,
     USER: 1,
 }
-HttpConfig.matches(["/user"]).hasRole(ROLE.ADMIN);
+
 const AuthException = require("../exceptions/auth-exception")
 
 

@@ -1,9 +1,8 @@
-const logger = require("../utils/logger")
+const logger = require('@utils/logger')
 const HOST = process.env.DATABASE_HOST
 const USERNAME = process.env.DATABASE_USERNAME
 const PASSWORD = process.env.DATABASE_PASSWORD
 const DBNAME = process.env.DATABASE_NAME
-
 
 function connection() {
     try {
@@ -16,8 +15,10 @@ function connection() {
             connectionLimit: 10,
             waitForConnections: true,
             queueLimit: 0,
-            trace: true
+            trace: true,
+            connectTimeout: 120,
         });
+        logger.info(`Database connected successfully`)
         return pool.promise();
     } catch (error) {
         return console.log(`Could not connect - ${error}`);
@@ -28,6 +29,7 @@ const executeWithTransaction = async function (callback) {
     const conn = await pool.getConnection();
     try {
         await conn.query('START TRANSACTION');
+        logSql(conn);
         return await callback(conn);
     } catch (e) {
         logger.error("Can not transaction. Need to rollback for exception: " + e.message)
@@ -41,14 +43,20 @@ const executeWithTransaction = async function (callback) {
 
 const executeQuery = async function (callback) {
     const conn = await pool.getConnection();
+    logSql(conn);
     return await callback(conn);
 }
 
-const execute = async (...params) => {
-    return await pool.execute(...params)
+const pool = connection();
+
+function logSql(conn) {
+    conn.queryWithLog = async function (params) {
+        const [rows, fields] = await conn.query(params);
+        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + params.values + "]")
+        return rows;
+    }
 }
 
-const pool = connection();
 
 module.exports = {
     connection: async () => pool.getConnection(),

@@ -10,7 +10,10 @@ const levels = {
     info: 2,
     http: 3,
     debug: 4,
+    sql: 5,
 }
+
+
 // This method set the current severity based on
 // the current NODE_ENV: show all the log levels
 // if the server was run in development mode; otherwise,
@@ -25,11 +28,12 @@ const level = () => {
 // Colors make the log message more visible,
 // adding the ability to focus or ignore messages.
 const colors = {
-    error: 'red',
-    warn: 'yellow',
-    info: 'green',
-    http: 'cyan',
-    debug: 'white',
+    error: 'bold red',
+    warn: 'bold yellow',
+    info: 'bold cyan',
+    http: 'bold blue',
+    debug: 'bold white',
+    sql: 'bold white',
 }
 
 // Define which transports the logger must use to print out messages.
@@ -38,11 +42,12 @@ const transports = [
     // Allow the use the console to print the messages
     new winston.transports.Console(
         {
+            level: 'sql',
             format: winston.format.combine(
                 winston.format.timestamp({format: 'YYYY-MM-DD HH:mm:ss'}),
-                winston.format.colorize({level: true }),
+                winston.format.colorize({level: 'sql', colors: colors}),
                 winston.format.printf(
-                    (info) => `${info.timestamp} [${info.level}] ${info.message}`
+                    (info) => `${info.timestamp} [${info.level.padStart(25,' ')}] ${info.message}`
                 ),
             )
         }
@@ -50,6 +55,7 @@ const transports = [
     // Allow to print all the error level messages inside the error.log file
     new winston.transports.DailyRotateFile({
         eol: "\r\n",
+        level: 'sql',
         filename: process.env.LOG_PATH + 'application-%DATE%.log',
         datePattern: 'YYYY-MM-DD',
         zippedArchive: true,
@@ -58,7 +64,7 @@ const transports = [
             winston.format.printf(
                 (info) => `${info.timestamp} [${info.level}] ${info.message}`
             ),
-            winston.format.colorize({all: false}),
+            winston.format.colorize({all: false, level: "sql"}),
         ),
         maxSize: '20m'
     }),
@@ -66,24 +72,24 @@ const transports = [
     // (also the error log that are also printed inside the error.log(
     new winston.transports.File({
         eol: "\r\n",
+        level: 'sql',
         filename: process.env.LOG_PATH + 'all.log',
         format: winston.format.combine(
             winston.format.timestamp({format: 'YYYY-MM-DD HH:mm:ss'}),
             winston.format.printf(
                 (info) => `${info.timestamp} [${info.level}] ${info.message}`
             ),
-            winston.format.colorize({all: false}),
+            winston.format.colorize({all: false, level: 'sql'}),
         )
-    }),
+    })
 ]
 
 // Create the logger instance that has to be exported
 // and used to log messages.
 const logger = winston.createLogger({
-    level: level(),
+    // transports,
     levels,
-    transports,
+    transports
 })
-
 
 module.exports = logger
