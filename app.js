@@ -37,7 +37,6 @@ app.use(function (req, res, next) {
 //HANDLER ERROR
 app.use(globalErrorHandler);
 
-
 app.listen(PORT, () => {
     logger.info(`App is running at port ${PORT}`)
 })

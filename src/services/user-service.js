@@ -55,7 +55,7 @@ const register = (body) => {
         if (!validator.stopOnFirstFailure().validate()) {
             throw new Error(validator.errors().first());
         }
-        let user = await connection.query({
+        let user = await connection.queryWithLog({
             sql: `INSERT INTO users(username, password, email)
                       VALUE(?,?,?)`,
             rowsAsArray: false,

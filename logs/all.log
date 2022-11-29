@@ -235,3 +235,58 @@
 2022-11-29 17:07:46 [info] App is running at port 8080
 2022-11-29 17:07:48 [error] [TypeError] : params[1].values.join is not a function
 2022-11-29 17:07:48 [http] ::1 GET /users?fields=email&page=1&limit=1 500 102 - 17.521 ms
+2022-11-29 21:55:12 [info] Database connected successfully
+2022-11-29 21:55:13 [info] App is running at port 8080
+2022-11-29 21:55:33 [error] [AuthException] : Not allowed to access this source
+2022-11-29 21:55:33 [http] ::1 GET /auth/ 403 100 - 3.506 ms
+2022-11-29 21:55:57 [error] [TypeError] : params[0].replaceAll is not a function
+2022-11-29 21:55:57 [http] ::1 POST /auth/ 500 101 - 29.858 ms
+2022-11-29 21:57:04 [info] Database connected successfully
+2022-11-29 21:57:05 [info] App is running at port 8080
+2022-11-29 21:57:06 [error] [TypeError] : params[0].replaceAll is not a function
+2022-11-29 21:57:06 [http] ::1 POST /auth/ 500 101 - 29.136 ms
+2022-11-29 21:57:51 [info] Database connected successfully
+2022-11-29 21:57:51 [info] App is running at port 8080
+2022-11-29 21:57:52 [sql] [SELECT * FROM users u where u.username = ?] => Binding => [chungchung]
+2022-11-29 21:57:52 [http] ::1 POST /auth/ 200 81 - 180.411 ms
+2022-11-29 21:58:06 [info] Database connected successfully
+2022-11-29 21:58:06 [info] App is running at port 8080
+2022-11-29 21:58:11 [error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 21:58:11 [error] [Error] : Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 21:58:11 [http] ::1 POST /auth/register 500 123 - 173.757 ms
+2022-11-29 21:58:48 [info] Database connected successfully
+2022-11-29 21:58:49 [info] App is running at port 8080
+2022-11-29 21:58:51 [sql] [INSERT INTO users(username, password, email) VALUE(?,?,?)] => Binding => [chungchung, $argon2id$v=19$m=64000,t=3,p=1$ToYwCcb2kdr4aKzR+K2mYQ$k0LKtAynO6pmpPyrLQP9hkUigXHZPFLVMgQkgx3dfIg, hnt1691@gmail.com]
+2022-11-29 21:58:51 [error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 21:58:51 [error] [Error] : Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 21:58:51 [http] ::1 POST /auth/register 500 123 - 169.962 ms
+2022-11-29 22:00:51 [                     info] Database connected successfully
+2022-11-29 22:00:51 [                     info] App is running at port 8080
+2022-11-29 22:00:55 [                      sql] [INSERT INTO users(username, password, email) VALUE(?,?,?)] => Binding => [chungchung, $argon2id$v=19$m=64000,t=3,p=1$XR2j4Cxep4m0DdxIPuIUWw$8bS/FeXJQ1I92Y/KwQBH0bUEX54E5yt/MpqyfsA1FIQ, hnt1691@gmail.com]
+2022-11-29 22:00:55 [                    error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 22:00:55 [                    error] [Error] : Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 22:00:55 [                     http] ::1 POST /auth/register 500 123 - 171.668 ms
+2022-11-29 22:01:16 [  info] Database connected successfully
+2022-11-29 22:01:16 [  info] App is running at port 8080
+2022-11-29 22:01:24 [   sql] [INSERT INTO users(username, password, email) VALUE(?,?,?)] => Binding => [chungchung, $argon2id$v=19$m=64000,t=3,p=1$W+tne/0grgJkhv2qtUy+DQ$a+xvROVxuF7H7CCOJ3mvkdoa9zA5agc9yPx/1rlOZMI, hnt1691@gmail.com]
+2022-11-29 22:01:24 [ error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 22:01:24 [ error] [Error] : Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 22:01:24 [  http] ::1 POST /auth/register 500 123 - 163.285 ms
+2022-11-29 22:02:34 [ error] [FileNotFoundException] : File not found
+2022-11-29 22:02:34 [  http] ::1 POST /files 200 89 - 2.309 ms
+2022-11-29 22:02:59 [ error] [FileUploadException] : ENOENT: no such file or directory, open 'D:\ngocpj\mysql2\storage\uploads\1669734179202-THACH OPTION  2 NEW 25-10 (5).dwg'
+2022-11-29 22:02:59 [  http] ::1 POST /files 500 200 - 7.117 ms
+2022-11-29 22:03:26 [ error] [FileUploadException] : File too large
+2022-11-29 22:03:26 [  http] ::1 POST /files 500 87 - 19.724 ms
+2022-11-29 22:03:36 [ error] [FileUploadException] : File too large
+2022-11-29 22:03:36 [  http] ::1 POST /files 500 87 - 12.943 ms
+2022-11-29 22:03:43 [  http] ::1 POST /files 200 368 - 1.812 ms
+2022-11-29 22:05:27 [  http] ::1 POST /files 200 368 - 2.165 ms
+2022-11-29 22:12:27 [  info] Database connected successfully
+2022-11-29 22:12:27 [  info] App is running at port 8080
+2022-11-29 22:12:35 [   sql] [SELECT * FROM users u where u.username = ?] => Binding => [chungchung]
+2022-11-29 22:12:36 [  http] ::1 POST /auth/ 200 81 - 155.485 ms
+2022-11-29 22:12:41 [   sql] [INSERT INTO users(username, password, email) VALUE(?,?,?)] => Binding => [chungchung | $argon2id$v=19$m=64000,t=3,p=1$Tf5l1i+hJ5o20TKdU49CPg$rzpA6clkv99mQ3DcAxyy0o3vh87k+IN9J5UdnB656kA | hnt1691@gmail.com]
+2022-11-29 22:12:41 [ error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 22:12:41 [ error] [Error] : Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-11-29 22:12:41 [  http] ::1 POST /auth/register 500 123 - 139.017 ms

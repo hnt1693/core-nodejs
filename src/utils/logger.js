@@ -62,7 +62,7 @@ const transports = [
         format: winston.format.combine(
             winston.format.timestamp({format: 'YYYY-MM-DD HH:mm:ss'}),
             winston.format.printf(
-                (info) => `${info.timestamp} [${info.level}] ${info.message}`
+                (info) => `${info.timestamp} [${info.level.padStart(6,' ')}] ${info.message}`
             ),
             winston.format.colorize({all: false, level: "sql"}),
         ),
@@ -77,7 +77,7 @@ const transports = [
         format: winston.format.combine(
             winston.format.timestamp({format: 'YYYY-MM-DD HH:mm:ss'}),
             winston.format.printf(
-                (info) => `${info.timestamp} [${info.level}] ${info.message}`
+                (info) => `${info.timestamp} [${info.level.padStart(6,' ')}] ${info.message}`
             ),
             winston.format.colorize({all: false, level: 'sql'}),
         )

@@ -51,9 +51,8 @@ const pool = connection();
 
 function logSql(conn) {
     conn.queryWithLog = async function (...params) {
-
-        logger.sql("[" + params[0].replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params[1].join(", ")||'none') + "]")
-        const [rows, fields] = await conn.query(params[0],params[1]);
+        logger.sql("[" + params[0].sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params[0].values.join(" | ")||'none') + "]")
+        const [rows, fields] = await conn.query(params[0]);
         return rows;
     }
 }
