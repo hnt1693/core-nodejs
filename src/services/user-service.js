@@ -6,7 +6,6 @@ const {hashPassword, verifyPasswordWithHash} = require("../utils/password-encryp
 const {StringBuilder} = require("@utils/ultil-helper");
 const {make} = require('simple-body-validator');
 
-
 const userLoginRules = {
     username: 'required|string|min:3',
     password: 'required|min:5'
@@ -14,7 +13,7 @@ const userLoginRules = {
 const userRegisterRules = {
     username: 'required|string|min:3',
     password: 'required|min:5',
-    email: 'required'
+    email: 'required|email'
 };
 
 const getUsers = (page = 0, limit = 10, search, fields) => {
@@ -71,7 +70,10 @@ const register = (body) => {
 
 const getInfo = async (username) => {
     return DBHelper.executeQuery(async connection => {
-        let user = await connection.query(`SELECT ${getColumns(["id", "username", "email"], UserMapping)}  FROm users WHERE username = ?`, [username])
+        let user = await connection.queryWithLog({
+            sql: `SELECT ${getColumns(["userId", "username", "email", "type"], UserMapping)}  FROm users WHERE username = ?`,
+            values: [username]
+        })
         user = user[0];
         if (!user) {
             throw new Exception("User not found", "NotFoundException")

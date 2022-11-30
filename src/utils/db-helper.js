@@ -3,6 +3,13 @@ const HOST = process.env.DATABASE_HOST
 const USERNAME = process.env.DATABASE_USERNAME
 const PASSWORD = process.env.DATABASE_PASSWORD
 const DBNAME = process.env.DATABASE_NAME
+let pool;
+
+function init() {
+    if (!pool) {
+        pool = connection();
+    }
+}
 
 function connection() {
     try {
@@ -30,7 +37,9 @@ const executeWithTransaction = async function (callback) {
     try {
         await conn.query('START TRANSACTION');
         logSql(conn);
-        return await callback(conn);
+        let res = await callback(conn);
+        await conn.query('COMMIT');
+        return res;
     } catch (e) {
         logger.error("Can not transaction. Need to rollback for exception: " + e.message)
         await conn.query('ROLLBACK');
@@ -47,12 +56,10 @@ const executeQuery = async function (callback) {
     return await callback(conn);
 }
 
-const pool = connection();
 
 function logSql(conn) {
     conn.queryWithLog = async function (params) {
-        console.log(params)
-        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params.values.join(" | ")||'none') + "]")
+        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params.values.join(" | ") || 'none') + "]")
         const [rows, fields] = await conn.query(params);
         return rows;
     }
@@ -63,4 +70,5 @@ module.exports = {
     connection: async () => pool.getConnection(),
     executeQuery,
     executeQueryWithTransaction: executeWithTransaction,
+    init
 };

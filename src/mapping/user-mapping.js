@@ -3,7 +3,6 @@ const UserMapping = {
     customerId: "customer_id",
     username: "username",
     email: "email",
-    status: "status",
     type: "type",
     createdAt: "created_at",
     updatedAt: "updated_at",

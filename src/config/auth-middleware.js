@@ -1,4 +1,4 @@
-
+const contextService = require('request-context');
 const {verify} = require("../services/jwt")
 const ROLE = {
     IS_AUTHENTICATED: 0,
@@ -34,7 +34,12 @@ const verifyCookie = (req, roles) => {
             if (!roles.includes(ROLE.IS_AUTHENTICATED) && !roles.includes(user.type)) {
                 throw new AuthException("Not allowed to access this source")
             }
-            req.res.locals.user = user;
+            if (user) {
+                contextService.set('request:user', user);
+            } else {
+                contextService.set('request:user', {username: "AnonymousUser", type: -1});
+            }
+
         } catch (e) {
             throw e
         }
@@ -52,6 +57,7 @@ const authWithAsync = (callbackFunction, roles = []) => async (req, res, next) =
                 next(new AuthException(e.message));
             }
         } else {
+            contextService.set('request:user', {username: "AnonymousUser", type: -1});
             await callbackFunction(req, res, next);
         }
 
