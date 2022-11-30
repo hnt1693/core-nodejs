@@ -8,4 +8,20 @@ const getIntParam = (req, key, defaultValue) => {
         return defaultValue
     }
 }
-module.exports = {getRequestParams}
+
+class StringBuilder {
+    value = '';
+
+    append(str) {
+        this.value += str;
+        return this;
+    }
+
+    toString() {
+        return this.value;
+    }
+
+
+}
+
+module.exports = {getRequestParams, StringBuilder}

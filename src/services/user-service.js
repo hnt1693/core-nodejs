@@ -3,6 +3,7 @@ const {UserMapping, getColumns} = require("../mapping/user-mapping");
 const AuthException = require("../exceptions/auth-exception");
 const Exception = require("../exceptions/custom-exception");
 const {hashPassword, verifyPasswordWithHash} = require("../utils/password-encrypt");
+const {StringBuilder} = require("@utils/ultil-helper");
 const {make} = require('simple-body-validator');
 
 
@@ -16,12 +17,15 @@ const userRegisterRules = {
     email: 'required'
 };
 
-const getUsers = (page, limit, search, fields) => {
+const getUsers = (page = 0, limit = 10, search, fields) => {
     return DBHelper.executeQuery(async (connection) => {
-        return await connection.queryWithLog(`SELECT ${getColumns(fields, UserMapping)}
-                                 FROM users u
-                                 where u.username like ? limit ?
-                                 offset ?`, [`'%${search}%'`, limit, page * limit])
+        return await connection.queryWithLog({
+            sql: `SELECT ${getColumns(fields, UserMapping)}
+                  FROM users u limit ?
+                  offset ?`,
+            rowsAsArray: false,
+            values: [parseInt(limit), page * limit]
+        })
     })
 }
 
@@ -70,7 +74,7 @@ const getInfo = async (username) => {
         let user = await connection.query(`SELECT ${getColumns(["id", "username", "email"], UserMapping)}  FROm users WHERE username = ?`, [username])
         user = user[0];
         if (!user) {
-            throw new Exception("User not found","NotFoundException")
+            throw new Exception("User not found", "NotFoundException")
         }
         return user;
     })

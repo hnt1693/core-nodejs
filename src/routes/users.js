@@ -5,7 +5,7 @@ const {getUsers} = require("@service/user-service")
 /* GET users listing. */
 router.get('/', authWithAsync(async function (req, res, next) {
     const {page, limit, fields} = req.query;
-    let data = await getUsers(page, limit, "honem223", fields.split(","))
+    let data = await getUsers(page, limit, "", fields.split(","))
     res.send({data, msg: "get success"});
 }, []));
 

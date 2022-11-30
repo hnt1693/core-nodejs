@@ -1,5 +1,5 @@
 const UserMapping = {
-    userId: "user_id",
+    userId: "id",
     customerId: "customer_id",
     username: "username",
     email: "email",
@@ -9,21 +9,26 @@ const UserMapping = {
     updatedAt: "updated_at",
     deleteAt: "delete_at",
     initialAdminType: "initial_admin_type",
-    '*': "*"
 }
 
 const getColumns = (fields, mapping) => {
     let columns = "";
     fields.forEach(f => {
-        if (mapping.hasOwnProperty(f)) {
-            columns += mapping[f];
-            columns += ' as';
-            columns += ` ${f},`
-        }else{
-            columns += `null`;
-            columns += ' as';
-            columns += ` '${f}',`
+        f = f.trim();
+        if (f === "*") {
+            columns += '* '
+        } else {
+            if (mapping.hasOwnProperty(f)) {
+                columns += mapping[f];
+                columns += ' as';
+                columns += ` ${f},`
+            } else {
+                columns += `null`;
+                columns += ' as';
+                columns += ` '${f}',`
+            }
         }
+
     })
     return columns.substr(0, columns.length - 1);
 }
