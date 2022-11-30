@@ -19,6 +19,9 @@
       ],
       "@service/*": [
         "./services/*"
+      ],
+      "@annotation/*": [
+        "./annotation/*"
       ]
     },
     "allowSyntheticDefaultImports": true

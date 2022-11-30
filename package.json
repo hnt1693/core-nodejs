@@ -37,6 +37,7 @@
     "@mapping": "src/mapping/",
     "@routes": "src/routes/",
     "@config": "src/config/",
+    "@annotation": "src/annotation/",
     "@service": "src/services/"
   }
 }

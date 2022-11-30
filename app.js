@@ -39,6 +39,8 @@ app.use(function (req, res, next) {
 //HANDLER ERROR
 app.use(globalErrorHandler);
 
+
+
 app.listen(PORT, () => {
     DbHelper.init();
     logger.info(`App is running at port ${PORT}`)
