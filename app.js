@@ -6,7 +6,7 @@ const DbHelper = require("@utils/db-helper")
 const morganMiddleware = require("@config/logger-middleware");
 const cors = require("@config/cors-middleware");
 const serverConfig = require("@config/server-config-middleware");
-const Exception = require("@exception/custom-exception");
+const {Exception, EXCEPTION_TYPES} = require("@exception/custom-exception");
 const {globalErrorHandler} = require('@config/error-handler')
 const authRouter = require('@routes/auth');
 const usersRouter = require('@routes/users');
@@ -15,7 +15,6 @@ const logger = require("@utils/logger")
 const bodyParser = require('body-parser')
 const app = express();
 const PORT = process.env.PORT || 8000
-
 
 
 //CONFIG
@@ -35,12 +34,11 @@ app.use('/public/flags', express.static('storage/public/flags'))
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-    next(new Exception("API not found", "NotFoundException"));
+    next(new Exception("API not found", EXCEPTION_TYPES.NOT_FOUND));
 });
 
 //HANDLER ERROR
 app.use(globalErrorHandler);
-
 
 
 app.listen(PORT, () => {

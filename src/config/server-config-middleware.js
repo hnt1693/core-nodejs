@@ -1,11 +1,11 @@
-const Exception = require('../exceptions/custom-exception')
+const {Exception, EXCEPTION_TYPES} = require('../exceptions/custom-exception')
 const API_TIMEOUT = 120 * 1000;
 
 const config = (req, res, next) => {
 
     // Set the timeout for all HTTP requests
     req.setTimeout(API_TIMEOUT, () => {
-        let err = new Exception('Request Timeout', "RequestTimeOutException");
+        let err = new Exception('Request Timeout', EXCEPTION_TYPES.CORS);
         err.status = 408;
         next(err);
     });

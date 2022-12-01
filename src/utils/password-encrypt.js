@@ -1,6 +1,6 @@
 const argon2 = require("argon2")
 const crypto = require("crypto")
-const AuthException = require("../exceptions/auth-exception")
+const {Exception,EXCEPTION_TYPES} = require("../exceptions/custom-exception")
 
 const hashingConfig = { // based on OWASP cheat sheet recommendations (as of March, 2022)
     parallelism: 1,
@@ -23,8 +23,7 @@ async function verifyPasswordWithHash(password, hash) {
             throw new Error();
         }
     } catch (e) {
-        console.log(e)
-        throw new AuthException("Username or password not valid")
+        throw new Exception("Username or password not valid",EXCEPTION_TYPES.AUTH).bind("verifyPasswordWithHash")
     }
 }
 

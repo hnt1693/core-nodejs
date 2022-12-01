@@ -19,7 +19,7 @@ function connection() {
             user: USERNAME,
             password: PASSWORD,
             database: DBNAME,
-            connectionLimit: 10,
+            connectionLimit: 100,
             waitForConnections: true,
             queueLimit: 0,
             trace: true,
@@ -45,6 +45,7 @@ const executeWithTransaction = async function (callback) {
         await conn.query('ROLLBACK');
         throw e;
     } finally {
+        console.log("RELEASE")
         await conn.release();
     }
 }
@@ -53,7 +54,9 @@ const executeWithTransaction = async function (callback) {
 const executeQuery = async function (callback) {
     const conn = await pool.getConnection();
     logSql(conn);
-    return await callback(conn);
+    let data =  await callback(conn);
+    conn.release();
+    return data;
 }
 
 

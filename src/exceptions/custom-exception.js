@@ -16,7 +16,8 @@ class CustomException extends Error {
 
 const EXCEPTION_TYPES = {
     AUTH: "AuthException",
-    NOT_FOUND: "NotFoundException"
+    NOT_FOUND: "NotFoundException",
+    CORS: "CORSException",
 }
 
 module.exports = {Exception: CustomException, EXCEPTION_TYPES}
