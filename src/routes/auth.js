@@ -5,6 +5,8 @@ const contextService = require('request-context');
 const {authWithAsync, ROLE} = require('@config/auth-middleware')
 const {getRequestParams} = require("@utils/ultil-helper")
 const {encode} = require("@service/jwt")
+
+
 /**
  * @Target: Get List
  */
@@ -39,9 +41,7 @@ router.post("/register", authWithAsync(async (req, res, next) => {
 router.get("/info", authWithAsync(async (req, res, next) => {
     let user = contextService.get('request:user');
     const data = await UserService.getInfo(user.username);
-    setTimeout(() => {
-        res.send({data, "code": 200})
-    }, 50000)
+    res.send({data, "code": 200})
 }, [ROLE.IS_AUTHENTICATED]))
 
 

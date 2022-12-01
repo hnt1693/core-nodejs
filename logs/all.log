@@ -1,12 +1,6 @@
-2022-11-30 16:08:01 [  info] Database connected successfully
-2022-11-30 16:08:01 [  info] App is running at port 8080
-2022-11-30 16:08:42 [  info] Database connected successfully
-2022-11-30 16:08:42 [  info] App is running at port 8080
-2022-11-30 16:10:24 [  info] Database connected successfully
-2022-11-30 16:10:24 [  info] App is running at port 8080
-2022-11-30 16:14:47 [  info] Database connected successfully
-2022-11-30 16:14:47 [  info] App is running at port 8080
-2022-11-30 16:23:38 [  info] Database connected successfully
-2022-11-30 16:23:38 [  info] App is running at port 8080
-2022-11-30 16:24:04 [  info] Database connected successfully
-2022-11-30 16:24:04 [  info] App is running at port 8080
+2022-12-01 11:08:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 11:08:30 [                   Application]  [  info] App is running at port 8080
+2022-12-01 11:08:37 [     clb4k4gsy0000ks55a5l53m84]  [   sql] [INSERT INTO users(username, password, email) VALUE(?,?,?)] => Binding => [honem224 | $argon2id$v=19$m=64000,t=3,p=1$L8pn+zhOVUDmbg+JfyHW1w$jJY5+7o0vAmWwrKaiUClYdf7mlzRtto1Avt3E9jwTgE | 123221231112@gmail.com]
+2022-12-01 11:08:37 [     clb4k4gsy0000ks55a5l53m84]  [ error] Can not transaction. Need to rollback for exception: Duplicate entry '123221231112@gmail.com' for key 'users.users_email_uindex'
+2022-12-01 11:08:37 [     clb4k4gsy0000ks55a5l53m84]  [ error] [register=>InsertUser] [AuthException] : Duplicate entry '123221231112@gmail.com' for key 'users.users_email_uindex'
+2022-12-01 11:08:37 [     clb4k4gsy0000ks55a5l53m84]  [  http] ::1 POST /auth/register 500 142 - 170.383 ms 

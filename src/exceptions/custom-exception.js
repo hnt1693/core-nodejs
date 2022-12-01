@@ -1,10 +1,22 @@
 class CustomException extends Error {
     name;
     msg
+    thrown
+
     constructor(msg, name) {
         super(msg);
         this.name = name;
     }
+
+    bind = (data) => {
+        this.thrown = data;
+        return this;
+    }
 }
 
-module.exports = CustomException
+const EXCEPTION_TYPES = {
+    AUTH: "AuthException",
+    NOT_FOUND: "NotFoundException"
+}
+
+module.exports = {Exception: CustomException, EXCEPTION_TYPES}

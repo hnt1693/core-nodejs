@@ -11,9 +11,11 @@
     "argon2": "^0.30.2",
     "body-parser": "^1.20.1",
     "cookie-parser": "~1.4.4",
+    "cuid": "^2.1.8",
     "dayjs": "^1.11.6",
     "dotenv": "^16.0.3",
     "express": "~4.16.1",
+    "express-request-id": "^3.0.0",
     "http-errors": "~1.6.3",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.2",
@@ -24,6 +26,7 @@
     "request-context": "^2.0.0",
     "simple-body-validator": "^1.2.9",
     "split": "^1.0.1",
+    "stack-trace": "^1.0.0-pre1",
     "winston": "^3.8.2"
   },
   "devDependencies": {

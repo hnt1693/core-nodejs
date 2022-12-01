@@ -7,6 +7,7 @@ const ROLE = {
 }
 
 const AuthException = require("../exceptions/auth-exception")
+const {EXCEPTION_TYPES, Exception} = require("../exceptions/custom-exception")
 
 
 function getcookie(req) {
@@ -28,11 +29,11 @@ const verifyCookie = (req, roles) => {
         const jwt = getcookie(req).get("SSID");
         try {
             if (!jwt) {
-                throw new AuthException("Not allowed to access this source")
+                throw new Exception("Not allowed to access this source", EXCEPTION_TYPES.AUTH).bind("verifyCookie=>checkJwt")
             }
             let user = verify(jwt);
             if (!roles.includes(ROLE.IS_AUTHENTICATED) && !roles.includes(user.type)) {
-                throw new AuthException("Not allowed to access this source")
+                throw new Exception("Not allowed to access this source", EXCEPTION_TYPES.AUTH).bind("verifyCookie=>checkRoles")
             }
             if (user) {
                 contextService.set('request:user', user);
@@ -41,7 +42,7 @@ const verifyCookie = (req, roles) => {
             }
 
         } catch (e) {
-            throw e
+            throw new Exception(e.message, EXCEPTION_TYPES.AUTH).bind("verifyCookie=>jwtValidate")
         }
     }
 
@@ -54,7 +55,7 @@ const authWithAsync = (callbackFunction, roles = []) => async (req, res, next) =
                 verifyCookie(req, roles);
                 await callbackFunction(req, res, next);
             } catch (e) {
-                next(new AuthException(e.message));
+                next(e);
             }
         } else {
             contextService.set('request:user', {username: "AnonymousUser", type: -1});

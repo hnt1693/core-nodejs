@@ -1,7 +1,7 @@
 const DBHelper = require("../utils/db-helper")
 const {UserMapping, getColumns} = require("../mapping/user-mapping");
 const AuthException = require("../exceptions/auth-exception");
-const Exception = require("../exceptions/custom-exception");
+const {Exception, EXCEPTION_TYPES} = require("../exceptions/custom-exception");
 const {hashPassword, verifyPasswordWithHash} = require("../utils/password-encrypt");
 const {StringBuilder} = require("@utils/ultil-helper");
 const {make} = require('simple-body-validator');
@@ -32,7 +32,7 @@ const login = (body) => {
     return DBHelper.executeQuery(async connection => {
         const validator = make(body, userLoginRules);
         if (!validator.stopOnFirstFailure().validate()) {
-            throw new AuthException(validator.errors().first());
+            throw new Exception(validator.errors().first(), EXCEPTION_TYPES.AUTH).bind('login=>Validate');
         }
         let user = await connection.queryWithLog({
             sql: `SELECT *
@@ -42,7 +42,7 @@ const login = (body) => {
             values: [body.username]
         });
         if (user.length === 0) {
-            throw new AuthException("Username password is not valid");
+            throw new Exception("Username password is not valid", EXCEPTION_TYPES.AUTH).bind('login=>getUser');
         }
         user = user[0];
         await verifyPasswordWithHash(body.password, user.password)
@@ -56,15 +56,21 @@ const register = (body) => {
     return DBHelper.executeQueryWithTransaction(async connection => {
         const validator = make(body, userRegisterRules);
         if (!validator.stopOnFirstFailure().validate()) {
-            throw new Error(validator.errors().first());
+            throw new Exception(validator.errors().first(), EXCEPTION_TYPES.AUTH).bind('register=>Validate');
         }
-        let user = await connection.queryWithLog({
-            sql: `INSERT INTO users(username, password, email)
+        try{
+            let user = await connection.queryWithLog({
+                sql: `INSERT INTO users(username, password, email)
                       VALUE(?,?,?)`,
-            rowsAsArray: false,
-            values: [body.username, await hashPassword(body.password), body.email]
-        });
-        return user.insertId;
+                rowsAsArray: false,
+                values: [body.username, await hashPassword(body.password), body.email]
+            });
+            return user.insertId;
+        }catch (e) {
+            throw new Exception(e.message, EXCEPTION_TYPES.AUTH).bind('register=>InsertUser');
+        }
+
+
     })
 }
 
@@ -76,7 +82,7 @@ const getInfo = async (username) => {
         })
         user = user[0];
         if (!user) {
-            throw new Exception("User not found", "NotFoundException")
+            throw new Exception("User not found", EXCEPTION_TYPES.NOT_FOUND).bind('getInfo=>getUser');
         }
         return user;
     })

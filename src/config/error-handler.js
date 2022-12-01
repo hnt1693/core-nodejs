@@ -1,6 +1,7 @@
 const AuthException = require("../exceptions/auth-exception")
 const dayjs = require('dayjs')
 const logger = require("../utils/logger")
+
 const handleErrorAsync = func => async (req, res, next) => {
     try {
         await func(req, res, next);
@@ -25,7 +26,7 @@ const globalErrorHandler = function (err, req, res, next) {
             })
         }
     }
-    logger.error(`[${err.name}] : ${err.message}`)
+    logger.logWithThrown('error',`[${err.name}] : ${err.message}`, err.thrown)
     next();
 }
 

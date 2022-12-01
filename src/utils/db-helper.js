@@ -25,7 +25,7 @@ function connection() {
             trace: true,
             connectTimeout: 120,
         });
-        logger.info(`Database connected successfully`)
+        logger.logWithThrown('info',`Database connected successfully`, "DBHelper")
         return pool.promise();
     } catch (error) {
         return console.log(`Could not connect - ${error}`);
@@ -59,7 +59,7 @@ const executeQuery = async function (callback) {
 
 function logSql(conn) {
     conn.queryWithLog = async function (params) {
-        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params.values.join(" | ") || 'none') + "]")
+        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params.values.join(" | ") || 'none') + "]");;
         const [rows, fields] = await conn.query(params);
         return rows;
     }
