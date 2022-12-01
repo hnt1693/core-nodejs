@@ -5,32 +5,22 @@ const ROLE = {
     ADMIN: 2,
     USER: 1,
 }
-
-const AuthException = require("../exceptions/auth-exception")
 const {EXCEPTION_TYPES, Exception} = require("../exceptions/custom-exception")
 
 
-function getcookie(req) {
-    let cookie = req.headers.cookie;
-    let map = new Map;
-    if (cookie) {
-        cookie = cookie.split('; ')
-        cookie.forEach(c => {
-            let temp = c.split("=");
-            map.set(temp[0], (temp[1]));
-        })
-    }
-    return map;
+function getToken(req) {
+    return req.headers.authorization;
 }
 
 const verifyCookie = (req, roles) => {
 
     if (roles.length > 0) {
-        const jwt = getcookie(req).get("SSID");
+        let jwt = getToken(req);
         try {
             if (!jwt) {
-                throw new Exception("Not allowed to access this source", EXCEPTION_TYPES.AUTH).bind("verifyCookie=>checkJwt")
+                throw new Exception("Token not found", EXCEPTION_TYPES.AUTH).bind("verifyCookie=>checkJwt")
             }
+            jwt =jwt.replace("Bearer ","")
             let user = verify(jwt);
             if (!roles.includes(ROLE.IS_AUTHENTICATED) && !roles.includes(user.type)) {
                 throw new Exception("Not allowed to access this source", EXCEPTION_TYPES.AUTH).bind("verifyCookie=>checkRoles")

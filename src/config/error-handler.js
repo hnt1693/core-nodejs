@@ -1,4 +1,4 @@
-const {Exception} = require("@exception/custom-exception")
+const {Exception,EXCEPTION_TYPES} = require("@exception/custom-exception")
 const dayjs = require('dayjs')
 const logger = require("../utils/logger")
 
@@ -12,7 +12,7 @@ const handleErrorAsync = func => async (req, res, next) => {
 
 const globalErrorHandler = function (err, req, res, next) {
     if (err) {
-        if (err instanceof Exception)
+        if (err.name===EXCEPTION_TYPES.AUTH)
             res.status(err.status || 403).send({
                 msg: err.message,
                 type: err.name,

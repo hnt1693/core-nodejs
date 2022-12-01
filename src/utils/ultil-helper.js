@@ -12,7 +12,10 @@ const getIntParam = (req, key, defaultValue) => {
 class StringBuilder {
     value = '';
 
-    append(str) {
+    constructor() {
+    }
+
+    append = (str)=> {
         this.value += str;
         return this;
     }

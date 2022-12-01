@@ -27,6 +27,7 @@
     "simple-body-validator": "^1.2.9",
     "split": "^1.0.1",
     "stack-trace": "^1.0.0-pre1",
+    "swagger-ui-express": "^4.6.0",
     "winston": "^3.8.2"
   },
   "devDependencies": {
@@ -42,5 +43,8 @@
     "@config": "src/config/",
     "@annotation": "src/annotation/",
     "@service": "src/services/"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }

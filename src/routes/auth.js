@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 const UserService = require("@service/user-service")
@@ -7,8 +8,35 @@ const {getRequestParams} = require("@utils/ultil-helper")
 const {encode} = require("@service/jwt")
 
 
+// routes/users.js
+
 /**
- * @Target: Get List
+ * @swagger
+ * /users:
+ *   get:
+ *     summary: Retrieve a list of JSONPlaceholder users.
+ *     description: Retrieve a list of users from JSONPlaceholder. Can be used to populate a list of fake users when prototyping or testing an API.
+ *     responses:
+ *       200:
+ *         description: A list of users.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 data:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       id:
+ *                         type: integer
+ *                         description: The user ID.
+ *                         example: 0
+ *                       name:
+ *                         type: string
+ *                         description: The user's name.
+ *                         example: Leanne Graham
  */
 router.get('/', authWithAsync(async function (req, res, next) {
     const {limit, page, name, fields} = getRequestParams(req);

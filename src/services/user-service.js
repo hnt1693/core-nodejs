@@ -5,7 +5,7 @@ const {Exception, EXCEPTION_TYPES} = require("../exceptions/custom-exception");
 const {hashPassword, verifyPasswordWithHash} = require("../utils/password-encrypt");
 const {StringBuilder} = require("@utils/ultil-helper");
 const {make} = require('simple-body-validator');
-
+const {encode} = require("@service/jwt")
 const userLoginRules = {
     username: 'required|string|min:3',
     password: 'required|min:5'
@@ -47,6 +47,7 @@ const login = (body) => {
         user = user[0];
         await verifyPasswordWithHash(body.password, user.password)
         delete user.password;
+        user.accessToken = encode(user)
         return user;
     })
 

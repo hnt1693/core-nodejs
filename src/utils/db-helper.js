@@ -45,7 +45,6 @@ const executeWithTransaction = async function (callback) {
         await conn.query('ROLLBACK');
         throw e;
     } finally {
-        console.log("RELEASE")
         await conn.release();
     }
 }

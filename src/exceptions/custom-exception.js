@@ -18,6 +18,7 @@ const EXCEPTION_TYPES = {
     AUTH: "AuthException",
     NOT_FOUND: "NotFoundException",
     CORS: "CORSException",
+    FILE: "FileException",
 }
 
 module.exports = {Exception: CustomException, EXCEPTION_TYPES}

@@ -17,6 +17,16 @@ const app = express();
 const PORT = process.env.PORT || 8000
 
 
+//Swagger
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger/swagger.json');
+const swaggerOptions = {
+    swaggerOptions: {
+        validatorUrl: null
+    }
+};
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOptions));
 //CONFIG
 app.use(contextService.middleware('request'));
 app.use(cors)

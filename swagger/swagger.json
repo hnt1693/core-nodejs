@@ -1,0 +1,143 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Fil Application",
+    "version": "1.0",
+    "contact": {
+      "name": "Hoang Ngoc Thach",
+      "email": "hnt1693@gmail.com"
+    },
+    "description": "App cá độ"
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Auth",
+      "description": "Đăng ký, xác thực người dùng"
+    },
+    {
+      "name": "File",
+      "description": "Upload, download file"
+    }
+  ],
+  "paths": {
+    "/auth/": {
+      "parameters": [
+        {
+          "name": "Body",
+          "required": true,
+          "in": "body",
+          "description": "Auth",
+          "schema": {
+            "default": {
+              "username": "admin",
+              "password": "123123123"
+            }
+          }
+        }
+      ],
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "operationId": "routeWithId",
+        "summary": "Login",
+        "description": "Login",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response",
+            "examples": {
+              "application/json": "{ foo: 1 }"
+            }
+          }
+        }
+      }
+    },
+    "/auth/register": {
+      "parameters": [
+        {
+          "name": "Body",
+          "required": true,
+          "in": "body",
+          "description": "Auth",
+          "schema": {
+            "default": {
+              "username": "admin",
+              "password": "123123123",
+              "email": "email@yahoo.com"
+            }
+          }
+        }
+      ],
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "operationId": "registerUser",
+        "summary": "Register new user",
+        "description": "Register new user",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "202": {
+            "description": "200 response",
+            "examples": {
+              "application/json": "{ foo: 'bar' }"
+            }
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/auth/info": {
+      "parameters": [
+      ],
+      "get": {
+        "tags": [
+          "Auth"
+        ],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "operationId": "Get profile",
+        "summary": "Get profile",
+        "description": "Get profile",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "202": {
+            "description": "200 response",
+            "examples": {
+              "application/json": "{ foo: 'bar' }"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Authorization": {
+      "type": "apiKey",
+      "name": "authorization",
+      "in": "header",
+      "description": "Authentication token"
+    }
+  }
+}
