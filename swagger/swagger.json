@@ -22,6 +22,10 @@
       "description": "Đăng ký, xác thực người dùng"
     },
     {
+      "name": "Users",
+      "description": "Get info, change profile"
+    },
+    {
       "name": "File",
       "description": "Upload, download file"
     }
@@ -53,12 +57,6 @@
           "application/json"
         ],
         "responses": {
-          "200": {
-            "description": "200 response",
-            "examples": {
-              "application/json": "{ foo: 1 }"
-            }
-          }
         }
       }
     },
@@ -89,12 +87,6 @@
           "application/json"
         ],
         "responses": {
-          "200": {
-            "description": "200 response",
-            "examples": {
-              "application/json": "{ foo: 'bar' }"
-            }
-          }
         },
         "security": [
           {
@@ -103,12 +95,46 @@
         ]
       }
     },
-    "/auth/info": {
+    "/users/update": {
+      "parameters": [
+        {
+          "name": "Body",
+          "required": true,
+          "in": "body",
+          "description": "Auth",
+          "schema": {
+            "default": {
+              "fullName": "Hoàng Ngọc Thạch",
+              "email": "ngoisaocodon@gmail.com"
+            }
+          }
+        }
+      ],
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "operationId": "updateUser",
+        "summary": "Update profile",
+        "description": "Update profile",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/users/info": {
       "parameters": [
       ],
       "get": {
         "tags": [
-          "Auth"
+          "Users"
         ],
         "security": [
           {
@@ -122,12 +148,34 @@
           "application/json"
         ],
         "responses": {
-          "202": {
-            "description": "200 response",
-            "examples": {
-              "application/json": "{ foo: 'bar' }"
-            }
+        }
+      }
+    },
+    "/users/change-avatar": {
+      "parameters": [
+        {
+          "type": "file",
+          "in": "formData",
+          "maxItems": 1,
+          "name": "files"
+        }
+      ],
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "security": [
+          {
+            "Authorization": []
           }
+        ],
+        "operationId": "Get profile",
+        "summary": "Get profile",
+        "description": "Get profile",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
         }
       }
     }

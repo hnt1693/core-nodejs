@@ -19,7 +19,7 @@ const globalErrorHandler = function (err, req, res, next) {
                 timestamp: dayjs().format("YYYY/MM/DD HH:mm:ss")
             })
         else {
-            res.status(err.status || 500).send({
+            res.status(err.status || 400).send({
                 msg: err.message,
                 type: err.name,
                 timestamp: dayjs().format("YYYY/MM/DD HH:mm:ss")

@@ -40,7 +40,7 @@ app.use(morganMiddleware)
 app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/files', fileStorageRouter);
-app.use('/public/flags', express.static('storage/public/flags'))
+app.use('/storage/public/avatar', express.static('storage/public/avatar'))
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -7,37 +7,10 @@ const {authWithAsync, ROLE} = require('@config/auth-middleware')
 const {getRequestParams} = require("@utils/ultil-helper")
 const {encode} = require("@service/jwt")
 
-
-// routes/users.js
-
 /**
- * @swagger
- * /users:
- *   get:
- *     summary: Retrieve a list of JSONPlaceholder users.
- *     description: Retrieve a list of users from JSONPlaceholder. Can be used to populate a list of fake users when prototyping or testing an API.
- *     responses:
- *       200:
- *         description: A list of users.
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 data:
- *                   type: array
- *                   items:
- *                     type: object
- *                     properties:
- *                       id:
- *                         type: integer
- *                         description: The user ID.
- *                         example: 0
- *                       name:
- *                         type: string
- *                         description: The user's name.
- *                         example: Leanne Graham
+ * @API :  Get Users
  */
+/
 router.get('/', authWithAsync(async function (req, res, next) {
     const {limit, page, name, fields} = getRequestParams(req);
     const [data] = await UserService.getUsers(parseInt(page), parseInt(limit), name, fields.split(","));
@@ -45,17 +18,16 @@ router.get('/', authWithAsync(async function (req, res, next) {
 }, []));
 
 /**
- * @Target: Login
+ * @API :  Login
  */
 router.post("/", authWithAsync(async (req, res, next) => {
     const data = await UserService.login(req.body);
-    res.cookie('SSID', encode(data));
     res.send({data, "code": 200})
 }, []))
 
 
 /**
- * @Target: Register
+ * @API :  Register
  */
 router.post("/register", authWithAsync(async (req, res, next) => {
     const data = await UserService.register(req.body);

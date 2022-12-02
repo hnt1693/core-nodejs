@@ -25,7 +25,7 @@ function connection() {
             trace: true,
             connectTimeout: 120,
         });
-        logger.logWithThrown('info',`Database connected successfully`, "DBHelper")
+        logger.logWithThrown('info', `Database connected successfully`, "DBHelper")
         return pool.promise();
     } catch (error) {
         return console.log(`Could not connect - ${error}`);
@@ -37,6 +37,7 @@ const executeWithTransaction = async function (callback) {
     try {
         await conn.query('START TRANSACTION');
         logSql(conn);
+        join(conn)
         let res = await callback(conn);
         await conn.query('COMMIT');
         return res;
@@ -53,7 +54,8 @@ const executeWithTransaction = async function (callback) {
 const executeQuery = async function (callback) {
     const conn = await pool.getConnection();
     logSql(conn);
-    let data =  await callback(conn);
+    join(conn)
+    let data = await callback(conn);
     conn.release();
     return data;
 }
@@ -61,8 +63,18 @@ const executeQuery = async function (callback) {
 
 function logSql(conn) {
     conn.queryWithLog = async function (params) {
-        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params.values.join(" | ") || 'none') + "]");;
+        logger.sql("[" + params.sql.replaceAll("\n", " ").replace(/\s+/g, ' ') + '] => Binding => [' + (params.values.join(" | ") || 'none') + "]");
+        ;
         const [rows, fields] = await conn.query(params);
+        return rows;
+    }
+}
+
+function join(conn) {
+    conn.join = async function (joinOptions) {
+        logger.sql(`SELECT ${joinOptions.columns} FROM ${joinOptions.table} where ${joinOptions.joinColumn}=${joinOptions.joinValue}`)
+        const [rows, fields] = await conn.query(`SELECT ${joinOptions.columns} FROM ${joinOptions.table} where ${joinOptions.joinColumn}=?`, [joinOptions.joinValue]);
+        if (joinOptions.unique) return rows[0] || null;
         return rows;
     }
 }

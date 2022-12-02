@@ -7,8 +7,21 @@ const UserMapping = {
     createdAt: "created_at",
     updatedAt: "updated_at",
     deleteAt: "delete_at",
-    initialAdminType: "initial_admin_type",
+    avatar: "avatar_id",
+    password: "password",
 }
+
+const FileMapping = {
+    id: "id",
+    path: "path",
+    originalName: "original_name",
+    mimeType: "mimetype",
+    encoding: "encoding",
+    destination: "destination",
+    size: "size",
+    fileName: "filename"
+}
+
 
 const getColumns = (fields, mapping) => {
     let columns = "";
@@ -32,4 +45,4 @@ const getColumns = (fields, mapping) => {
     return columns.substr(0, columns.length - 1);
 }
 
-module.exports = {getColumns, UserMapping}
+module.exports = {getColumns, UserMapping, FileMapping}
