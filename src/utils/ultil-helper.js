@@ -13,6 +13,7 @@ class StringBuilder {
     value = '';
 
     constructor() {
+        this.value=''
     }
 
     append = (str) => {

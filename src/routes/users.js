@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {ROLE, authWithAsync} = require("@config/auth-middleware")
+const {fetch} = require("@service/crawler")
 const {getInfo, changeAvatar, updateInfo} = require("@service/user-service")
 const {getUsers} = require("@service/user-service")
 const {ResponseBuilder} = require("@utils/ultil-helper")
@@ -51,6 +52,17 @@ router.put('/update', authWithAsync(async function (req, res, next) {
         .build()
     );
 }, [ROLE.IS_AUTHENTICATED]));
+
+router.put('/wc', authWithAsync(async function (req, res, next) {
+    let data =  fetch('https://www.livescore.com/en/')
+    res.json(ResponseBuilder.getInstance()
+        .data("Ok")
+        .code(200)
+        .msg("Update profile success")
+        .build()
+    );
+}, []));
+
 
 
 module.exports = router;

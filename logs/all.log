@@ -28292,3 +28292,545 @@
 2022-12-01 21:21:36 [     clb560s2n0000qcslbh6ibf1q]  [  http] ::1 POST /auth/ 200 318 - 186.133 ms 
 2022-12-01 21:27:07 [                   Application]  [  info] [DBHelper] Database connected successfully
 2022-12-01 21:27:07 [                   Application]  [  info] App is running at port 8080
+2022-12-01 21:28:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 21:28:56 [                   Application]  [  info] App is running at port 8080
+2022-12-01 21:29:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 21:29:16 [                   Application]  [  info] App is running at port 8080
+2022-12-01 21:29:37 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 21:29:37 [                   Application]  [  info] App is running at port 8080
+2022-12-01 21:30:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 21:30:12 [                   Application]  [  info] App is running at port 8080
+2022-12-01 21:30:22 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 21:30:22 [                   Application]  [  info] App is running at port 8080
+2022-12-01 21:31:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 21:31:16 [                   Application]  [  info] App is running at port 8080
+2022-12-01 21:32:25 [     clb56eoqx0000kksla7bi5x7t]  [   sql] [SELECT * FROM users u where u.username = ?] => Binding => [admin]
+2022-12-01 21:32:25 [     clb56eoqx0000kksla7bi5x7t]  [  http] ::1 POST /auth/ 200 318 - 202.351 ms 
+2022-12-01 21:32:30 [     clb56esh80001kkslemt31004]  [   sql] [SELECT * FROM users u where u.username = ?] => Binding => [admin2]
+2022-12-01 21:32:30 [     clb56esh80001kkslemt31004]  [ error] [login=>getUser] [AuthException] : Username password is not valid
+2022-12-01 21:32:30 [     clb56esh80001kkslemt31004]  [  http] ::1 POST /auth/ 403 97 - 9.065 ms 
+2022-12-01 22:35:53 [     clb58oaxv0002kksl1jumhqd6]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:35:53 [     clb58oaxv0002kksl1jumhqd6]  [  http] ::ffff:127.0.0.1 POST /subway/ 500 84 - 1.818 ms 
+2022-12-01 22:36:08 [     clb58om8b0003kksl6zys0h7o]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:36:08 [     clb58om8b0003kksl6zys0h7o]  [  http] ::ffff:127.0.0.1 POST /subway/ 500 84 - 0.484 ms 
+2022-12-01 22:37:28 [     clb58qcil0004kksl2ms526gp]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:37:28 [     clb58qcil0004kksl2ms526gp]  [  http] ::ffff:127.0.0.1 POST /subway/ 500 84 - 0.517 ms 
+2022-12-01 22:37:33 [     clb58qgi70005kksl3w66fohf]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:37:33 [     clb58qgi70005kksl3w66fohf]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 0.224 ms 
+2022-12-01 22:37:55 [     clb58qwwg0006kksl8a594xfm]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:37:55 [     clb58qwwg0006kksl8a594xfm]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 0.358 ms 
+2022-12-01 22:38:07 [     clb58r6940007kksldxunhznh]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:38:07 [     clb58r6940007kksldxunhznh]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 0.562 ms 
+2022-12-01 22:38:17 [     clb58rdwy0008kkslgg3fb53f]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:38:17 [     clb58rdwy0008kkslgg3fb53f]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 0.302 ms 
+2022-12-01 22:38:20 [     clb58rgd30009kksld90mg8cz]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:38:20 [     clb58rgd30009kksld90mg8cz]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 0.589 ms 
+2022-12-01 22:38:31 [     clb58romz000akkslgyk3ge6i]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:38:31 [     clb58romz000akkslgyk3ge6i]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 0.797 ms 
+2022-12-01 22:38:44 [     clb58ryw8000bkkslden04hec]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:38:44 [     clb58ryw8000bkkslden04hec]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 0.225 ms 
+2022-12-01 22:39:40 [     clb58t5vo000ckkslead3b5fc]  [ error] [] [NotFoundException] : API not found
+2022-12-01 22:39:40 [     clb58t5vo000ckkslead3b5fc]  [  http] ::ffff:127.0.0.1 POST /subway/auth 500 84 - 1.877 ms 
+2022-12-01 22:39:42 [     clb58t7tx000dkkslgl1h0ztp]  [   sql] [SELECT * FROM users u where u.username = ?] => Binding => [chungchung]
+2022-12-01 22:39:42 [     clb58t7tx000dkkslgl1h0ztp]  [  http] ::ffff:127.0.0.1 POST /auth 200 327 - 197.107 ms 
+2022-12-01 22:39:58 [     clb58tjsh000ekksl0vxw3quq]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'split')
+2022-12-01 22:39:58 [     clb58tjsh000ekksl0vxw3quq]  [  http] ::ffff:127.0.0.1 GET /auth/ 500 116 - 3.194 ms 
+2022-12-01 22:40:08 [     clb58tr9o000fkksl7h4rf6hn]  [   sql] [INSERT INTO users(username, password, email) VALUE(?,?,?)] => Binding => [chungchung | $argon2id$v=19$m=64000,t=3,p=1$jMNtcxA4MHhobEajAcEYCQ$kAmdtevSIs1dBAVZWHFKP7fVer3RdtP7PBM7JnWnfos | hnt1691@gmail.com]
+2022-12-01 22:40:08 [     clb58tr9o000fkksl7h4rf6hn]  [ error] Can not transaction. Need to rollback for exception: Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-12-01 22:40:08 [     clb58tr9o000fkksl7h4rf6hn]  [ error] [register=>InsertUser] [AuthException] : Duplicate entry 'hnt1691@gmail.com' for key 'users.email_UNIQUE'
+2022-12-01 22:40:08 [     clb58tr9o000fkksl7h4rf6hn]  [  http] ::1 POST /auth/register 403 131 - 150.585 ms 
+2022-12-01 23:09:55 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-01 23:09:55 [                   Application]  [  info] App is running at port 8080
+2022-12-02 20:24:52 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:24:52 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:30:11 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:30:11 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:34:19 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:34:19 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:34:50 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:34:50 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:35:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:35:30 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:36:09 [     clb6ju69h0000mksl6fej4d2s]  [ error] [] [NotFoundException] : API not found
+2022-12-02 20:36:09 [     clb6ju69h0000mksl6fej4d2s]  [  http] ::1 GET /users/wc 400 84 - 2.915 ms 
+2022-12-02 20:36:20 [     clb6juewy0001mkslcefgc6zz]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:36:24 [     clb6juewy0001mkslcefgc6zz]  [  http] ::1 PUT /users/wc 400 - - 3653.168 ms 
+2022-12-02 20:36:40 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:36:40 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:36:41 [     clb6juv8b0000aosla9xbe2qf]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:36:41 [     clb6juv8b0000aosla9xbe2qf]  [  http] ::1 PUT /users/wc 200 53 - 7.532 ms 
+2022-12-02 20:36:53 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:36:53 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:36:55 [     clb6jv5jv000078slh8ho85j7]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:36:55 [     clb6jv5jv000078slh8ho85j7]  [  http] ::1 PUT /users/wc 200 55 - 6.921 ms 
+2022-12-02 20:37:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:37:25 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:37:28 [     clb6jvvlv0000woslaesue8wr]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:37:28 [     clb6jvvlv0000woslaesue8wr]  [  http] ::1 PUT /users/wc 200 55 - 10.094 ms 
+2022-12-02 20:37:54 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:37:54 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:37:56 [     clb6jwgtl0000rssles4t2567]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:37:56 [     clb6jwgtl0000rssles4t2567]  [  http] ::1 PUT /users/wc 200 55 - 8.148 ms 
+2022-12-02 20:38:19 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:38:19 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:38:21 [     clb6jx0ac00004csl81rp1w4h]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:38:21 [     clb6jx0ac00004csl81rp1w4h]  [  http] ::1 PUT /users/wc 200 55 - 8.323 ms 
+2022-12-02 20:38:42 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:38:42 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:38:44 [     clb6jxi3y0000c4slfkxp68l9]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:38:44 [     clb6jxi3y0000c4slfkxp68l9]  [  http] ::1 PUT /users/wc 200 55 - 6.336 ms 
+2022-12-02 20:39:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:39:16 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:39:17 [     clb6jy7gm0000iosl45dx327v]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:39:17 [     clb6jy7gm0000iosl45dx327v]  [  http] ::1 PUT /users/wc 200 55 - 7.392 ms 
+2022-12-02 20:39:33 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:39:33 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:39:34 [     clb6jyktm000074slcz2jamfn]  [  info] Start crawler https://www.livescore.com/en/
+2022-12-02 20:39:34 [     clb6jyktm000074slcz2jamfn]  [  http] ::1 PUT /users/wc 200 55 - 7.619 ms 
+2022-12-02 20:40:02 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:40:02 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:42:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:42:16 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:42:26 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:42:26 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:44:04 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:44:04 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:46:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:46:15 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:46:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:46:25 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:49:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:49:16 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:49:35 [     clb6kbg0e00008wslfgym9xbm]  [ error] [] [NotFoundException] : API not found
+2022-12-02 20:49:35 [     clb6kbg0e00008wslfgym9xbm]  [  http] ::1 GET /match/20221202 400 84 - 2.805 ms 
+2022-12-02 20:49:44 [     clb6kbng000018wsl08xw4mai]  [ error] [] [NotFoundException] : API not found
+2022-12-02 20:49:44 [     clb6kbng000018wsl08xw4mai]  [  http] ::1 GET /match/20221202 400 84 - 0.575 ms 
+2022-12-02 20:50:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:50:44 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:50:44 [     clb6kcxuv0000t0sl20h6bytc]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'filter')
+2022-12-02 20:50:44 [     clb6kcxuv0000t0sl20h6bytc]  [  http] ::1 GET /match/20221202 400 117 - 24.657 ms 
+2022-12-02 20:51:47 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:51:47 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:51:50 [     clb6kecd10000osslfkdb63bc]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'filter')
+2022-12-02 20:51:50 [     clb6kecd10000osslfkdb63bc]  [  http] ::1 GET /match/20221202 400 117 - 23.837 ms 
+2022-12-02 20:52:00 [     clb6kekk30001ossl2i192rfy]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'filter')
+2022-12-02 20:52:00 [     clb6kekk30001ossl2i192rfy]  [  http] ::1 GET /match/20221202 400 117 - 4.312 ms 
+2022-12-02 20:52:28 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:52:28 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:52:29 [     clb6kf60s000094sl0dup2yec]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'filter')
+2022-12-02 20:52:29 [     clb6kf60s000094sl0dup2yec]  [  http] ::1 GET /match/20221202 400 117 - 647.621 ms 
+2022-12-02 20:52:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:52:44 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:52:46 [     clb6kfiqw0000a8slau9decgj]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'filter')
+2022-12-02 20:52:46 [     clb6kfiqw0000a8slau9decgj]  [  http] ::1 GET /match/20221202 400 117 - 842.671 ms 
+2022-12-02 20:53:18 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:53:18 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:53:22 [     clb6kgah90000yksl7w7rgx3s]  [ error] [] [TypeError] : Stages.filter is not a function
+2022-12-02 20:53:22 [     clb6kgah90000yksl7w7rgx3s]  [  http] ::1 GET /match/20221202 400 94 - 839.663 ms 
+2022-12-02 20:53:39 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:53:39 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:53:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:53:45 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:53:46 [     clb6kgtmm0000noslgae1235s]  [ error] [] [TypeError] : Cannot destructure property 'Stages' of '(intermediate value)' as it is undefined.
+2022-12-02 20:53:46 [     clb6kgtmm0000noslgae1235s]  [  http] ::1 GET /match/20221202 400 145 - 22.204 ms 
+2022-12-02 20:54:04 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:54:04 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:54:06 [     clb6kh8m70000ecsl5xph7vmz]  [ error] [] [TypeError] : The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received function ResponseBuilder
+2022-12-02 20:54:06 [     clb6kh8m70000ecsl5xph7vmz]  [  http] ::1 GET /match/20221202 400 211 - 604.211 ms 
+2022-12-02 20:54:22 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 20:54:22 [                   Application]  [  info] App is running at port 8081
+2022-12-02 20:54:24 [     clb6khmrv000018sl9wic9g7q]  [  http] ::1 GET /match/20221202 200 862 - 606.448 ms 
+2022-12-02 21:02:29 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:02:29 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:02:32 [     clb6ks3ar0000k8sleob69mu3]  [  http] ::1 GET /match/20221202 200 898 - 872.366 ms 
+2022-12-02 21:02:55 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:02:55 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:02:56 [     clb6ksltt0000d8sl56z8fpan]  [  http] ::1 GET /match/20221202 200 111490 - 588.459 ms 
+2022-12-02 21:05:17 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:05:17 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:05:23 [     clb6kvqs60000boslhsl65k73]  [  http] ::1 GET /match/20221202 200 111490 - 900.963 ms 
+2022-12-02 21:06:08 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:06:08 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:06:11 [     clb6kwsd10000o8sl0f13cche]  [  http] ::1 GET /match/20221202 200 111490 - 881.231 ms 
+2022-12-02 21:06:34 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:06:34 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:06:38 [     clb6kxdgm0000z4sl6kcmddmc]  [  http] ::1 GET /match/20221202 200 111490 - 770.589 ms 
+2022-12-02 21:06:51 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:06:51 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:08:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:08:12 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:08:15 [     clb6kzfza0000k0sl14glfx51]  [ error] [] [AxiosError] : Request failed with status code 410
+2022-12-02 21:08:15 [     clb6kzfza0000k0sl14glfx51]  [  http] ::1 GET /match/20221202 400 99 - 486.503 ms 
+2022-12-02 21:09:00 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:09:00 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:09:05 [     clb6l0iv90000xgsl7ott7971]  [  http] ::1 GET /match/20221202 200 25140 - 665.528 ms 
+2022-12-02 21:09:22 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:09:22 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:09:26 [     clb6l0ym000007cslh1x18ulz]  [  http] ::1 GET /match/20221201 200 1278 - 547.478 ms 
+2022-12-02 21:09:53 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:09:53 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:11:58 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:11:58 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:12:02 [     clb6l4az30000l8sl1umkgnkf]  [  http] ::1 GET /match/20221201 200 1494 - 570.534 ms 
+2022-12-02 21:14:43 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:14:43 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:14:44 [     clb6l7sjn000094slhsyc10x8]  [  http] ::1 GET /match/20221201 200 1490 - 514.353 ms 
+2022-12-02 21:22:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:22:45 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:22:51 [     clb6li82u0000gwsl7dix48ls]  [  http] ::1 GET /match/20221201 200 1546 - 557.433 ms 
+2022-12-02 21:23:02 [     clb6ligdt0001gwslfi1rdmb9]  [  http] ::1 GET /match/20221202 200 1460 - 746.715 ms 
+2022-12-02 21:50:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:50:56 [                   Application]  [  info] App is running at port 8081
+2022-12-02 21:56:08 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 21:56:08 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:03:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:03:07 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6189 | Costa Rica | enet/6705.png | CRI]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9016 | Germany | enet/8570.png | GER]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6326 | Japan | enet/6715.png | JPN]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9182 | Spain | enet/6720.png | SPA]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9116 | Ghana | enet/6714.png | GHA]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9101 | Uruguay | enet/5796.png | URY]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6325 | South Korea | enet/7804.png | KOR]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9295 | Portugal | enet/8361.png | POR]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,undefined,undefined,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,undefined,undefined,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,undefined,undefined,'4'',0,0),(9893,'World Cup 2022','Group H',20221202220000,undefined,undefined,'3'',0,0)] => Binding => [none]
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,undefined,undefined,'3'',0,0)' at line 1
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [ error] [] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,undefined,undefined,'3'',0,0)' at line 1
+2022-12-02 22:03:09 [     clb6my1yw0000tgsleq6q33b7]  [  http] ::1 GET /match/20221202 400 275 - 572.924 ms 
+2022-12-02 22:04:43 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:04:43 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6189 | Costa Rica | enet/6705.png | CRI]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9016 | Germany | enet/8570.png | GER]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6326 | Japan | enet/6715.png | JPN]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9182 | Spain | enet/6720.png | SPA]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9116 | Ghana | enet/6714.png | GHA]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9101 | Uruguay | enet/5796.png | URY]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6325 | South Korea | enet/7804.png | KOR]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9295 | Portugal | enet/8361.png | POR]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,undefined,undefined,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,undefined,undefined,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0),(9893,'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0)] => Binding => [none]
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0)' at line 1
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [ error] [] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0)' at line 1
+2022-12-02 22:04:48 [     clb6n05r300006ksl1sg3dsfp]  [  http] ::1 GET /match/20221202 400 275 - 662.364 ms 
+2022-12-02 22:04:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:04:56 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6189 | Costa Rica | enet/6705.png | CRI]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9016 | Germany | enet/8570.png | GER]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6326 | Japan | enet/6715.png | JPN]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9182 | Spain | enet/6720.png | SPA]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9116 | Ghana | enet/6714.png | GHA]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9101 | Uruguay | enet/5796.png | URY]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6325 | South Korea | enet/7804.png | KOR]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9295 | Portugal | enet/8361.png | POR]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,undefined,undefined,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,undefined,undefined,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0),(9893,'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0)] => Binding => [none]
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0)' at line 1
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [ error] [] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,undefined,undefined,'5'',0,0)' at line 1
+2022-12-02 22:04:58 [     clb6n0dgn0000dgsl1k6p5ps0]  [  http] ::1 GET /match/20221202 400 275 - 728.553 ms 
+2022-12-02 22:05:53 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:05:53 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6189 | Costa Rica | enet/6705.png | CRI]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9016 | Germany | enet/8570.png | GER]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6326 | Japan | enet/6715.png | JPN]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9182 | Spain | enet/6720.png | SPA]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9116 | Ghana | enet/6714.png | GHA]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9101 | Uruguay | enet/5796.png | URY]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6325 | South Korea | enet/7804.png | KOR]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9295 | Portugal | enet/8361.png | POR]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,9116,9101,'6'',0,0),(9893,'World Cup 2022','Group H',20221202220000,6325,9295,'6'',0,1)] => Binding => [none]
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'6'',0,1)' at line 1
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [ error] [] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'6'',0,1)' at line 1
+2022-12-02 22:05:55 [     clb6n1lm9000008slg5646ysk]  [  http] ::1 GET /match/20221202 400 265 - 563.037 ms 
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6189 | Costa Rica | enet/6705.png | CRI]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9016 | Germany | enet/8570.png | GER]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6326 | Japan | enet/6715.png | JPN]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9182 | Spain | enet/6720.png | SPA]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9116 | Ghana | enet/6714.png | GHA]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9101 | Uruguay | enet/5796.png | URY]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [6325 | South Korea | enet/7804.png | KOR]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into teams(id, name, img, short_name) VALUE (?, ?, ?, ?)] => Binding => [9295 | Portugal | enet/8361.png | POR]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,9116,9101,'6'',0,0),(9893,'World Cup 2022','Group H',20221202220000,6325,9295,'6'',0,1)] => Binding => [none]
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'6'',0,1)' at line 1
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [ error] [] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'6'',0,1)' at line 1
+2022-12-02 22:06:04 [     clb6n1t1x000108slbpy2eh9v]  [  http] ::1 GET /match/20221202 400 265 - 531.927 ms 
+2022-12-02 22:09:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:09:45 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:10:49 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:10:49 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:12:33 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:12:33 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:12:37 [     clb6na7sq0000fwslgriy9vza]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,9116,9101,'13'',0,0),(9893,'World Cup 2022','Group H',20221202220000,6325,9295,'13'',0,1)] => Binding => [none]
+2022-12-02 22:12:37 [     clb6na7sq0000fwslgriy9vza]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'13'',0,1)' at line 1
+2022-12-02 22:12:37 [     clb6na7sq0000fwslgriy9vza]  [ error] [] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'13'',0,1)' at line 1
+2022-12-02 22:12:37 [     clb6na7sq0000fwslgriy9vza]  [  http] ::1 GET /match/20221202 400 266 - 543.543 ms 
+2022-12-02 22:14:39 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:14:39 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:14:44 [     clb6ncxp10000wssla2v61kat]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,9116,9101,'15'',0,0),(9893,'World Cup 2022','Group H',20221202220000,6325,9295,'15'',0,1)] => Binding => [none]
+2022-12-02 22:14:44 [     clb6ncxp10000wssla2v61kat]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'15'',0,1)' at line 1
+2022-12-02 22:14:44 [     clb6ncxp10000wssla2v61kat]  [ error] [] [Error] : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'World Cup 2022','Group H',20221202220000,6325,9295,'15'',0,1)' at line 1
+2022-12-02 22:14:44 [     clb6ncxp10000wssla2v61kat]  [  http] ::1 GET /match/20221202 400 266 - 574.276 ms 
+2022-12-02 22:14:57 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:14:57 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:14:59 [     clb6nd9am0000acsl5m5f2u8a]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,9116,9101,'15m',0,0),(9893,'World Cup 2022','Group H',20221202220000,6325,9295,'15m',0,1)] => Binding => [none]
+2022-12-02 22:14:59 [     clb6nd9am0000acsl5m5f2u8a]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (undefined,'South Korea','enet/7804.png','KOR')] => Binding => [none]
+2022-12-02 22:14:59 [     clb6nd9am0000acsl5m5f2u8a]  [ error] Can not transaction. Need to rollback for exception: Unknown column 'undefined' in 'field list'
+2022-12-02 22:14:59 [     clb6nd9am0000acsl5m5f2u8a]  [ error] [] [Error] : Unknown column 'undefined' in 'field list'
+2022-12-02 22:14:59 [     clb6nd9am0000acsl5m5f2u8a]  [  http] ::1 GET /match/20221202 400 101 - 605.798 ms 
+2022-12-02 22:15:32 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:15:32 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:15:47 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:15:47 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:15:49 [     clb6nec5r0000hgsl5a0aeiz5]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (9890,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(9890,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(9893,'World Cup 2022','Group H',20221202220000,9116,9101,'16m',0,0),(9893,'World Cup 2022','Group H',20221202220000,6325,9295,'16m',0,1)] => Binding => [none]
+2022-12-02 22:15:49 [     clb6nec5r0000hgsl5a0aeiz5]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (6325,'South Korea','enet/7804.png','KOR'),(9295,'Portugal','enet/8361.png','POR')] => Binding => [none]
+2022-12-02 22:15:49 [     clb6nec5r0000hgsl5a0aeiz5]  [  http] ::1 GET /match/20221202 200 182 - 554.313 ms 
+2022-12-02 22:17:02 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:17:02 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:17:29 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:17:29 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:18:03 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-02 22:18:03 [                   Application]  [  info] App is running at port 8081
+2022-12-02 22:18:07 [     clb6nhasr00004csl7g60cvqs]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663917,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(663916,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(663934,'World Cup 2022','Group H',20221202220000,9116,9101,'18m',0,0),(663935,'World Cup 2022','Group H',20221202220000,6325,9295,'18m',0,1)] => Binding => [none]
+2022-12-02 22:18:07 [     clb6nhasr00004csl7g60cvqs]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (6189,'Costa Rica','enet/6705.png','CRI'),(9016,'Germany','enet/8570.png','GER'),(6326,'Japan','enet/6715.png','JPN'),(9182,'Spain','enet/6720.png','SPA'),(9116,'Ghana','enet/6714.png','GHA'),(9101,'Uruguay','enet/5796.png','URY'),(6325,'South Korea','enet/7804.png','KOR'),(9295,'Portugal','enet/8361.png','POR')] => Binding => [none]
+2022-12-02 22:18:07 [     clb6nhasr00004csl7g60cvqs]  [  http] ::1 GET /match/20221202 200 182 - 550.284 ms 
+2022-12-02 22:37:29 [     clb6o676l00014csl807e0k8d]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663917,'World Cup 2022','Group E',20221202020000,6189,9016,'FT',2,4),(663916,'World Cup 2022','Group E',20221202020000,6326,9182,'FT',2,1),(663934,'World Cup 2022','Group H',20221202220000,9116,9101,'38m',0,2),(663935,'World Cup 2022','Group H',20221202220000,6325,9295,'38m',1,1)] => Binding => [none]
+2022-12-02 22:37:29 [     clb6o676l00014csl807e0k8d]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (6189,'Costa Rica','enet/6705.png','CRI'),(9016,'Germany','enet/8570.png','GER'),(6326,'Japan','enet/6715.png','JPN'),(9182,'Spain','enet/6720.png','SPA'),(9116,'Ghana','enet/6714.png','GHA'),(9101,'Uruguay','enet/5796.png','URY'),(6325,'South Korea','enet/7804.png','KOR'),(9295,'Portugal','enet/8361.png','POR')] => Binding => [none]
+2022-12-02 22:37:29 [     clb6o676l00014csl807e0k8d]  [ error] Can not transaction. Need to rollback for exception: Duplicate entry '6189' for key 'teams.PRIMARY'
+2022-12-02 22:37:29 [     clb6o676l00014csl807e0k8d]  [ error] [] [Error] : Duplicate entry '6189' for key 'teams.PRIMARY'
+2022-12-02 22:37:29 [     clb6o676l00014csl807e0k8d]  [  http] ::1 GET /match/20221202 400 105 - 588.507 ms 
+2022-12-03 21:21:01 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:21:01 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:21:33 [     clb80we8p0000aosl5zbwgdl4]  [ error] Can not transaction. Need to rollback for exception: Cannot read properties of undefined (reading 'replace')
+2022-12-03 21:21:33 [     clb80we8p0000aosl5zbwgdl4]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'replace')
+2022-12-03 21:21:33 [     clb80we8p0000aosl5zbwgdl4]  [  http] ::1 GET /match/20221203 400 118 - 968.893 ms 
+2022-12-03 21:21:53 [     clb80wti90001aoslggmd3dvo]  [ error] Can not transaction. Need to rollback for exception: Cannot read properties of undefined (reading 'replace')
+2022-12-03 21:21:53 [     clb80wti90001aoslggmd3dvo]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'replace')
+2022-12-03 21:21:53 [     clb80wti90001aoslggmd3dvo]  [  http] ::1 GET /match/20221204 400 118 - 758.489 ms 
+2022-12-03 21:22:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:22:44 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:22:47 [     clb80xzcf0000osslczka36zm]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,'null',null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,'null',null,null)] => Binding => [none]
+2022-12-03 21:22:47 [     clb80xzcf0000osslczka36zm]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (9100,'Argentina','enet/6706.png','ARG'),(9592,'Australia','enet/6716.png','AUS'),(9179,'France','enet/6723.png','FRA'),(8993,'Poland','enet/8568.png','POL')] => Binding => [none]
+2022-12-03 21:22:47 [     clb80xzcf0000osslczka36zm]  [  http] ::1 GET /match/20221204 200 182 - 871.191 ms 
+2022-12-03 21:23:54 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:23:54 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:23:56 [     clb80zgqf0000rcsl3otv999h]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 21:23:56 [     clb80zgqf0000rcsl3otv999h]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (9100,'Argentina','enet/6706.png','ARG'),(9592,'Australia','enet/6716.png','AUS'),(9179,'France','enet/6723.png','FRA'),(8993,'Poland','enet/8568.png','POL')] => Binding => [none]
+2022-12-03 21:23:56 [     clb80zgqf0000rcsl3otv999h]  [ error] Can not transaction. Need to rollback for exception: Duplicate entry '9100' for key 'teams.PRIMARY'
+2022-12-03 21:23:56 [     clb80zgqf0000rcsl3otv999h]  [ error] [] [Error] : Duplicate entry '9100' for key 'teams.PRIMARY'
+2022-12-03 21:23:56 [     clb80zgqf0000rcsl3otv999h]  [  http] ::1 GET /match/20221204 400 105 - 841.800 ms 
+2022-12-03 21:24:07 [     clb80zpil0001rcsl9szb3tf2]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 21:24:07 [     clb80zpil0001rcsl9szb3tf2]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (9100,'Argentina','enet/6706.png','ARG'),(9592,'Australia','enet/6716.png','AUS'),(9179,'France','enet/6723.png','FRA'),(8993,'Poland','enet/8568.png','POL')] => Binding => [none]
+2022-12-03 21:24:07 [     clb80zpil0001rcsl9szb3tf2]  [  http] ::1 GET /match/20221204 200 182 - 588.201 ms 
+2022-12-03 21:28:22 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:28:22 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:28:41 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:28:41 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:33:39 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:33:39 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:35:49 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:35:49 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:39:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:39:44 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:42:10 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:42:10 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:46:43 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:46:43 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:58:29 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:58:29 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:59:11 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 21:59:11 [                   Application]  [  info] App is running at port 8081
+2022-12-03 21:59:14 [     clb828utj0000u4slf7i38d9w]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 21:59:14 [     clb828utj0000u4slf7i38d9w]  [  http] ::1 GET /match/20221204 200 45 - 651.962 ms 
+2022-12-03 22:00:19 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:00:19 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:00:48 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:00:48 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:00:50 [     clb82ax9m0000qkslfhfxftaq]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:00:50 [     clb82ax9m0000qkslfhfxftaq]  [ error] Can not transaction. Need to rollback for exception: Cannot read properties of undefined (reading 'join')
+2022-12-03 22:00:50 [     clb82ax9m0000qkslfhfxftaq]  [ error] [] [TypeError] : Cannot read properties of undefined (reading 'join')
+2022-12-03 22:00:50 [     clb82ax9m0000qkslfhfxftaq]  [  http] ::1 GET /match/20221204 400 115 - 598.910 ms 
+2022-12-03 22:01:42 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:01:42 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:01:45 [     clb82c3fb0000ioslbwb93w37]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:01:45 [     clb82c3fb0000ioslbwb93w37]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:01:45 [     clb82c3fb0000ioslbwb93w37]  [  http] ::1 GET /match/20221204 200 45 - 626.247 ms 
+2022-12-03 22:02:09 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:02:09 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:02:10 [     clb82cn6d0000vcsl71x87z87]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:02:10 [     clb82cn6d0000vcsl71x87z87]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:02:10 [     clb82cn6d0000vcsl71x87z87]  [  http] ::1 GET /match/20221204 200 45 - 612.216 ms 
+2022-12-03 22:04:20 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:04:20 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:05:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:05:44 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:05:48 [     clb82hb9f00004ssl3v8b8q4j]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:05:48 [     clb82hb9f00004ssl3v8b8q4j]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:05:48 [     clb82hb9f00004ssl3v8b8q4j]  [  http] ::1 GET /match/20221204 200 45 - 761.963 ms 
+2022-12-03 22:05:56 [     clb82hh5l00014ssl9fatgz18]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:05:56 [     clb82hh5l00014ssl9fatgz18]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:05:56 [     clb82hh5l00014ssl9fatgz18]  [  http] ::1 GET /match/20221204 200 45 - 653.504 ms 
+2022-12-03 22:06:20 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:06:20 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:06:25 [     clb82i3qu0000sssl4sc086dz]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:06:25 [     clb82i3qu0000sssl4sc086dz]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:06:25 [     clb82i3qu0000sssl4sc086dz]  [  http] ::1 GET /match/20221204 200 45 - 655.024 ms 
+2022-12-03 22:06:49 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:06:49 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:06:50 [     clb82inb900007ksl0fzy4ys8]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:06:50 [     clb82inb900007ksl0fzy4ys8]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:06:50 [     clb82inb900007ksl0fzy4ys8]  [  http] ::1 GET /match/20221204 200 45 - 599.096 ms 
+2022-12-03 22:07:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:07:16 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:07:18 [     clb82j8260000iwsldtmwf7xi]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:07:18 [     clb82j8260000iwsldtmwf7xi]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:07:18 [     clb82j8260000iwsldtmwf7xi]  [  http] ::1 GET /match/20221204 200 45 - 815.458 ms 
+2022-12-03 22:07:33 [     clb82jk1u0001iwsl2w2w43hj]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:07:33 [     clb82jk1u0001iwsl2w2w43hj]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:07:33 [     clb82jk1u0001iwsl2w2w43hj]  [  http] ::1 GET /match/20221204 200 45 - 781.436 ms 
+2022-12-03 22:07:52 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:07:52 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:07:54 [     clb82jzvj0000vosl3l3eb0cc]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:07:54 [     clb82jzvj0000vosl3l3eb0cc]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:07:54 [     clb82jzvj0000vosl3l3eb0cc]  [  http] ::1 GET /match/20221204 200 45 - 821.196 ms 
+2022-12-03 22:09:32 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:09:32 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:09:33 [     clb82m4wm0000voslbq3e44tw]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:09:33 [     clb82m4wm0000voslbq3e44tw]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:09:33 [     clb82m4wm0000voslbq3e44tw]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (9592,'Australia','enet/6716.png','AUS')] => Binding => [none]
+2022-12-03 22:09:33 [     clb82m4wm0000voslbq3e44tw]  [  http] ::1 GET /match/20221204 200 182 - 618.351 ms 
+2022-12-03 22:09:40 [     clb82marb0001vosl5png1yaq]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (714152,'World Cup 2022','Round of 16',20221204020000,9100,9592,null,null,null),(714154,'World Cup 2022','Round of 16',20221204220000,9179,8993,null,null,null)] => Binding => [none]
+2022-12-03 22:09:40 [     clb82marb0001vosl5png1yaq]  [   sql] [SELECT id FROM teams WHERE id in (9100,9592,9179,8993)] => Binding => [none]
+2022-12-03 22:09:40 [     clb82marb0001vosl5png1yaq]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (9100,'Argentina','enet/6706.png','ARG'), (9592,'Australia','enet/6716.png','AUS'), (9179,'France','enet/6723.png','FRA'), (8993,'Poland','enet/8568.png','POL')] => Binding => [none]
+2022-12-03 22:09:40 [     clb82marb0001vosl5png1yaq]  [  http] ::1 GET /match/20221204 200 182 - 250.231 ms 
+2022-12-03 22:13:08 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:13:09 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:13:23 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:13:23 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:13:51 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:13:51 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:14:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:14:15 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:18:33 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:18:33 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:21:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:21:12 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:21:14 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:21:14 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:21:34 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:21:34 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:21:36 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'22m',1,0)] => Binding => [none]
+2022-12-03 22:21:36 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:21:36 [                   Application]  [   sql] [INSERT INTO teams(id, name, img, short_name) VALUES (9273,'Cameroon','enet/6629.png','CMR'), (9010,'Brazil','enet/8256.png','BRA'), (9244,'Serbia','enet/8205.png','SRB'), (9153,'Switzerland','enet/6717.png','SWI'), (8967,'Netherlands','enet/6708.png','NLD'), (6188,'USA','enet/6713.png','USA')] => Binding => [none]
+2022-12-03 22:21:36 [                   Application]  [  info] Update
+2022-12-03 22:22:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:22:27 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:22:29 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:29 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:29 [                   Application]  [  info] Update
+2022-12-03 22:22:29 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:29 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:30 [                   Application]  [  info] Update
+2022-12-03 22:22:30 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:30 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:32 [                   Application]  [  info] Update
+2022-12-03 22:22:32 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:32 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:32 [                   Application]  [  info] Update
+2022-12-03 22:22:32 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:32 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:33 [                   Application]  [  info] Update
+2022-12-03 22:22:33 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:33 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:34 [                   Application]  [  info] Update
+2022-12-03 22:22:34 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:34 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:35 [                   Application]  [  info] Update
+2022-12-03 22:22:35 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:35 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:36 [                   Application]  [  info] Update
+2022-12-03 22:22:36 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:36 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:37 [                   Application]  [  info] Update
+2022-12-03 22:22:37 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:37 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:39 [                   Application]  [  info] Update
+2022-12-03 22:22:39 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:39 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:40 [                   Application]  [  info] Update
+2022-12-03 22:22:40 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:40 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:40 [                   Application]  [  info] Update
+2022-12-03 22:22:40 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:40 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:41 [                   Application]  [  info] Update
+2022-12-03 22:22:41 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:41 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:42 [                   Application]  [  info] Update
+2022-12-03 22:22:42 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:42 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:43 [                   Application]  [  info] Update
+2022-12-03 22:22:43 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:43 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:44 [                   Application]  [  info] Update
+2022-12-03 22:22:44 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:44 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:45 [                   Application]  [  info] Update
+2022-12-03 22:22:45 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:45 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:46 [                   Application]  [  info] Update
+2022-12-03 22:22:46 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:46 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:47 [                   Application]  [  info] Update
+2022-12-03 22:22:47 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:47 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:49 [                   Application]  [  info] Update
+2022-12-03 22:22:49 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:49 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:50 [                   Application]  [  info] Update
+2022-12-03 22:22:50 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:50 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:51 [                   Application]  [  info] Update
+2022-12-03 22:22:51 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:51 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:51 [                   Application]  [  info] Update
+2022-12-03 22:22:51 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:51 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:52 [                   Application]  [  info] Update
+2022-12-03 22:22:52 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:52 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:53 [                   Application]  [  info] Update
+2022-12-03 22:22:53 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:53 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:54 [                   Application]  [  info] Update
+2022-12-03 22:22:54 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:54 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:55 [                   Application]  [  info] Update
+2022-12-03 22:22:55 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:55 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:56 [                   Application]  [  info] Update
+2022-12-03 22:22:56 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:56 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:57 [                   Application]  [  info] Update
+2022-12-03 22:22:57 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:57 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:58 [                   Application]  [  info] Update
+2022-12-03 22:22:58 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:58 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:22:59 [                   Application]  [  info] Update
+2022-12-03 22:22:59 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:22:59 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:23:01 [                   Application]  [  info] Update
+2022-12-03 22:23:01 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:23:01 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:23:02 [                   Application]  [  info] Update
+2022-12-03 22:23:02 [                   Application]  [   sql] [insert into matches(id, org, league, time, t1, t2, status, t1_score, t2_score) VALUES (663929,'World Cup 2022','Group G',20221203020000,9273,9010,'FT',1,0),(663928,'World Cup 2022','Group G',20221203020000,9244,9153,'FT',2,3),(714151,'World Cup 2022','Round of 16',20221203220000,8967,6188,'23m',1,0)] => Binding => [none]
+2022-12-03 22:23:02 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9273,9010,9244,9153,8967,6188)] => Binding => [none]
+2022-12-03 22:39:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:39:45 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:40:17 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:40:17 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:41:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:41:07 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:41:29 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:41:29 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:41:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:41:56 [                   Application]  [  info] App is running at port 8081
+2022-12-03 22:48:00 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-03 22:48:00 [                   Application]  [  info] App is running at port 8081
