@@ -2,6 +2,7 @@ const axios = require("axios")
 const DbHelper = require("@utils/db-helper")
 const {StringBuilder} = require("@utils/ultil-helper");
 const dayjs = require("dayjs");
+const {getColumns, MatchMapping, TeamMapping} = require("@mapping/user-mapping");
 const logger = require("@utils/logger");
 const {Exception, EXCEPTION_TYPES} = require("@exception/custom-exception");
 let lastMatches;
@@ -203,4 +204,33 @@ const getMatches = async (dayId) => {
 
 }
 
-module.exports = {getMatches, getMatchesForCronJob}
+const getMatchById = async (id) => {
+    return DbHelper.executeQuery(async connection => {
+        let data = await connection.queryWithLog({
+            sql: `SELECT ${getColumns(["id", "league", "org", "time", "dateId", "status", "t1", "t2", "t1Score", "t2Score"], MatchMapping)} 
+            FROM matches WHERE id = ?`,
+            values: [id]
+        })
+
+        data = data[0];
+
+        data.t1 = await connection.join({
+            table: "teams",
+            joinColumn: "id",
+            columns: getColumns(["id", "name", "img", "shortName"], TeamMapping),
+            joinValue: data.t1,
+            unique: true
+        });
+        data.t2 = await connection.join({
+            table: "teams",
+            joinColumn: "id",
+            columns: getColumns(["id", "name", "img", "shortName"], TeamMapping),
+            joinValue: data.t2,
+            unique: true
+        })
+        return data;
+
+    })
+}
+
+module.exports = {getMatches, getMatchesForCronJob, getMatchById}

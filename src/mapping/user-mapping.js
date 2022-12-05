@@ -8,7 +8,7 @@ const UserMapping = {
     deleteAt: "delete_at",
     avatar: "avatar_id",
     password: "password",
-    fullName:"fullname"
+    fullName: "fullname"
 }
 
 const FileMapping = {
@@ -20,6 +20,34 @@ const FileMapping = {
     destination: "destination",
     size: "size",
     fileName: "filename"
+}
+
+const MatchMapping = {
+    id: "id",
+    league: "league",
+    org: "org",
+    time: "time",
+    dateId: "day_id",
+    status: "status",
+    t1Score: "t1_score",
+    t2Score: "t2_score",
+    t1: "t1",
+    t2: "t2",
+}
+const TeamMapping = {
+    id: "id",
+    name: "name",
+    img: "img",
+    shortName: "short_name"
+}
+
+
+const PredictMapping = {
+    id: "id",
+    matchId: "match_id",
+    userId: "user_id",
+    t1Score: "t1_score",
+    t2Score: "t2_score"
 }
 
 
@@ -45,4 +73,11 @@ const getColumns = (fields, mapping) => {
     return columns.substr(0, columns.length - 1);
 }
 
-module.exports = {getColumns, UserMapping, FileMapping}
+module.exports = {
+    getColumns,
+    UserMapping,
+    FileMapping,
+    MatchMapping,
+    PredictMapping,
+    TeamMapping
+}

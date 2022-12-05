@@ -7,10 +7,12 @@ const morganMiddleware = require("@config/logger-middleware");
 const cors = require("@config/cors-middleware");
 const serverConfig = require("@config/server-config-middleware");
 const {Exception, EXCEPTION_TYPES} = require("@exception/custom-exception");
+const {init} = require("@utils/db-helper2");
 const {globalErrorHandler} = require('@config/error-handler')
 const authRouter = require('@routes/auth');
 const usersRouter = require('@routes/users');
 const matchRouter = require('@routes/match');
+const predictRouter = require('@routes/predicts');
 const fileStorageRouter = require('@routes/file-storage');
 const Cronjob = require('@config/cronjob');
 const logger = require("@utils/logger")
@@ -43,6 +45,7 @@ app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/files', fileStorageRouter);
 app.use('/match', matchRouter);
+app.use('/predict', predictRouter);
 app.use('/storage/public/avatar', express.static('storage/public/avatar'))
 
 // catch 404 and forward to error handler
@@ -56,5 +59,6 @@ app.use(globalErrorHandler);
 app.listen(PORT, () => {
     DbHelper.init();
     Cronjob.initial();
+    init();
     logger.info(`App is running at port ${PORT}`)
 })

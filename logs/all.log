@@ -28834,3 +28834,998 @@
 2022-12-03 22:41:56 [                   Application]  [  info] App is running at port 8081
 2022-12-03 22:48:00 [                   Application]  [  info] [DBHelper] Database connected successfully
 2022-12-03 22:48:00 [                   Application]  [  info] App is running at port 8081
+2022-12-05 08:43:03 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 08:43:03 [                   Application]  [  info] App is running at port 8081
+2022-12-05 08:43:04 [                   Application]  [ error] Can not transaction. Need to rollback for exception: Table 'predict.matches' doesn't exist
+2022-12-05 09:01:14 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:01:14 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:01:16 [                   Application]  [ error] Can not transaction. Need to rollback for exception: Table 'predict.matches' doesn't exist
+2022-12-05 09:14:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:14:07 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:14:09 [                   Application]  [ error] Can not transaction. Need to rollback for exception: Table 'predict.matches' doesn't exist
+2022-12-05 09:22:47 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:22:47 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:27:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:27:56 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:28:01 [                   Application]  [ error] Can not transaction. Need to rollback for exception: Cannot read properties of undefined (reading 'query')
+2022-12-05 09:28:03 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:28:03 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:28:05 [                   Application]  [ error] Can not transaction. Need to rollback for exception: Cannot read properties of undefined (reading 'query')
+2022-12-05 09:28:23 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:28:23 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:28:58 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:28:58 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:32:20 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:32:20 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:32:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:32:30 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:33:58 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:33:58 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:34:06 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:34:06 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:34:31 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 09:46:51 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:46:51 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:47:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:47:07 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:47:49 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:47:49 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:48:09 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:48:09 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:49:06 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:49:06 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:53:13 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:53:13 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:53:15 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 09:53:29 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:53:29 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:53:31 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 09:54:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:54:16 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:54:20 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 09:54:35 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:54:35 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:54:40 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 09:54:51 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:54:51 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:54:56 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 09:56:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:56:25 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:56:30 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 09:56:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 09:56:44 [                   Application]  [  info] App is running at port 8081
+2022-12-05 09:56:46 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:01:01 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:01:01 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:01:06 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:01:17 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:01:18 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:01:25 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:01:34 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:01:34 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:01:35 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:02:11 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:02:11 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:02:15 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:02:34 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:02:34 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:02:36 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:04:48 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:04:48 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:04:51 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:05:46 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:05:46 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:05:51 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:06:01 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:06:01 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:06:05 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:06:49 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:06:49 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:06:51 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:07:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:07:25 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:07:31 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:07:31 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:07:35 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:08:49 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:08:49 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:08:50 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:12:01 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:12:01 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:12:05 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:05 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:10 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:10 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:15 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:15 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:20 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:20 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:25 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:25 [                   Application]  [  info] DONT NEED
+2022-12-05 10:12:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:12:30 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:14:03 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:14:03 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:14:05 [                   Application]  [ error] Can not transaction. Need to rollback for exception: dayjs is not defined
+2022-12-05 10:14:18 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:14:18 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:15:28 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:15:28 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:23:14 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:23:14 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:24:00 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:24:00 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:24:00 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:24:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:24:15 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:38:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:38:15 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:38:46 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:38:46 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:39:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:39:07 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:39:21 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:39:21 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:39:37 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:39:37 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:39:40 [                   Application]  [ error] Can not transaction. Need to rollback for exception: startTime is not defined
+2022-12-05 10:40:13 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:40:13 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:40:16 [                   Application]  [ error] Can not transaction. Need to rollback for exception: m is not defined
+2022-12-05 10:40:24 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:40:24 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:40:57 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:40:57 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:42:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:42:30 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:43:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:43:12 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:43:58 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:43:58 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:44:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:44:12 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:44:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:44:25 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:45:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:45:07 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:46:37 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:46:37 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:46:41 [                   Application]  [ error] Can not transaction. Need to rollback for exception: startTime is not defined
+2022-12-05 10:46:57 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:46:57 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:47:26 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:47:26 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:48:04 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:48:04 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:48:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:48:27 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:48:53 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:48:53 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:50:02 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:50:02 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:50:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:50:12 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:51:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:51:45 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:51:50 [                   Application]  [  info] Dont run
+2022-12-05 10:51:55 [                   Application]  [  info] Dont run
+2022-12-05 10:52:01 [                   Application]  [  info] Dont run
+2022-12-05 10:52:05 [                   Application]  [  info] Dont run
+2022-12-05 10:52:10 [                   Application]  [  info] Dont run
+2022-12-05 10:52:15 [                   Application]  [  info] Dont run
+2022-12-05 10:52:20 [                   Application]  [  info] Dont run
+2022-12-05 10:52:26 [                   Application]  [  info] Dont run
+2022-12-05 10:52:31 [                   Application]  [  info] Dont run
+2022-12-05 10:52:36 [                   Application]  [  info] Dont run
+2022-12-05 10:52:40 [                   Application]  [  info] Dont run
+2022-12-05 10:52:46 [                   Application]  [  info] Dont run
+2022-12-05 10:52:50 [                   Application]  [  info] Dont run
+2022-12-05 10:52:52 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:52:52 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:52:55 [                   Application]  [  info] Dont run
+2022-12-05 10:53:00 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:53:00 [                   Application]  [  info] Dont run
+2022-12-05 10:53:20 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:53:20 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:53:26 [                   Application]  [  info] Dont run
+2022-12-05 10:53:30 [                   Application]  [  info] Dont run
+2022-12-05 10:53:36 [                   Application]  [  info] Dont run
+2022-12-05 10:53:48 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:53:48 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:53:50 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 10:53:50 [                   Application]  [  info] Dont run
+2022-12-05 10:53:55 [                   Application]  [  info] Dont run
+2022-12-05 10:54:00 [                   Application]  [  info] Dont run
+2022-12-05 10:54:05 [                   Application]  [  info] Dont run
+2022-12-05 10:54:10 [                   Application]  [  info] Dont run
+2022-12-05 10:54:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:54:15 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:54:21 [                   Application]  [  info] Dont run
+2022-12-05 10:54:26 [                   Application]  [  info] Dont run
+2022-12-05 10:54:31 [                   Application]  [  info] Dont run
+2022-12-05 10:54:35 [                   Application]  [  info] Dont run
+2022-12-05 10:54:40 [                   Application]  [  info] Dont run
+2022-12-05 10:54:45 [                   Application]  [  info] Dont run
+2022-12-05 10:54:50 [                   Application]  [  info] Dont run
+2022-12-05 10:54:55 [                   Application]  [  info] Dont run
+2022-12-05 10:55:00 [                   Application]  [  info] Dont run
+2022-12-05 10:55:05 [                   Application]  [  info] Dont run
+2022-12-05 10:55:10 [                   Application]  [  info] Dont run
+2022-12-05 10:55:15 [                   Application]  [  info] Dont run
+2022-12-05 10:55:20 [                   Application]  [  info] Dont run
+2022-12-05 10:55:25 [                   Application]  [  info] Dont run
+2022-12-05 10:55:30 [                   Application]  [  info] Dont run
+2022-12-05 10:55:35 [                   Application]  [  info] Dont run
+2022-12-05 10:55:40 [                   Application]  [  info] Dont run
+2022-12-05 10:55:45 [                   Application]  [  info] Dont run
+2022-12-05 10:55:50 [                   Application]  [  info] Dont run
+2022-12-05 10:55:55 [                   Application]  [  info] Dont run
+2022-12-05 10:56:00 [                   Application]  [  info] Dont run
+2022-12-05 10:56:05 [                   Application]  [  info] Dont run
+2022-12-05 10:56:10 [                   Application]  [  info] Dont run
+2022-12-05 10:56:15 [                   Application]  [  info] Dont run
+2022-12-05 10:56:20 [                   Application]  [  info] Dont run
+2022-12-05 10:56:22 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:56:22 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:56:26 [                   Application]  [  info] Dont run
+2022-12-05 10:56:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:56:30 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:56:36 [                   Application]  [  info] Dont run
+2022-12-05 10:56:40 [                   Application]  [  info] Dont run
+2022-12-05 10:56:45 [                   Application]  [  info] Dont run
+2022-12-05 10:56:50 [                   Application]  [  info] Dont run
+2022-12-05 10:56:55 [                   Application]  [  info] Dont run
+2022-12-05 10:57:00 [                   Application]  [  info] Dont run
+2022-12-05 10:57:05 [                   Application]  [  info] Dont run
+2022-12-05 10:57:10 [                   Application]  [  info] Dont run
+2022-12-05 10:57:15 [                   Application]  [  info] Dont run
+2022-12-05 10:57:20 [                   Application]  [  info] Dont run
+2022-12-05 10:57:25 [                   Application]  [  info] Dont run
+2022-12-05 10:57:30 [                   Application]  [  info] Dont run
+2022-12-05 10:57:35 [                   Application]  [  info] Dont run
+2022-12-05 10:57:38 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:57:38 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:57:41 [                   Application]  [  info] Dont run
+2022-12-05 10:57:46 [                   Application]  [  info] Dont run
+2022-12-05 10:57:50 [                   Application]  [  info] Dont run
+2022-12-05 10:57:56 [                   Application]  [  info] Dont run
+2022-12-05 10:58:01 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:58:01 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:58:06 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:58:06 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:58:10 [                   Application]  [  info] Dont run
+2022-12-05 10:58:15 [                   Application]  [  info] Dont run
+2022-12-05 10:58:19 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 10:58:19 [                   Application]  [  info] App is running at port 8081
+2022-12-05 10:58:21 [                   Application]  [  info] Dont run
+2022-12-05 10:58:25 [                   Application]  [  info] Dont run
+2022-12-05 10:58:31 [                   Application]  [  info] Dont run
+2022-12-05 10:58:36 [                   Application]  [  info] Dont run
+2022-12-05 11:00:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:00:27 [                   Application]  [  info] App is running at port 8081
+2022-12-05 11:00:30 [                   Application]  [  info] Dont run
+2022-12-05 11:00:30 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9010,6325,9111,9182)] => Binding => [none]
+2022-12-05 11:00:30 [                   Application]  [  info] Dont run
+2022-12-05 11:00:35 [                   Application]  [  info] Dont run
+2022-12-05 11:00:35 [                   Application]  [  info] Dont run
+2022-12-05 11:00:37 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:00:37 [                   Application]  [  info] App is running at port 8081
+2022-12-05 11:00:40 [                   Application]  [  info] Dont run
+2022-12-05 11:00:40 [                   Application]  [  info] Dont run
+2022-12-05 11:00:45 [                   Application]  [  info] Dont run
+2022-12-05 11:00:45 [                   Application]  [  info] Dont run
+2022-12-05 11:00:50 [                   Application]  [  info] Dont run
+2022-12-05 11:00:50 [                   Application]  [  info] Dont run
+2022-12-05 11:00:56 [                   Application]  [  info] Dont run
+2022-12-05 11:00:56 [                   Application]  [  info] Dont run
+2022-12-05 11:01:00 [                   Application]  [  info] Dont run
+2022-12-05 11:01:01 [                   Application]  [  info] Dont run
+2022-12-05 11:01:05 [                   Application]  [  info] Dont run
+2022-12-05 11:01:06 [                   Application]  [  info] Dont run
+2022-12-05 11:01:10 [                   Application]  [  info] Dont run
+2022-12-05 11:01:11 [                   Application]  [  info] Dont run
+2022-12-05 11:01:13 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:01:13 [                   Application]  [  info] App is running at port 8081
+2022-12-05 11:05:19 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:05:19 [                   Application]  [  info] App is running at port 8081
+2022-12-05 11:06:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:06:56 [                   Application]  [  info] App is running at port 8081
+2022-12-05 11:07:10 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9010,6325,9111,9182)] => Binding => [none]
+2022-12-05 11:07:10 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 11:07:48 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:07:48 [                   Application]  [  info] App is running at port 8081
+2022-12-05 11:07:55 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 11:07:56 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9010,6325,9111,9182)] => Binding => [none]
+2022-12-05 11:23:52 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:23:52 [                   Application]  [  info] App is running at port 8081
+2022-12-05 11:24:39 [     clbaagied0000lc5583hmg3kb]  [ error] [] [SyntaxError] : Unexpected token  in JSON at position 429
+2022-12-05 11:24:49 [     clbaagq3o0001lc55djmreb2n]  [   sql] [SELECT id as userId,username as username,fullname as fullName,email as email,avatar_id as avatar,password as password FROM users u where u.username = ?] => Binding => [admin]
+2022-12-05 11:24:49 [     clbaagq3o0001lc55djmreb2n]  [   sql] SELECT id as id,path as path,original_name as originalName,mimetype as mimeType,encoding as encoding,size as size,filename as fileName FROM files where id=45
+2022-12-05 11:24:50 [     clbaagq3o0001lc55djmreb2n]  [  http] ::1 POST /auth 200 880 - 169.856 ms 
+2022-12-05 11:25:04 [     clbaah1fr0002lc55h61e372f]  [ error] [] [SyntaxError] : Unexpected token  in JSON at position 429
+2022-12-05 11:25:34 [     clbaaho9z0003lc55g8ql19bb]  [ error] [] [SyntaxError] : Unexpected token  in JSON at position 429
+2022-12-05 11:25:44 [     clbaahwfo0004lc555nl53b3t]  [ error] [] [SyntaxError] : Unexpected token  in JSON at position 429
+2022-12-05 11:26:00 [     clbaai8ai0005lc5597ff0jol]  [ error] [] [SyntaxError] : Unexpected token  in JSON at position 429
+2022-12-05 11:26:26 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:26:26 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:26:39 [     clbaaj28r00004c555ljlh12z]  [   sql] [SELECT id as userId,username as username,fullname as fullName,email as email,avatar_id as avatar,password as password FROM users u where u.username = ?] => Binding => [admin]
+2022-12-05 11:26:39 [     clbaaj28r00004c555ljlh12z]  [   sql] SELECT id as id,path as path,original_name as originalName,mimetype as mimeType,encoding as encoding,size as size,filename as fileName FROM files where id=45
+2022-12-05 11:26:39 [     clbaaj28r00004c555ljlh12z]  [  http] ::1 POST /auth 200 880 - 172.446 ms 
+2022-12-05 11:27:01 [     clbaajjfm00014c55druig7s7]  [ error] [] [ReferenceError] : dayID is not defined
+2022-12-05 11:27:01 [     clbaajjfm00014c55druig7s7]  [  http] ::1 GET /match/202212205 400 88 - 1.841 ms 
+2022-12-05 11:27:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:27:15 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:27:18 [     clbaajwec0000r455f5p6ditv]  [ error] [] [AxiosError] : Request failed with status code 410
+2022-12-05 11:27:18 [     clbaajwec0000r455f5p6ditv]  [  http] ::1 GET /match/202212205 400 99 - 426.537 ms 
+2022-12-05 11:27:29 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:27:29 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:27:32 [     clbaak7eg00009o55auu3a2l9]  [ error] [] [AxiosError] : Request failed with status code 410
+2022-12-05 11:27:32 [     clbaak7eg00009o55auu3a2l9]  [  http] ::1 GET /match/202212205 400 99 - 385.792 ms 
+2022-12-05 11:27:59 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:27:59 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:29:41 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:29:41 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:30:43 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:30:43 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:31:00 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:31:00 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:31:05 [                   Application]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', )' at line 3
+2022-12-05 11:31:34 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:31:34 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:31:35 [                   Application]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', )' at line 3
+2022-12-05 11:31:40 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:31:40 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:31:46 [                   Application]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', )' at line 3
+2022-12-05 11:31:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:31:56 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:32:00 [                   Application]  [ error] Can not transaction. Need to rollback for exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ', )' at line 3
+2022-12-05 11:32:08 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:32:08 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:32:23 [     clbaaqfvx0000ek5511wka51f]  [ error] [] [AxiosError] : Request failed with status code 410
+2022-12-05 11:32:23 [     clbaaqfvx0000ek5511wka51f]  [  http] ::1 GET /match/202212205 400 99 - 363.650 ms 
+2022-12-05 11:32:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:32:30 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:32:54 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:32:54 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:32:55 [     clbaar4tk00002s55goqh3yp2]  [ error] [] [AxiosError] : Request failed with status code 410
+2022-12-05 11:32:55 [     clbaar4tk00002s55goqh3yp2]  [  http] ::1 GET /match/202212205 400 99 - 376.451 ms 
+2022-12-05 11:33:05 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:33:05 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:33:06 [     clbaardcy0000qg552ztlgpbl]  [ error] [] [AxiosError] : Request failed with status code 410
+2022-12-05 11:33:06 [     clbaardcy0000qg552ztlgpbl]  [  http] ::1 GET /match/202212205 400 99 - 134.823 ms 
+2022-12-05 11:33:54 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:33:54 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:33:59 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:33:59 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:34:00 [     clbaasiz70000zk550ipf9jam]  [ error] [] [AxiosError] : Request failed with status code 410
+2022-12-05 11:34:00 [     clbaasiz70000zk550ipf9jam]  [  http] ::1 GET /match/202212205 400 99 - 147.350 ms 
+2022-12-05 11:34:13 [     clbaassnp0001zk5576x2fhye]  [  http] ::1 GET /match/20221205 200 764 - 424.528 ms 
+2022-12-05 11:34:26 [     clbaat2dn0002zk5507yz463l]  [  http] ::1 GET /match/20221206 200 728 - 465.072 ms 
+2022-12-05 11:35:58 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:35:58 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:35:59 [     clbaav2d80000gw55bu1whhhw]  [  http] ::1 GET /match/20221206 200 728 - 143.780 ms 
+2022-12-05 11:37:47 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:37:47 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:38:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:38:27 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:38:30 [     clbaaybke0000k4556c3sh40t]  [ error] [] [NotFoundException] : API not found
+2022-12-05 11:38:30 [     clbaaybke0000k4556c3sh40t]  [  http] ::1 GET /match 400 84 - 1.382 ms 
+2022-12-05 11:38:36 [     clbaayfu70001k455ah85dwei]  [ error] [] [NotFoundException] : API not found
+2022-12-05 11:38:36 [     clbaayfu70001k455ah85dwei]  [  http] ::1 GET /match 400 84 - 1.184 ms 
+2022-12-05 11:38:40 [     clbaayj6a0002k4550a4h1ecp]  [ error] [] [NotFoundException] : API not found
+2022-12-05 11:38:40 [     clbaayj6a0002k4550a4h1ecp]  [  http] ::1 GET /match 400 84 - 0.513 ms 
+2022-12-05 11:39:05 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:39:05 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:39:22 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:39:22 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:39:50 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:39:50 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:39:55 [     clbab04uq0000zw5501fa0fmv]  [ error] [] [NotFoundException] : API not found
+2022-12-05 11:39:55 [     clbab04uq0000zw5501fa0fmv]  [  http] ::1 GET /match 400 84 - 1.965 ms 
+2022-12-05 11:40:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:40:44 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:40:53 [     clbab1d9q00008855brv50luo]  [ error] [[GetMatches]] [DataException] : Request failed with status code 410
+2022-12-05 11:40:53 [     clbab1d9q00008855brv50luo]  [  http] ::1 GET /match/%7Bid%7D 400 102 - 371.992 ms 
+2022-12-05 11:41:11 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:41:11 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:41:25 [     clbab21xa0000yk5540sk2f4g]  [  http] ::1 GET /match/20121205 200 55 - 399.687 ms 
+2022-12-05 11:41:36 [     clbab2ams0001yk55g7di4fye]  [  http] ::1 GET /match/20221205 200 764 - 103.075 ms 
+2022-12-05 11:43:43 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:43:43 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:43:45 [     clbab51xa00004855ffpxc11l]  [  http] ::1 GET /match/20221206 200 980 - 471.611 ms 
+2022-12-05 11:44:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:44:15 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:44:18 [     clbab5rix00008s559ed88xnm]  [  http] ::1 GET /match/20221206 200 980 - 466.001 ms 
+2022-12-05 11:44:34 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:44:34 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:44:35 [     clbab64ie0000fo5513vy8pzq]  [  http] ::1 GET /match/20221206 200 908 - 476.775 ms 
+2022-12-05 11:46:31 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:46:31 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:46:34 [     clbab8oad0000fw55028i1s0a]  [  http] ::1 GET /match/20221206 200 731 - 480.208 ms 
+2022-12-05 11:46:46 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:46:46 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:47:20 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:47:20 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:47:35 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (,,,)] => Binding => [none]
+2022-12-05 11:48:14 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:48:14 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:48:16 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (,,,)] => Binding => [none]
+2022-12-05 11:49:02 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 11:49:02 [                   Application]  [  info] App is running at port 8080
+2022-12-05 11:49:05 [                   Application]  [   sql] [SELECT id FROM teams WHERE id in (9267,9315,6326,9138)] => Binding => [none]
+2022-12-05 11:49:25 [     clbabccd000004k55csynamq3]  [  http] ::1 GET /match/20221206 200 731 - 410.275 ms 
+2022-12-05 11:49:45 [     clbabcrbv00014k55cbr71bbr]  [  http] ::1 GET /match/20221210 200 757 - 661.951 ms 
+2022-12-05 11:50:25 [     clbabdm9j00024k55am7rboza]  [  http] ::1 GET /match/20221208 200 55 - 460.875 ms 
+2022-12-05 11:50:32 [     clbabdrx400034k55d2w4htz5]  [  http] ::1 GET /match/20221204 200 814 - 712.577 ms 
+2022-12-05 11:50:53 [     clbabe86800044k559xyy8d6s]  [  http] ::1 GET /match/20221205 200 770 - 377.766 ms 
+2022-12-05 13:42:18 [     clbafdi3900054k550dlganue]  [  http] ::1 GET /match/20221207 200 397 - 468.670 ms 
+2022-12-05 13:43:25 [     clbafexzu00064k555nodgj2r]  [  http] ::1 GET /match/20221209 200 408 - 407.257 ms 
+2022-12-05 13:43:35 [     clbaff5n300074k55ajl12aby]  [  http] ::1 GET /match/20221212 200 55 - 456.744 ms 
+2022-12-05 13:43:39 [     clbaff8wh00084k55fgvt3eul]  [  http] ::1 GET /match/20221213 200 55 - 386.024 ms 
+2022-12-05 13:43:45 [     clbaffdah00094k559tnqcpg3]  [  http] ::1 GET /match/20221214 200 394 - 365.936 ms 
+2022-12-05 13:57:01 [     clbafwfqh000a4k55bk126ym0]  [  http] ::1 GET /match/20221207 200 397 - 432.229 ms 
+2022-12-05 14:11:59 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:11:59 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:21:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:21:15 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:21:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:21:25 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:21:34 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:21:34 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:21:58 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:21:58 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:22:11 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:22:11 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:27:33 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:27:33 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:28:06 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:28:06 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:28:43 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:28:43 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:28:49 [     clbah1ckz0000x8555muy93pl]  [ error] [] [NotFoundException] : API not found
+2022-12-05 14:28:49 [     clbah1ckz0000x8555muy93pl]  [  http] ::1 GET /predict 400 84 - 2.178 ms 
+2022-12-05 14:29:05 [     clbah1ox30001x855a1c64w0i]  [ error] [verifyCookie=>jwtValidate] [AuthException] : Token not found
+2022-12-05 14:29:05 [     clbah1ox30001x855a1c64w0i]  [  http] ::1 POST /predict/ 403 82 - 0.849 ms 
+2022-12-05 14:29:10 [     clbah1smz0002x8555zxb0pra]  [   sql] [SELECT id as userId,username as username,fullname as fullName,email as email,avatar_id as avatar,password as password FROM users u where u.username = ?] => Binding => [admin]
+2022-12-05 14:29:10 [     clbah1smz0002x8555zxb0pra]  [   sql] SELECT id as id,path as path,original_name as originalName,mimetype as mimeType,encoding as encoding,size as size,filename as fileName FROM files where id=45
+2022-12-05 14:29:10 [     clbah1smz0002x8555zxb0pra]  [  http] ::1 POST /auth 200 880 - 153.744 ms 
+2022-12-05 14:29:29 [     clbah27aa0003x855f6bcemrs]  [ error] Can not transaction. Need to rollback for exception: The match id field is required.
+2022-12-05 14:29:29 [     clbah27aa0003x855f6bcemrs]  [ error] [predictByMatch=>Validate] [AuthException] : The match id field is required.
+2022-12-05 14:29:29 [     clbah27aa0003x855f6bcemrs]  [  http] ::1 POST /predict/ 403 98 - 5.014 ms 
+2022-12-05 14:29:48 [     clbah2lv60004x855g0et33fo]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:29:48 [     clbah2lv60004x855g0et33fo]  [ error] [] [undefined] : undefined
+2022-12-05 14:29:48 [     clbah2lv60004x855g0et33fo]  [  http] ::1 POST /predict/ 400 35 - 1.910 ms 
+2022-12-05 14:30:24 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:30:24 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:30:24 [     clbah3di300004c55hszd8sgd]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:30:24 [     clbah3di300004c55hszd8sgd]  [ error] [] [undefined] : undefined
+2022-12-05 14:30:24 [     clbah3di300004c55hszd8sgd]  [  http] ::1 POST /predict/ 400 35 - 23.202 ms 
+2022-12-05 14:30:27 [     clbah3fp900014c553i4scznr]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:30:27 [     clbah3fp900014c553i4scznr]  [ error] [] [undefined] : undefined
+2022-12-05 14:30:27 [     clbah3fp900014c553i4scznr]  [  http] ::1 POST /predict/ 400 35 - 3.387 ms 
+2022-12-05 14:30:56 [     clbah42cy00024c55hov424qw]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:30:56 [     clbah42cy00024c55hov424qw]  [ error] [] [undefined] : undefined
+2022-12-05 14:30:56 [     clbah42cy00024c55hov424qw]  [  http] ::1 POST /predict/ 400 35 - 2.664 ms 
+2022-12-05 14:32:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:32:07 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:32:08 [     clbah5lnk0000ds5555qv3gs8]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:32:08 [     clbah5lnk0000ds5555qv3gs8]  [ error] [] [undefined] : undefined
+2022-12-05 14:32:08 [     clbah5lnk0000ds5555qv3gs8]  [  http] ::1 POST /predict/ 400 35 - 22.930 ms 
+2022-12-05 14:32:18 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:32:18 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:32:19 [     clbah5u8d0000d4550s25eg5e]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:32:19 [     clbah5u8d0000d4550s25eg5e]  [ error] [] [undefined] : undefined
+2022-12-05 14:32:19 [     clbah5u8d0000d4550s25eg5e]  [  http] ::1 POST /predict/ 400 35 - 24.070 ms 
+2022-12-05 14:33:00 [     clbah6q0j0001d455agy92awq]  [ error] Can not transaction. Need to rollback for exception: The match id field is required.
+2022-12-05 14:33:00 [     clbah6q0j0001d455agy92awq]  [ error] [predictByMatch=>Validate] [AuthException] : The match id field is required.
+2022-12-05 14:33:00 [     clbah6q0j0001d455agy92awq]  [  http] ::1 POST /predict/ 403 98 - 4.493 ms 
+2022-12-05 14:33:13 [     clbah6zsy0002d455apr4gr24]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:33:13 [     clbah6zsy0002d455apr4gr24]  [ error] [] [undefined] : undefined
+2022-12-05 14:33:13 [     clbah6zsy0002d455apr4gr24]  [  http] ::1 PUT /predict/ 400 35 - 3.817 ms 
+2022-12-05 14:33:18 [     clbah73tz0003d4553l1egph5]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:33:18 [     clbah73tz0003d4553l1egph5]  [ error] [] [undefined] : undefined
+2022-12-05 14:33:18 [     clbah73tz0003d4553l1egph5]  [  http] ::1 POST /predict/ 400 35 - 3.981 ms 
+2022-12-05 14:34:48 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:34:48 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:34:51 [     clbah937r0000eo55dlr7fg4b]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:34:51 [     clbah937r0000eo55dlr7fg4b]  [ error] [] [undefined] : undefined
+2022-12-05 14:34:51 [     clbah937r0000eo55dlr7fg4b]  [  http] ::1 POST /predict/ 400 35 - 7.141 ms 
+2022-12-05 14:35:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:35:25 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:35:28 [     clbah9wam0000t4557k49913t]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:35:28 [     clbah9wam0000t4557k49913t]  [ error] [] [undefined] : undefined
+2022-12-05 14:35:28 [     clbah9wam0000t4557k49913t]  [  http] ::1 POST /predict/ 400 35 - 23.606 ms 
+2022-12-05 14:36:07 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:36:07 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:36:08 [     clbahaqzn0000zc55brxj9cvn]  [ error] Can not transaction. Need to rollback for exception: undefined
+2022-12-05 14:36:08 [     clbahaqzn0000zc55brxj9cvn]  [ error] [] [undefined] : undefined
+2022-12-05 14:36:08 [     clbahaqzn0000zc55brxj9cvn]  [  http] ::1 POST /predict/ 400 35 - 23.651 ms 
+2022-12-05 14:37:00 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:37:00 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:37:00 [     clbahbvdl0000zw552befeo12]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:37:00 [     clbahbvdl0000zw552befeo12]  [ error] [predictByMatch=>InsertPredict] [AuthException] : 
+2022-12-05 14:37:00 [     clbahbvdl0000zw552befeo12]  [  http] ::1 POST /predict/ 403 67 - 32.603 ms 
+2022-12-05 14:37:20 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:37:20 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:37:21 [     clbahcb650000ew55b0of5y6t]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:37:21 [     clbahcb650000ew55b0of5y6t]  [ error] [predictByMatch=>InsertPredict] [AuthException] : 
+2022-12-05 14:37:21 [     clbahcb650000ew55b0of5y6t]  [  http] ::1 POST /predict/ 403 67 - 23.098 ms 
+2022-12-05 14:37:54 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:37:54 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:37:56 [     clbahd2mr00002855bo7zhcyb]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:37:56 [     clbahd2mr00002855bo7zhcyb]  [ error] [predictByMatch=>InsertPredict] [AuthException] : 
+2022-12-05 14:37:56 [     clbahd2mr00002855bo7zhcyb]  [  http] ::1 POST /predict/ 403 67 - 8.403 ms 
+2022-12-05 14:39:01 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:39:01 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:39:02 [     clbahehd300000455hskn1fwt]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:39:02 [     clbahehd300000455hskn1fwt]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:39:02 [     clbahehd300000455hskn1fwt]  [  http] ::1 POST /predict/ 400 67 - 23.798 ms 
+2022-12-05 14:39:22 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:39:22 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:39:23 [     clbahex6n0000jg550ntp5nd1]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:39:23 [     clbahex6n0000jg550ntp5nd1]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:39:23 [     clbahex6n0000jg550ntp5nd1]  [  http] ::1 POST /predict/ 400 67 - 26.016 ms 
+2022-12-05 14:39:55 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:39:55 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:39:57 [     clbahfnwf0000m05508td7exj]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:39:57 [     clbahfnwf0000m05508td7exj]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:39:57 [     clbahfnwf0000m05508td7exj]  [  http] ::1 POST /predict/ 400 67 - 25.534 ms 
+2022-12-05 14:41:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:41:16 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:41:17 [     clbahhdmg00008g55bpzq414z]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:41:17 [     clbahhdmg00008g55bpzq414z]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:41:17 [     clbahhdmg00008g55bpzq414z]  [  http] ::1 POST /predict/ 400 67 - 25.171 ms 
+2022-12-05 14:41:23 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:41:23 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:41:23 [     clbahhid600003k55hhh11ae1]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:41:23 [     clbahhid600003k55hhh11ae1]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:41:23 [     clbahhid600003k55hhh11ae1]  [  http] ::1 POST /predict/ 400 67 - 26.067 ms 
+2022-12-05 14:41:36 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:41:36 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:41:38 [     clbahhtuc0000tc55fhst1ztn]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:41:38 [     clbahhtuc0000tc55fhst1ztn]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:41:38 [     clbahhtuc0000tc55fhst1ztn]  [  http] ::1 POST /predict/ 400 67 - 25.833 ms 
+2022-12-05 14:42:01 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:42:01 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:42:06 [     clbahieyz0000hs55g41i8i6k]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:42:06 [     clbahieyz0000hs55g41i8i6k]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:42:06 [     clbahieyz0000hs55g41i8i6k]  [  http] ::1 POST /predict/ 400 67 - 9.937 ms 
+2022-12-05 14:42:11 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:42:11 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:42:11 [     clbahij9t0000kw559u6232r4]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:42:11 [     clbahij9t0000kw559u6232r4]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:42:11 [     clbahij9t0000kw559u6232r4]  [  http] ::1 POST /predict/ 400 67 - 23.837 ms 
+2022-12-05 14:42:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:42:27 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:42:28 [     clbahiw0300009k55677h5png]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:42:28 [     clbahiw0300009k55677h5png]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:42:28 [     clbahiw0300009k55677h5png]  [  http] ::1 POST /predict/ 400 67 - 23.775 ms 
+2022-12-05 14:42:35 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:42:35 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:42:50 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:42:50 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:42:52 [     clbahjex70000ic551uk0hqu0]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:42:52 [     clbahjex70000ic551uk0hqu0]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:42:52 [     clbahjex70000ic551uk0hqu0]  [  http] ::1 POST /predict/ 400 67 - 26.017 ms 
+2022-12-05 14:42:58 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:42:58 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:43:18 [     clbahjyfv00007k551vopamkn]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:43:18 [     clbahjyfv00007k551vopamkn]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:43:18 [     clbahjyfv00007k551vopamkn]  [  http] ::1 POST /predict/ 400 67 - 8.225 ms 
+2022-12-05 14:43:27 [     clbahk5f100017k550ikc396q]  [ error] Can not transaction. Need to rollback for exception: The match id field is required.
+2022-12-05 14:43:27 [     clbahk5f100017k550ikc396q]  [ error] [predictByMatch=>InsertPredict] [DataException] : The match id field is required.
+2022-12-05 14:43:27 [     clbahk5f100017k550ikc396q]  [  http] ::1 POST /predict/ 400 98 - 3.953 ms 
+2022-12-05 14:44:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:44:27 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:44:28 [     clbahlgf30000nc5506uk6waa]  [ error] Can not transaction. Need to rollback for exception: The match id field is required.
+2022-12-05 14:44:28 [     clbahlgf30000nc5506uk6waa]  [ error] [predictByMatch=>InsertPredict] [DataException] : The match id field is required.
+2022-12-05 14:44:28 [     clbahlgf30000nc5506uk6waa]  [  http] ::1 POST /predict/ 400 98 - 24.460 ms 
+2022-12-05 14:45:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:45:27 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:45:28 [     clbahmr6r0000aw55cqge90hq]  [ error] Can not transaction. Need to rollback for exception: The username field is required.
+2022-12-05 14:45:28 [     clbahmr6r0000aw55cqge90hq]  [ error] [predictByMatch=>InsertPredict] [DataException] : The username field is required.
+2022-12-05 14:45:28 [     clbahmr6r0000aw55cqge90hq]  [  http] ::1 POST /predict/ 400 98 - 25.180 ms 
+2022-12-05 14:45:36 [     clbahmxga0001aw559v37dx5o]  [ error] Can not transaction. Need to rollback for exception: The username must be at least 5 characters.
+2022-12-05 14:45:36 [     clbahmxga0001aw559v37dx5o]  [ error] [predictByMatch=>InsertPredict] [DataException] : The username must be at least 5 characters.
+2022-12-05 14:45:36 [     clbahmxga0001aw559v37dx5o]  [  http] ::1 POST /predict/ 400 110 - 4.682 ms 
+2022-12-05 14:45:39 [     clbahmzs10002aw55h8106q7s]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:45:39 [     clbahmzs10002aw55h8106q7s]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:45:39 [     clbahmzs10002aw55h8106q7s]  [  http] ::1 POST /predict/ 400 98 - 3.312 ms 
+2022-12-05 14:45:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:45:56 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:45:56 [     clbahncs40000js55a9vdcvol]  [ error] Can not transaction. Need to rollback for exception: The match id field is required.
+2022-12-05 14:45:56 [     clbahncs40000js55a9vdcvol]  [ error] [predictByMatch=>InsertPredict] [DataException] : The match id field is required.
+2022-12-05 14:45:56 [     clbahncs40000js55a9vdcvol]  [  http] ::1 POST /predict/ 400 98 - 25.263 ms 
+2022-12-05 14:46:02 [     clbahnhlf0001js552vnhc0xy]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:46:02 [     clbahnhlf0001js552vnhc0xy]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:46:02 [     clbahnhlf0001js552vnhc0xy]  [  http] ::1 POST /predict/ 400 98 - 4.162 ms 
+2022-12-05 14:46:36 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:46:36 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:46:38 [     clbaho9gh0000o8557g2n18ui]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:46:38 [     clbaho9gh0000o8557g2n18ui]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:46:38 [     clbaho9gh0000o8557g2n18ui]  [  http] ::1 POST /predict/ 400 67 - 39.030 ms 
+2022-12-05 14:46:48 [     clbahogi40001o855f1t7bmai]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:46:48 [     clbahogi40001o855f1t7bmai]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:46:48 [     clbahogi40001o855f1t7bmai]  [  http] ::1 POST /predict/ 400 67 - 3.904 ms 
+2022-12-05 14:47:00 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:47:00 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:47:01 [     clbahoqmt0000j055bqlrfmqz]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:47:01 [     clbahoqmt0000j055bqlrfmqz]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:47:01 [     clbahoqmt0000j055bqlrfmqz]  [  http] ::1 POST /predict/ 400 67 - 23.328 ms 
+2022-12-05 14:47:08 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:47:08 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:47:08 [     clbahowlb0000s055cwdj8zf1]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:47:08 [     clbahowlb0000s055cwdj8zf1]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:47:08 [     clbahowlb0000s055cwdj8zf1]  [  http] ::1 POST /predict/ 400 98 - 26.796 ms 
+2022-12-05 14:48:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:48:27 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:48:31 [     clbahqoai0000gg552m5r1x9r]  [ error] Can not transaction. Need to rollback for exception: The match id must be an integer.
+2022-12-05 14:48:31 [     clbahqoai0000gg552m5r1x9r]  [ error] [predictByMatch=>InsertPredict] [DataException] : The match id must be an integer.
+2022-12-05 14:48:31 [     clbahqoai0000gg552m5r1x9r]  [  http] ::1 POST /predict/ 400 99 - 10.577 ms 
+2022-12-05 14:48:35 [     clbahqr110001gg5546y54a88]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:48:35 [     clbahqr110001gg5546y54a88]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:48:35 [     clbahqr110001gg5546y54a88]  [  http] ::1 POST /predict/ 400 98 - 3.670 ms 
+2022-12-05 14:48:36 [     clbahqsg80002gg55cc2j69c8]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:48:36 [     clbahqsg80002gg55cc2j69c8]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:48:36 [     clbahqsg80002gg55cc2j69c8]  [  http] ::1 POST /predict/ 400 98 - 3.945 ms 
+2022-12-05 14:48:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:48:44 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:48:44 [     clbahqym300008s55h1na6i44]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:48:44 [     clbahqym300008s55h1na6i44]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:48:44 [     clbahqym300008s55h1na6i44]  [  http] ::1 POST /predict/ 400 98 - 24.495 ms 
+2022-12-05 14:48:48 [     clbahr1rk00018s552zhk5oka]  [ error] Can not transaction. Need to rollback for exception: The match id must be greater than 0.
+2022-12-05 14:48:48 [     clbahr1rk00018s552zhk5oka]  [ error] [predictByMatch=>InsertPredict] [DataException] : The match id must be greater than 0.
+2022-12-05 14:48:48 [     clbahr1rk00018s552zhk5oka]  [  http] ::1 POST /predict/ 400 103 - 4.245 ms 
+2022-12-05 14:49:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:49:15 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:49:17 [     clbahro5c0000ck552opl0f0e]  [ error] Can not transaction. Need to rollback for exception: The match id must be greater than 0.
+2022-12-05 14:49:17 [     clbahro5c0000ck552opl0f0e]  [ error] [predictByMatch=>InsertPredict] [DataException] : The match id must be greater than 0.
+2022-12-05 14:49:17 [     clbahro5c0000ck552opl0f0e]  [  http] ::1 POST /predict/ 400 103 - 25.364 ms 
+2022-12-05 14:49:23 [     clbahrs2p0001ck555l7g0b0d]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:49:23 [     clbahrs2p0001ck555l7g0b0d]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:49:23 [     clbahrs2p0001ck555l7g0b0d]  [  http] ::1 POST /predict/ 400 98 - 3.949 ms 
+2022-12-05 14:49:31 [     clbahryc40002ck55e7oi59ur]  [ error] Can not transaction. Need to rollback for exception: The password field is required.
+2022-12-05 14:49:31 [     clbahryc40002ck55e7oi59ur]  [ error] [predictByMatch=>InsertPredict] [DataException] : The password field is required.
+2022-12-05 14:49:31 [     clbahryc40002ck55e7oi59ur]  [  http] ::1 POST /predict/ 400 98 - 3.084 ms 
+2022-12-05 14:49:50 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:49:50 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:49:52 [     clbahset90000z0559c9m2zy4]  [ error] Can not transaction. Need to rollback for exception: 
+2022-12-05 14:49:52 [     clbahset90000z0559c9m2zy4]  [ error] [predictByMatch=>InsertPredict] [DataException] : 
+2022-12-05 14:49:52 [     clbahset90000z0559c9m2zy4]  [  http] ::1 POST /predict/ 400 67 - 24.256 ms 
+2022-12-05 14:50:25 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:50:25 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:50:28 [     clbaht6d00000go5514n795uq]  [ error] Can not transaction. Need to rollback for exception: The t1 score field is required.
+2022-12-05 14:50:28 [     clbaht6d00000go5514n795uq]  [ error] [predictByMatch=>InsertPredict] [DataException] : The t1 score field is required.
+2022-12-05 14:50:28 [     clbaht6d00000go5514n795uq]  [  http] ::1 POST /predict/ 400 98 - 24.407 ms 
+2022-12-05 14:50:44 [     clbahtj380001go557uv97nj2]  [ error] Can not transaction. Need to rollback for exception: The t2 score field is required.
+2022-12-05 14:50:44 [     clbahtj380001go557uv97nj2]  [ error] [predictByMatch=>InsertPredict] [DataException] : The t2 score field is required.
+2022-12-05 14:50:44 [     clbahtj380001go557uv97nj2]  [  http] ::1 POST /predict/ 400 98 - 5.036 ms 
+2022-12-05 14:50:56 [     clbahtsjz0002go5571yj4p1n]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:50:56 [     clbahtsjz0002go5571yj4p1n]  [  http] ::1 POST /predict/ 200 57 - 17.153 ms 
+2022-12-05 14:51:45 [     clbahuuaj0003go55gd4taovr]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:51:45 [     clbahuuaj0003go55gd4taovr]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:51:45 [     clbahuuaj0003go55gd4taovr]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:51:45 [     clbahuuaj0003go55gd4taovr]  [  http] ::1 POST /predict/ 400 244 - 9.415 ms 
+2022-12-05 14:53:35 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:53:35 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:53:37 [     clbahx8c00000es55blbydpob]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:53:37 [     clbahx8c00000es55blbydpob]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:53:37 [     clbahx8c00000es55blbydpob]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:53:37 [     clbahx8c00000es55blbydpob]  [  http] ::1 POST /predict/ 400 244 - 30.872 ms 
+2022-12-05 14:53:47 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:53:47 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:53:47 [     clbahxgfb0000do559gxm0k8j]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:53:47 [     clbahxgfb0000do559gxm0k8j]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:53:47 [     clbahxgfb0000do559gxm0k8j]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:53:47 [     clbahxgfb0000do559gxm0k8j]  [  http] ::1 POST /predict/ 400 244 - 29.914 ms 
+2022-12-05 14:56:16 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:56:16 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:56:18 [     clbai0p0100008s5538tbbffr]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:56:18 [     clbai0p0100008s5538tbbffr]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:19 [     clbai0p0100008s5538tbbffr]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:19 [     clbai0p0100008s5538tbbffr]  [  http] ::1 POST /predict/ 400 244 - 30.676 ms 
+2022-12-05 14:56:27 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:56:27 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:56:27 [     clbai0vve000000553xkl1sdc]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:56:27 [     clbai0vve000000553xkl1sdc]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:27 [     clbai0vve000000553xkl1sdc]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:27 [     clbai0vve000000553xkl1sdc]  [  http] ::1 POST /predict/ 400 244 - 30.821 ms 
+2022-12-05 14:56:37 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:56:37 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:56:37 [     clbai13810000n0553ts0cuo7]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:56:37 [     clbai13810000n0553ts0cuo7]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:37 [     clbai13810000n0553ts0cuo7]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:37 [     clbai13810000n0553ts0cuo7]  [  http] ::1 POST /predict/ 400 244 - 30.037 ms 
+2022-12-05 14:56:42 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:56:42 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:56:42 [     clbai173v0000x855bri1b7xp]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:56:42 [     clbai173v0000x855bri1b7xp]  [ error] Can not transaction. Need to rollback for exception: e.message.matches is not a function
+2022-12-05 14:56:42 [     clbai173v0000x855bri1b7xp]  [ error] [] [TypeError] : e.message.matches is not a function
+2022-12-05 14:56:42 [     clbai173v0000x855bri1b7xp]  [  http] ::1 POST /predict/ 400 98 - 30.203 ms 
+2022-12-05 14:56:57 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:56:57 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:56:59 [     clbai1k950000bo55ee4j0xdf]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:56:59 [     clbai1k950000bo55ee4j0xdf]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:59 [     clbai1k950000bo55ee4j0xdf]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:56:59 [     clbai1k950000bo55ee4j0xdf]  [  http] ::1 POST /predict/ 400 244 - 31.331 ms 
+2022-12-05 14:57:06 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:57:06 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:57:06 [     clbai1pt70000ao556t0t0lh8]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:57:06 [     clbai1pt70000ao556t0t0lh8]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:57:06 [     clbai1pt70000ao556t0t0lh8]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:57:06 [     clbai1pt70000ao556t0t0lh8]  [  http] ::1 POST /predict/ 400 244 - 29.969 ms 
+2022-12-05 14:57:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 14:57:56 [                   Application]  [  info] App is running at port 8080
+2022-12-05 14:57:58 [     clbai2tyo0000ts558n416w0j]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [13 | 45 | 2 | 3]
+2022-12-05 14:57:58 [     clbai2tyo0000ts558n416w0j]  [ error] Can not transaction. Need to rollback for exception: Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:57:58 [     clbai2tyo0000ts558n416w0j]  [ error] [predictByMatch=>InsertPredict] [DataException] : Cannot add or update a child row: a foreign key constraint fails (`predict`.`predicts`, CONSTRAINT `predicts_matches_id_fk` FOREIGN KEY (`match_id`) REFERENCES `matches` (`id`))
+2022-12-05 14:57:58 [     clbai2tyo0000ts558n416w0j]  [  http] ::1 POST /predict/ 400 244 - 28.899 ms 
+2022-12-05 14:58:36 [     clbai3ngn0001ts55a58kfzfq]  [   sql] [INSERT INTO predicts(match_id, user_id, t1_score, t2_score) VALUE (?, ?, ?, ?)] => Binding => [714153 | 45 | 2 | 3]
+2022-12-05 14:58:36 [     clbai3ngn0001ts55a58kfzfq]  [  http] ::1 POST /predict/ 200 58 - 12.062 ms 
+2022-12-05 15:03:28 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:03:28 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:03:37 [     clbaia33t0000l855buoo456o]  [ error] [] [NotFoundException] : API not found
+2022-12-05 15:03:37 [     clbaia33t0000l855buoo456o]  [  http] ::1 GET /predict/ 400 84 - 1.913 ms 
+2022-12-05 15:03:50 [     clbaiad4m0001l855axg7hbhl]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:03:50 [     clbaiad4m0001l855axg7hbhl]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:03:50 [     clbaiad4m0001l855axg7hbhl]  [  http] ::1 GET /predict/714153 200 137 - 6.775 ms 
+2022-12-05 15:04:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:04:12 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:04:13 [     clbaiav420000go55daio9rty]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:04:13 [     clbaiav420000go55daio9rty]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:04:13 [     clbaiav420000go55daio9rty]  [  http] ::1 GET /predict/714153 200 60 - 24.349 ms 
+2022-12-05 15:04:24 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:04:24 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:04:25 [     clbaib4ml00005g55hzkl0nlf]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:04:25 [     clbaib4ml00005g55hzkl0nlf]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:04:25 [     clbaib4ml00005g55hzkl0nlf]  [  http] ::1 GET /predict/714153 200 60 - 8.080 ms 
+2022-12-05 15:04:54 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:04:54 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:04:54 [     clbaibqks0000s455711579jn]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:04:54 [     clbaibqks0000s455711579jn]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:04:54 [     clbaibqks0000s455711579jn]  [  http] ::1 GET /predict/714153 200 60 - 25.602 ms 
+2022-12-05 15:05:09 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:05:09 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:05:10 [     clbaic2s00000wc55g87zhsj6]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:05:10 [     clbaic2s00000wc55g87zhsj6]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:05:10 [     clbaic2s00000wc55g87zhsj6]  [  http] ::1 GET /predict/714153 200 60 - 26.114 ms 
+2022-12-05 15:05:29 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:05:29 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:05:29 [     clbaichu50000es55551q3be4]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:05:29 [     clbaichu50000es55551q3be4]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:05:29 [     clbaichu50000es55551q3be4]  [  http] ::1 GET /predict/714153 200 60 - 25.648 ms 
+2022-12-05 15:05:37 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:05:37 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:05:37 [     clbaico9x0000qc550hr3cn8v]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:05:37 [     clbaico9x0000qc550hr3cn8v]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:05:37 [     clbaico9x0000qc550hr3cn8v]  [  http] ::1 GET /predict/714153 200 60 - 41.325 ms 
+2022-12-05 15:05:44 [     clbaict0x0001qc550horah84]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:05:44 [     clbaict0x0001qc550horah84]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where id=714153
+2022-12-05 15:05:44 [     clbaict0x0001qc550horah84]  [  http] ::1 GET /predict/714153 200 60 - 3.662 ms 
+2022-12-05 15:06:04 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:06:04 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:06:05 [     clbaid9x500005k5540zge9ap]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:06:05 [     clbaid9x500005k5540zge9ap]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,result as result FROM matches where match_id=714153
+2022-12-05 15:06:05 [     clbaid9x500005k5540zge9ap]  [  http] ::1 GET /predict/714153 200 60 - 10.302 ms 
+2022-12-05 15:07:35 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:07:35 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:07:37 [     clbaif8fg0000xc5544po2vxa]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:07:37 [     clbaif8fg0000xc5544po2vxa]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where match_id=714153
+2022-12-05 15:07:37 [     clbaif8fg0000xc5544po2vxa]  [  http] ::1 GET /predict/714153 200 60 - 25.706 ms 
+2022-12-05 15:07:57 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:07:57 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:08:32 [     clbaigf5b00001455bcmygkgv]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:08:32 [     clbaigf5b00001455bcmygkgv]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:08:32 [     clbaigf5b00001455bcmygkgv]  [  http] ::1 GET /predict/714153 200 60 - 9.537 ms 
+2022-12-05 15:09:06 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:09:06 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:09:06 [     clbaih5d00000do555bbofqix]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:09:06 [     clbaih5d00000do555bbofqix]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:09:06 [     clbaih5d00000do555bbofqix]  [  http] ::1 GET /predict/714153 200 60 - 26.674 ms 
+2022-12-05 15:09:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:09:44 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:09:45 [     clbaihzia00002c551r9t93wm]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:09:45 [     clbaihzia00002c551r9t93wm]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:09:45 [     clbaihzia00002c551r9t93wm]  [  http] ::1 GET /predict/714153 200 60 - 29.594 ms 
+2022-12-05 15:10:38 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:10:38 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:10:38 [     clbaij4l300007s554a2o9hew]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:10:38 [     clbaij4l300007s554a2o9hew]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:10:39 [     clbaij4l300007s554a2o9hew]  [  http] ::1 GET /predict/714153 200 137 - 26.491 ms 
+2022-12-05 15:10:51 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:10:51 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:10:51 [     clbaijeix0000v8557tdc2o8d]  [   sql] [SELECT * FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:10:51 [     clbaijeix0000v8557tdc2o8d]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:10:51 [     clbaijeix0000v8557tdc2o8d]  [  http] ::1 GET /predict/714153 200 278 - 27.627 ms 
+2022-12-05 15:11:09 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:11:09 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:12:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:12:44 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:14:52 [     clbaiok7z0000tk55dtp7d18w]  [   sql] [SELECT id as id,null as 'league',null as 'org',null as 'time',null as 'dayId',t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:14:52 [     clbaiok7z0000tk55dtp7d18w]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:14:52 [     clbaiok7z0000tk55dtp7d18w]  [  http] ::1 GET /predict/714153 200 296 - 27.211 ms 
+2022-12-05 15:16:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:16:45 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:16:45 [     clbaiqziy0000g455g8s03lcy]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:16:45 [     clbaiqziy0000g455g8s03lcy]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:16:45 [     clbaiqziy0000g455g8s03lcy]  [   sql] SELECT id as id,league as league,org as org,time as time,null as 'dayId',t1_score as t1Score,t2_score as t2Score,status as status FROM matches where id=714153
+2022-12-05 15:16:45 [     clbaiqziy0000g455g8s03lcy]  [  http] ::1 GET /predict/714153 200 258 - 29.615 ms 
+2022-12-05 15:24:08 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:24:08 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:24:09 [     clbaj0htq0000oo557zo4gd3a]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:24:09 [     clbaj0htq0000oo557zo4gd3a]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,null as 't1',null as 't2',t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:24:09 [     clbaj0htq0000oo557zo4gd3a]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=undefined
+2022-12-05 15:24:09 [     clbaj0htq0000oo557zo4gd3a]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=undefined
+2022-12-05 15:24:09 [     clbaj0htq0000oo557zo4gd3a]  [  http] ::1 GET /predict/714153 200 285 - 32.954 ms 
+2022-12-05 15:24:43 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:24:43 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:24:44 [     clbaj195700005s557drlfn35]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:24:44 [     clbaj195700005s557drlfn35]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,null as 't1',null as 't2',t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:24:44 [     clbaj195700005s557drlfn35]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=undefined
+2022-12-05 15:24:44 [     clbaj195700005s557drlfn35]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=undefined
+2022-12-05 15:24:44 [     clbaj195700005s557drlfn35]  [  http] ::1 GET /predict/714153 200 285 - 33.282 ms 
+2022-12-05 15:25:04 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:25:04 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:25:05 [     clbaj1p4k00003o55b86x7rey]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:25:05 [     clbaj1p4k00003o55b86x7rey]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,null as 't1',null as 't2',t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:25:05 [     clbaj1p4k00003o55b86x7rey]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=null
+2022-12-05 15:25:05 [     clbaj1p4k00003o55b86x7rey]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=null
+2022-12-05 15:25:05 [     clbaj1p4k00003o55b86x7rey]  [  http] ::1 GET /predict/714153 200 283 - 31.989 ms 
+2022-12-05 15:25:39 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:25:39 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:25:40 [     clbaj2fwb0000ig55hmn9e2sy]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:25:40 [     clbaj2fwb0000ig55hmn9e2sy]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,t1 as t1,t2 as t2,t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:25:40 [     clbaj2fwb0000ig55hmn9e2sy]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9267
+2022-12-05 15:25:40 [     clbaj2fwb0000ig55hmn9e2sy]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9315
+2022-12-05 15:25:40 [     clbaj2fwb0000ig55hmn9e2sy]  [  http] ::1 GET /predict/714153 200 403 - 36.626 ms 
+2022-12-05 15:26:17 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:26:17 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:26:17 [     clbaj38t700006055gnoi4w2j]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:26:17 [     clbaj38t700006055gnoi4w2j]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,t1 as t1,t2 as t2,t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:26:17 [     clbaj38t700006055gnoi4w2j]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9267
+2022-12-05 15:26:17 [     clbaj38t700006055gnoi4w2j]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9315
+2022-12-05 15:26:17 [     clbaj38t700006055gnoi4w2j]  [  http] ::1 GET /predict/714153 200 60 - 36.490 ms 
+2022-12-05 15:27:30 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:27:30 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:27:30 [     clbaj4tda0000o85529g5e0aj]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:27:30 [     clbaj4tda0000o85529g5e0aj]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,t1 as t1,t2 as t2,t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:27:30 [     clbaj4tda0000o85529g5e0aj]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9267
+2022-12-05 15:27:30 [     clbaj4tda0000o85529g5e0aj]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9315
+2022-12-05 15:27:30 [     clbaj4tda0000o85529g5e0aj]  [  http] ::1 GET /predict/714153 200 403 - 38.470 ms 
+2022-12-05 15:28:37 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:28:37 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:28:39 [     clbaj6a8k00000g557365amws]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:28:39 [     clbaj6a8k00000g557365amws]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,t1 as t1,t2 as t2,t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:28:39 [     clbaj6a8k00000g557365amws]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9267
+2022-12-05 15:28:39 [     clbaj6a8k00000g557365amws]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9315
+2022-12-05 15:28:39 [     clbaj6a8k00000g557365amws]  [   sql] SELECT null as 'id',username as username,fullname as fullName,avatar_id as avatar FROM users where id=45
+2022-12-05 15:28:39 [     clbaj6a8k00000g557365amws]  [  http] ::1 GET /predict/714153 200 488 - 35.922 ms 
+2022-12-05 15:29:06 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:29:06 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:29:07 [     clbaj6vsq00005455g84h26nb]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:29:07 [     clbaj6vsq00005455g84h26nb]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,t1 as t1,t2 as t2,t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:29:07 [     clbaj6vsq00005455g84h26nb]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9267
+2022-12-05 15:29:07 [     clbaj6vsq00005455g84h26nb]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9315
+2022-12-05 15:29:07 [     clbaj6vsq00005455g84h26nb]  [   sql] SELECT null as 'id',username as username,fullname as fullName,avatar_id as avatar FROM users where id=45
+2022-12-05 15:29:07 [     clbaj6vsq00005455g84h26nb]  [  http] ::1 GET /predict/714153 200 476 - 35.913 ms 
+2022-12-05 15:29:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:29:45 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:29:46 [     clbaj7pmi0000oc55bi8obza1]  [   sql] [SELECT id as id,user_id as userId,t1_score as t1Score,t2_score as t2Score,null as 'status' FROM predict.predicts WHERE match_id = ?] => Binding => [714153]
+2022-12-05 15:29:46 [     clbaj7pmi0000oc55bi8obza1]  [   sql] [SELECT id as id,league as league,org as org,time as time,day_id as dateId,status as status,t1 as t1,t2 as t2,t1_score as t1Score,t2_score as t2Score FROM matches WHERE id = ?] => Binding => [714153]
+2022-12-05 15:29:46 [     clbaj7pmi0000oc55bi8obza1]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9267
+2022-12-05 15:29:46 [     clbaj7pmi0000oc55bi8obza1]  [   sql] SELECT id as id,name as name,img as img,short_name as shortName FROM teams where id=9315
+2022-12-05 15:29:46 [     clbaj7pmi0000oc55bi8obza1]  [   sql] SELECT null as 'id',username as username,fullname as fullName,avatar_id as avatar FROM users where id=45
+2022-12-05 15:29:46 [     clbaj7pmi0000oc55bi8obza1]  [  http] ::1 GET /predict/714153 200 476 - 31.256 ms 
+2022-12-05 15:41:05 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:41:05 [                   Application]  [  info] App is running at port 8080
+2022-12-05 15:57:23 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 15:57:23 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:05:14 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:05:14 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:06:49 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:06:49 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:08:35 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:08:35 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:08:56 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:08:56 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:08:59 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:08:59 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:09:11 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:09:11 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:17:38 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:17:38 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:18:53 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:18:53 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:26:45 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:26:45 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:27:38 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:27:38 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:47:40 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:47:40 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:47:55 [     clbam080n0000dk55h47v5wqn]  [ error] [] [SequelizeValidationError] : notNull Violation: User.username cannot be null,
+notNull Violation: User.password cannot be null
+2022-12-05 16:47:55 [     clbam080n0000dk55h47v5wqn]  [  http] ::1 GET /users/test 400 175 - 5.938 ms 
+2022-12-05 16:48:12 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:48:12 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:48:13 [     clbam0lnp00006w559xoy4rbu]  [ error] [] [SequelizeValidationError] : notNull Violation: User.password cannot be null
+2022-12-05 16:48:13 [     clbam0lnp00006w559xoy4rbu]  [  http] ::1 GET /users/test 400 125 - 6.438 ms 
+2022-12-05 16:48:26 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:48:26 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:48:26 [     clbam0w0t0000vo5581q7heds]  [ error] [] [SequelizeDatabaseError] : Unknown column 'createdAt' in 'field list'
+2022-12-05 16:48:26 [     clbam0w0t0000vo5581q7heds]  [  http] ::ffff:127.0.0.1 GET /users/test 400 118 - 19.195 ms 
+2022-12-05 16:49:21 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:49:21 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:49:23 [     clbam23ow0000yw55g5rggmkp]  [ error] [] [SequelizeDatabaseError] : Unknown column 'createdAt' in 'field list'
+2022-12-05 16:49:23 [     clbam23ow0000yw55g5rggmkp]  [  http] ::1 GET /users/test 400 118 - 26.337 ms 
+2022-12-05 16:49:51 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:49:51 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:49:51 [     clbam2pyf0000zs554a0s82kc]  [ error] [] [SequelizeDatabaseError] : Unknown column 'createdAt' in 'field list'
+2022-12-05 16:49:52 [     clbam2pyf0000zs554a0s82kc]  [  http] ::1 GET /users/test 400 118 - 20.979 ms 
+2022-12-05 16:50:21 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:50:21 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:50:23 [     clbam3e8c0000t4558xzuhwsq]  [ error] [] [SequelizeDatabaseError] : Field 'email' doesn't have a default value
+2022-12-05 16:50:23 [     clbam3e8c0000t4558xzuhwsq]  [  http] ::1 GET /users/test 400 118 - 19.010 ms 
+2022-12-05 16:50:44 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:50:44 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:50:44 [     clbam3uma00009w55ebiw6i2f]  [ error] [] [SequelizeValidationError] : notNull Violation: users.email cannot be null
+2022-12-05 16:50:44 [     clbam3uma00009w55ebiw6i2f]  [  http] ::1 GET /users/test 400 123 - 13.388 ms 
+2022-12-05 16:51:10 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:51:10 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:51:10 [     clbam4ejf0000y455fokmdb4l]  [  http] ::ffff:127.0.0.1 GET /users/test 200 21 - 23.834 ms 
+2022-12-05 16:51:32 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:51:32 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:51:33 [     clbam4vvt000054553n72f8oq]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:51:33 [     clbam4vvt000054553n72f8oq]  [  http] ::1 GET /users/test 400 100 - 50.038 ms 
+2022-12-05 16:51:46 [     clbam55zz000154551ro5dloy]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:51:46 [     clbam55zz000154551ro5dloy]  [  http] ::1 GET /users/test 400 100 - 17.238 ms 
+2022-12-05 16:56:15 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:56:15 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:56:22 [     clbamb3900000wk55ej762tet]  [ error] [] [SequelizeValidationError] : notNull Violation: users.userName cannot be null
+2022-12-05 16:56:22 [     clbamb3900000wk55ej762tet]  [  http] ::1 GET /users/test 400 126 - 16.578 ms 
+2022-12-05 16:56:40 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:56:40 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:56:40 [     clbambhdz00003455edwbgqx6]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:56:40 [     clbambhdz00003455edwbgqx6]  [  http] ::ffff:127.0.0.1 GET /users/test 400 100 - 26.593 ms 
+2022-12-05 16:57:08 [     clbamc2wp00013455h4ereo26]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:57:08 [     clbamc2wp00013455h4ereo26]  [  http] ::1 GET /users/test 400 100 - 13.416 ms 
+2022-12-05 16:57:11 [     clbamc4xe0002345540yr7vxy]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:57:11 [     clbamc4xe0002345540yr7vxy]  [  http] ::1 GET /users/test 400 100 - 11.906 ms 
+2022-12-05 16:57:11 [     clbamc5bb000334555h79hvzj]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:57:11 [     clbamc5bb000334555h79hvzj]  [  http] ::1 GET /users/test 400 100 - 7.872 ms 
+2022-12-05 16:57:12 [     clbamc5lo000434558pvjf7m1]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:57:12 [     clbamc5lo000434558pvjf7m1]  [  http] ::1 GET /users/test 400 100 - 10.452 ms 
+2022-12-05 16:57:13 [     clbamc6vs000534557tkx5ce0]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:57:13 [     clbamc6vs000534557tkx5ce0]  [  http] ::1 GET /users/test 400 100 - 8.265 ms 
+2022-12-05 16:57:14 [     clbamc78n000634558qnk8lfm]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:57:14 [     clbamc78n000634558qnk8lfm]  [  http] ::1 GET /users/test 400 100 - 10.085 ms 
+2022-12-05 16:58:23 [     clbamdoyx000734551thhfre3]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 16:58:23 [     clbamdoyx000734551thhfre3]  [  http] ::1 GET /users/test 400 100 - 13.428 ms 
+2022-12-05 16:58:46 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:58:46 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:58:48 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 16:58:48 [                   Application]  [  info] App is running at port 8080
+2022-12-05 16:58:48 [     clbame8240000hk55gpdu9bcx]  [  http] ::ffff:127.0.0.1 GET /users/test 200 21 - 23.718 ms 
+2022-12-05 17:00:51 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 17:00:51 [                   Application]  [  info] App is running at port 8080
+2022-12-05 17:00:51 [                   Application]  [   sql] Executing (default): SELECT 1+1 AS result => [object Object]
+2022-12-05 17:00:54 [     clbamgx0t0000s4552qqpcbfq]  [   sql] Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'predict' => [object Object]
+2022-12-05 17:00:54 [     clbamgx0t0000s4552qqpcbfq]  [   sql] Executing (default): SHOW INDEX FROM `users` => [object Object]
+2022-12-05 17:00:54 [     clbamgx0t0000s4552qqpcbfq]  [   sql] Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`) VALUES (DEFAULT,?,?,?); => [object Object]
+2022-12-05 17:00:54 [     clbamgx0t0000s4552qqpcbfq]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 17:00:54 [     clbamgx0t0000s4552qqpcbfq]  [  http] ::1 GET /users/test 400 100 - 28.300 ms 
+2022-12-05 17:01:14 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 17:01:14 [                   Application]  [  info] App is running at port 8080
+2022-12-05 17:01:14 [                   Application]  [   sql] Executing (default): SELECT 1+1 AS result => [object Object]
+2022-12-05 17:01:15 [     clbamhdd90000gg556euo3pvv]  [   sql] Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'predict' => [object Object]
+2022-12-05 17:01:15 [     clbamhdd90000gg556euo3pvv]  [   sql] Executing (default): SHOW INDEX FROM `users` => [object Object]
+2022-12-05 17:01:15 [     clbamhdd90000gg556euo3pvv]  [   sql] Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`) VALUES (DEFAULT,?,?,?); => [object Object]
+2022-12-05 17:01:15 [     clbamhdd90000gg556euo3pvv]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 17:01:15 [     clbamhdd90000gg556euo3pvv]  [  http] ::1 GET /users/test 400 100 - 33.293 ms 
+2022-12-05 17:02:09 [                   Application]  [  info] [DBHelper] Database connected successfully
+2022-12-05 17:02:09 [                   Application]  [  info] App is running at port 8080
+2022-12-05 17:02:09 [                   Application]  [   sql] Executing (default): SELECT 1+1 AS result => undefined
+2022-12-05 17:02:09 [     clbamij4h00003g55e7fkdnjh]  [   sql] Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'predict' => undefined
+2022-12-05 17:02:09 [     clbamij4h00003g55e7fkdnjh]  [   sql] Executing (default): SHOW INDEX FROM `users` => undefined
+2022-12-05 17:02:09 [     clbamij4h00003g55e7fkdnjh]  [   sql] Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`) VALUES (DEFAULT,?,?,?); => 123132123,123123321123,hello1232
+2022-12-05 17:02:09 [     clbamij4h00003g55e7fkdnjh]  [ error] [] [SequelizeUniqueConstraintError] : Validation error
+2022-12-05 17:02:09 [     clbamij4h00003g55e7fkdnjh]  [  http] ::1 GET /users/test 400 100 - 25.966 ms 

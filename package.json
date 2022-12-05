@@ -26,6 +26,7 @@
     "nodemon": "^2.0.20",
     "playwright": "^1.28.1",
     "request-context": "^2.0.0",
+    "sequelize": "^6.26.0",
     "simple-body-validator": "^1.2.9",
     "split": "^1.0.1",
     "stack-trace": "^1.0.0-pre1",
