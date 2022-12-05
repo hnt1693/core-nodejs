@@ -10,7 +10,7 @@ const requestContext = require("request-context")
  * */
 router.get('/:dayId', authWithAsync(async function (req, res, next) {
     const dayId = req.params.dayId;
-    let data = await getMatches(dayId)
+    let data = await getMatches(parseInt(dayId))
     res.send(ResponseBuilder.getInstance()
         .code(200)
         .data(data)

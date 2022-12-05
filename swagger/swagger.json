@@ -28,6 +28,10 @@
     {
       "name": "File",
       "description": "Upload, download file"
+    },
+    {
+      "name": "Matches",
+      "description": "Get Upcoming Matches"
     }
   ],
   "paths": {
@@ -172,6 +176,34 @@
         "operationId": "Get profile",
         "summary": "Get profile",
         "description": "Get profile",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+        }
+      }
+    },
+    "/match/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "type": "number",
+          "name": "id",
+          "required": true
+        }
+      ],
+      "get": {
+        "tags": [
+          "Matches"
+        ],
+        "security": [
+          {
+            "Authorization": []
+          }
+        ],
+        "operationId": "Get matches",
+        "summary": "Get matches",
+        "description": "Day Id. exp: 20121202",
         "produces": [
           "application/json"
         ],

@@ -1,6 +1,5 @@
 const UserMapping = {
     userId: "id",
-    customerId: "customer_id",
     username: "username",
     email: "email",
     type: "type",
@@ -9,6 +8,7 @@ const UserMapping = {
     deleteAt: "delete_at",
     avatar: "avatar_id",
     password: "password",
+    fullName:"fullname"
 }
 
 const FileMapping = {

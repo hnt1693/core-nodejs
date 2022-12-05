@@ -121,7 +121,7 @@ const changeAvatar = (req, res) => {
                 sql: `UPDATE users
                       set avatar_id = ?
                       WHERE id = ?`
-                , values: [file.sqlResult.insertId, user.id]
+                , values: [file.sqlResult.insertId, user.userId]
             },
         )
         if (user.avatar) {
