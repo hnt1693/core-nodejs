@@ -3,17 +3,16 @@ const router = express.Router();
 const {EXCEPTION_TYPES, Exception} = require("@exception/custom-exception")
 const requestContext = require("request-context")
 const DBHelper = require("@utils/db-helper");
+const DBHelper2 = require("@utils/db-helper2");
+const {Op} = require("sequelize");
+const {Team} = require("@mapping/team.model");
 const {UserMapping} = require("@mapping/user-mapping");
 const {make} = require('simple-body-validator');
 const {getColumns, MatchMapping, PredictMapping} = require('@mapping/user-mapping');
 const {getMatchById} = require('@service/matches');
-
-
-const predictRules = {
-    matchId: 'required',
-    t1Score: 'required|integer|gt:0',
-    t2Score: 'required|integer|gt:0',
-}
+const {Predict} = require("@mapping/predict.model")
+const {Match} = require("@mapping/match.model")
+const {User} = require("@mapping/user-model")
 
 
 const getPredictByMatchId = async (matchIds) => {
@@ -49,20 +48,32 @@ const getPredictByMatchId = async (matchIds) => {
 
 
 const createPredictByMatch = async (match) => {
-    return DBHelper.executeQueryWithTransaction(async connection => {
+    return DBHelper2.executeWithTransaction(async transaction => {
         try {
-            const validator = make(match, predictRules);
-            if (!validator.stopOnFirstFailure().validate()) {
-                throw new Error(validator.errors().first())
-            }
-            const user = requestContext.get('request:user');
-            let data = await connection.queryWithLog({
-                sql: `INSERT INTO predicts(match_id, user_id, t1_score, t2_score)
-                          VALUE (?, ?, ?, ?)`,
-                rowsAsArray: false,
-                values: [match.matchId, user.userId, match.t1Score, match.t2Score]
-            });
-            return data.insertId;
+            const currentUser = requestContext.get('request:user');
+            const [data] = await DBHelper2.sequelize.query(`INSERT INTO predict.predicts(team1Score, team2Score, user_id, match_id) VALUE (:team1, :team2, :userId, :matchId)`,
+                {
+                    replacements: {
+                        team1: match.team1Score,
+                        team2: match.team2Score,
+                        userId: currentUser.id,
+                        matchId: match.matchId
+                    },
+                })
+
+            return await Predict.findByPk(data, {
+                include: [
+                    {
+                        model: Match,
+                        as: 'match',
+                        include: [
+                            {model: Team, as: "team1"},
+                            {model: Team, as: "team2"},
+                        ]
+                    }
+                ]
+            })
+
         } catch (e) {
             throw new Exception(e.message, EXCEPTION_TYPES.DATA_INVALID).bind('predictByMatch=>InsertPredict');
         }
@@ -70,23 +81,39 @@ const createPredictByMatch = async (match) => {
 }
 
 const updatePredictByMatch = async (match) => {
-    return DBHelper.executeQueryWithTransaction(async connection => {
-        const validator = make(match, predictRules);
-        if (!validator.stopOnFirstFailure().validate()) {
-            throw new Exception(validator.errors().first(), EXCEPTION_TYPES.AUTH).bind('updatePredictByMatch=>Validate');
-        }
+    return DBHelper2.executeWithTransaction(async transaction => {
         try {
             const user = requestContext.get('request:user');
-            let data = await connection.queryWithLog({
-                sql: `UPDATE predicts
-                      set t1_score=?,
-                          t2_score=?
-                      WHERE match_id = ?
-                        AND user_id = ?`,
-                rowsAsArray: false,
-                values: [match.t1Score, match.t2Score, match.matchId, user.userId]
-            });
-            return data;
+            const predict = await Predict.findOne({
+                where: {
+                    match_id: {
+                        [Op.eq]: match.matchId
+                    },
+                    user_id: {
+                        [Op.eq]: user.id
+                    }
+                },
+                include: [
+                    {
+                        model: Match, as: 'match',
+                        include: [
+                            {model: Team, as: 'team1'},
+                            {model: Team, as: 'team2'},
+                        ]
+                    },
+                    {model: User, as: 'user', attributes: ['fullname', 'username', 'id']},
+                ]
+            })
+            if (!predict) {
+                throw new Error("Match not found")
+            }
+            if (predict.dataValues.match.status === "FT") {
+                throw new Error("Match ended")
+            }
+
+            predict.team1Score = match.team1Score;
+            predict.team2Score = match.team2Score;
+            return await predict.save({transaction});
         } catch (e) {
             throw new Exception(e.message, EXCEPTION_TYPES.AUTH).bind('updatePredictByMatch=>InsertPredict');
         }

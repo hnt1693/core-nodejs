@@ -1,8 +1,11 @@
 const DbHelper = require("@utils/db-helper")
+const DbHelper2 = require("@utils/db-helper2")
 const fs = require("fs");
+const {File} = require("@mapping/file-model");
 const logger = require("@utils/logger");
 const multer = require("multer")
 const dayJs = require("dayjs")
+const {FILE_TYPES} = require("@mapping/file-model");
 const {Exception, EXCEPTION_TYPES} = require("@exception/custom-exception")
 
 const {StringBuilder} = require("@utils/ultil-helper")
@@ -72,34 +75,20 @@ const uploadFiles = async (req, res) => {
 
 
 const uploadAvatar = (req, res) => {
-    return DbHelper.executeQueryWithTransaction(async (connection) => {
+    return DbHelper2.execute(async (transaction) => {
         try {
-
             let files = await write(req, res, avatarUploader);
             if (files.length === 0) {
                 throw new Error("No file valid type")
             }
-            let builder = new StringBuilder();
-
-            // language=SQL format=false
-            builder.append(`INSERT INTO files (filename, original_name, mimetype, encoding, destination, path, size)
-                            VALUES `);
-            files.forEach(ob => {
-                builder.append("(");
-                builder.append(`'${ob.filename}',`);
-                builder.append(`'${ob.originalname}',`);
-                builder.append(`'${ob.mimetype}',`);
-                builder.append(`'${ob.encoding}',`);
-                builder.append(`'${ob.destination}',`);
-                builder.append(`'${ob.path.replaceAll("\\", "\\\\")}',`);
-                builder.append(`'${ob.size}'`);
-                builder.append(`),`);
+            const file = await File.create({
+                ...files[0],
+                originalName: files[0].originalname,
+                mimeType: files[0].mimetype,
+                type: FILE_TYPES.AVATAR
             })
-            let sql = builder.toString();
-            sql = sql.substr(0, sql.length - 1)
-            console.log(sql)
-            let sqlResult = await connection.queryWithLog({sql: sql, values: []});
-            return {files, sqlResult};
+            await file.save();
+            return file;
         } catch (e) {
             throw new Exception(e.message, EXCEPTION_TYPES.FILE).bind("upload");
         }

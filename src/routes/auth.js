@@ -1,10 +1,9 @@
-
 var express = require('express');
 var router = express.Router();
 const UserService = require("@service/user-service")
 const contextService = require('request-context');
 const {authWithAsync, ROLE} = require('@config/auth-middleware')
-const {getRequestParams} = require("@utils/ultil-helper")
+const {getRequestParams, ResponseBuilder} = require("@utils/ultil-helper")
 const {encode} = require("@service/jwt")
 
 /**
@@ -22,7 +21,11 @@ router.get('/', authWithAsync(async function (req, res, next) {
  */
 router.post("/", authWithAsync(async (req, res, next) => {
     const data = await UserService.login(req.body);
-    res.send({data, "code": 200})
+    res.send(ResponseBuilder.getInstance()
+        .data(data)
+        .code(200)
+        .msg("Login successfully")
+        .build())
 }, []))
 
 
@@ -31,7 +34,11 @@ router.post("/", authWithAsync(async (req, res, next) => {
  */
 router.post("/register", authWithAsync(async (req, res, next) => {
     const data = await UserService.register(req.body);
-    res.send({data, "code": 200, msg: "Register successfully!"})
+    res.send(ResponseBuilder.getInstance()
+        .data(data)
+        .code(200)
+        .msg("Register successfully!")
+        .build())
 }, []))
 
 
@@ -41,7 +48,11 @@ router.post("/register", authWithAsync(async (req, res, next) => {
 router.get("/info", authWithAsync(async (req, res, next) => {
     let user = contextService.get('request:user');
     const data = await UserService.getInfo(user.username);
-    res.send({data, "code": 200})
+    res.send(ResponseBuilder.getInstance()
+        .data(data)
+        .code(200)
+        .msg("Get info successfully!")
+        .build())
 }, [ROLE.IS_AUTHENTICATED]))
 
 

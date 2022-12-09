@@ -7,22 +7,31 @@ const {getUsers} = require("@service/user-service")
 const {ResponseBuilder} = require("@utils/ultil-helper")
 const requestContext = require("request-context")
 const {User} = require("@mapping/user-model")
+const {File} = require("@mapping/file-model")
+const DbHelper = require("@utils/db-helper2")
 
 /**
  * @API: Get users
  * */
 router.get('/', authWithAsync(async function (req, res, next) {
     const {page, limit, fields} = req.query;
-    let data = await getUsers(page, limit, "", fields.split(","))
-    res.send({data, msg: "get success"});
+    let data = await getUsers(page, limit, "", (fields || "").split(","))
+    res.json(ResponseBuilder.getInstance()
+        .data(data)
+        .code(200)
+        .msg("Get users successfully")
+        .build()
+    );
 }, []));
 
 
 router.get('/test', authWithAsync(async function (req, res, next) {
-    await User.sync()
-    let x = await User.create({ userName:"123132123",password:"123123321123","email": 'hello1232'});
-    await x.save();
-    res.send({msg: "get success"});
+    return DbHelper.executeWithTransaction(async tran => {
+        await User.sync({force: true});
+        await File.sync({force: true});
+        res.send({data: await User.findAll({include: File}), msg: "get success"});
+    })
+
 }, []));
 
 
@@ -30,8 +39,8 @@ router.get('/test', authWithAsync(async function (req, res, next) {
  * @API: Get profile
  * */
 router.get('/info', authWithAsync(async function (req, res, next) {
-    let user = requestContext.get('request:user')
-    let data = await getInfo(user.username);
+    let user = requestContext.get('request:user');
+    let data = await getInfo(user);
     res.json(ResponseBuilder.getInstance()
         .data(data)
         .code(200)

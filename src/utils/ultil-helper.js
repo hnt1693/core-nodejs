@@ -1,65 +1,65 @@
 const getRequestParams = (req) => {
-    return req.query;
-}
+  return req.query;
+};
 const getIntParam = (req, key, defaultValue) => {
-    try {
-        return parseInt(req.query.get(key))
-    } catch (e) {
-        return defaultValue
-    }
-}
+  try {
+    return parseInt(req.query.get(key));
+  } catch (e) {
+    return defaultValue;
+  }
+};
 
 class StringBuilder {
-    value = '';
+  value = '';
 
-    constructor() {
-        this.value=''
-    }
+  constructor() {
+    this.value = '';
+  }
 
-    append = (str) => {
-        this.value += str;
-        return this;
-    }
+  append = (str) => {
+    this.value += str;
+    return this;
+  };
 
-    toString() {
-        return this.value;
-    }
+  toString() {
+    return this.value;
+  }
 
 }
 
 class ResponseBuilder {
 
-    static map = {}
+  static map = {};
 
-    static getInstance() {
-        this.map = {}
-        return this
-    }
+  static getInstance() {
+    this.map = {};
+    return this;
+  }
 
-    static code(code) {
-        this.map["code"] = code
-        return this
-    }
+  static code(code) {
+    this.map['code'] = code;
+    return this;
+  }
 
-    static data(data) {
-        this.map["data"] = data
-        return this
-    }
+  static data(data) {
+    this.map['data'] = data;
+    return this;
+  }
 
-    static msg(msg) {
-        this.map["msg"] = msg
-        return this
-    }
+  static msg(msg) {
+    this.map['msg'] = msg;
+    return this;
+  }
 
-    static other(key, value) {
-        this.map[key] = value;
-        return this
-    }
+  static other(key, value) {
+    this.map[key] = value;
+    return this;
+  }
 
-    static build() {
-        return this.map
-    }
+  static build() {
+    return this.map;
+  }
 
 }
 
-module.exports = {getRequestParams, StringBuilder, ResponseBuilder}
+module.exports = {getRequestParams, StringBuilder, ResponseBuilder};

@@ -1,21 +1,18 @@
 class CronjobBuilder {
+  cronjob;
 
-    cronjob
+  static getInstance() {
+    this.cronjob = require('node-cron');
+    return this;
+  }
 
-    static getInstance() {
-        this.cronjob = require("node-cron");
-        return this;
-    }
+  static regex(reg, callback) {
+    this.cronjob.schedule(reg, callback);
+  }
 
-    static regex(reg, callback) {
-        this.cronjob.schedule(reg, callback)
-    }
-
-    static start() {
-        this.cronjob.start();
-    }
-
-
+  static start() {
+    this.cronjob.start();
+  }
 }
 
-module.exports = CronjobBuilder
+module.exports = CronjobBuilder;

@@ -1,60 +1,78 @@
 const axios = require("axios")
 const DbHelper = require("@utils/db-helper")
+const DbHelper2 = require("@utils/db-helper2")
 const {StringBuilder} = require("@utils/ultil-helper");
 const dayjs = require("dayjs");
 const {getColumns, MatchMapping, TeamMapping} = require("@mapping/user-mapping");
 const logger = require("@utils/logger");
+const {User} = require("@mapping/user-model");
+const {sequelize} = require("@utils/db-helper2");
+const {Predict} = require("@mapping/predict.model");
+const {Match} = require("@mapping/match.model");
+const {Op} = require("sequelize");
+const {Team} = require("@mapping/team.model");
 const {Exception, EXCEPTION_TYPES} = require("@exception/custom-exception");
 let lastMatches;
 
+
 const getMatchesForCronJob = async (dayID) => {
     try {
-        DbHelper.executeQueryWithTransaction(async connection => {
-            const matches = await getMatches(dayID);
-            const matchesIds = [];
-            matches.forEach(m => {
-                matchesIds.push(m.id);
-            })
-
-            if (matchesIds.length === 0) return;
-
-            const [existMatchIds] = await connection.query(`SELECT id
-                                                       FROM matches
-                                                       where id in (${matchesIds.join(", ")})`);
-            let matchesUpdate = [];
-            let matchesNew = [];
-
-            if (existMatchIds.length === 0) {
-                matchesUpdate = [];
-                matchesNew = [...matches];
-            } else {
+        DbHelper2.executeWithTransaction(async (transaction) => {
+                const matches = await getMatches(dayID);
+                const matchesIds = [];
                 matches.forEach(m => {
-                    if (existMatchIds.find(t => t.id == m.id)) {
-                        matchesUpdate.push(m)
-                    } else {
-                        matchesNew.push(m)
-                    }
+                    matchesIds.push(parseInt(m.id));
                 })
-            }
 
-            //INSERT NEW
-            insertMatches(matchesNew, connection);
+                if (matchesIds.length === 0) return;
 
-            //CHECK UPDATE NEW
-            const matchesTime = addUnactivatedTimes(matches);
-            const currentTime = dayjs().format("YYYYMMDDHHmmss");
-            let isNeedToRun = false;
+                const existMatchIds = await Match.findAll({
+                    where: {
+                        id: {
+                            [Op.in]: matchesIds
+                        }
+                    },
+                    logging: false
+                })
 
-            for (const time of matchesTime) {
-                if (time.startTime <= currentTime - 1000 && time.end >= currentTime) {
-                    isNeedToRun = true;
-                    break;
+
+                let matchesUpdate = [];
+                let matchesNew = [];
+
+                if (existMatchIds.length === 0) {
+                    matchesUpdate = [];
+                    matchesNew = [...matches];
+                } else {
+                    matches.forEach(m => {
+                        if (existMatchIds.find(t => t.id == m.id)) {
+                            matchesUpdate.push(m)
+                        } else {
+                            matchesNew.push(m)
+                        }
+                    })
                 }
-            }
-            if (isNeedToRun) {
-                updateMatches(matchesUpdate, connection);
-            }
-        })
+
+                //INSERT NEW
+                await insertMatches(matchesNew, transaction);
+
+                //CHECK UPDATE NEW
+                // const matchesTime = addUnactivatedTimes(matches);
+                // const currentTime = dayjs().format("YYYYMMDDHHmmss");
+                // let isNeedToRun = false;
+                //
+                // for (const time of matchesTime) {
+                //     if (time.startTime <= currentTime - 1000 && time.end >= currentTime) {
+                //         isNeedToRun = true;
+                //         break;
+                //     }
+                // }
+
+                if (true) {
+                    await updateMatches(matchesUpdate, transaction);
+                }
+                lastMatches = matches;
+            }, false
+        )
 
     } catch (e) {
         throw e
@@ -64,69 +82,71 @@ const getMatchesForCronJob = async (dayID) => {
 const updateMatches = async (matches, connection) => {
     if (matches.length === 0) return;
 
-    let sqlMatch = new StringBuilder();
-    let matchValues = [];
-    const teamMTemp = new Map();
-    sqlMatch.append(" UPDATE matches set status=? ,t1_score=?, t2_score=? WHERE id=?")
+    const ids = [];
+    matches.forEach(m => ids.push(parseInt(m.id)))
 
-    matches = getMatchNeedToUpdate(matches);
-    matches.forEach(m => {
-        connection.query({
-            sql: `${sqlMatch.value}`,
-            values: [m.result.status, m.result.t1Score, m.result.t2Score, m.id]
-        });
+    const matchInDB = await Match.findAll({
+        where: {
+            id: {
+                [Op.in]: ids
+            }
+        },
+        logging: false
     })
+
+    matches = getMatchNeedToUpdate(matches)
+
+    for (let m of matchInDB) {
+        const find = matches.find(t => t.id === m.id);
+        if (find) {
+            m.status = find.status;
+            m.team1Score = find.team1Score;
+            m.team2Score = find.team2Score;
+            await m.save();
+        }
+    }
+
+
 }
 
-const insertMatches = async (matches, connection) => {
+const insertMatches = async (matches, transaction) => {
     lastMatches = matches;
     if (matches.length === 0) return;
 
-    let sqlMatch = new StringBuilder();
-    let sqlTeams = new StringBuilder();
-    let tempSqlBuilder = new StringBuilder();
-    let matchValues = [];
-    let teamValues = [];
-    let teamIds = [];
-    const teamMTemp = new Map();
-    sqlMatch.append(" INSERT INTO matches(id, org, league, time, t1, t2, status, t1_score, t2_score,day_id) VALUES ")
-    sqlTeams.append("INSERT INTO teams(id, name, img, short_name) VALUES ");
+    for (const m of matches) {
 
-    matches.forEach(m => {
-        matchValues.push(`(${m.id},'${m.org}','${m.league}',${m.time},${m.t1.id},${m.t2.id},${m.result?.status ? "'" + m.result.status.replace("'", "m") + "'" : null},${m.result?.t1Score || null},${m.result?.t2Score || null},${dayjs(m.time + '', 'YYYYMMDDHHmmss').format("YYYYMMDD")})`);
-
-        tempSqlBuilder = new StringBuilder();
-        tempSqlBuilder.append(`(${m.t1.id},`);
-        tempSqlBuilder.append(`'${m.t1.name}',`);
-        tempSqlBuilder.append(`'${m.t1.img}',`);
-        tempSqlBuilder.append(`'${m.t1.shortName}')`);
-        teamMTemp.set(m.t1.id, tempSqlBuilder.value)
-        teamIds.push(m.t1.id)
-
-        tempSqlBuilder = new StringBuilder();
-        tempSqlBuilder.append(`(${m.t2.id},`);
-        tempSqlBuilder.append(`'${m.t2.name}',`);
-        tempSqlBuilder.append(`'${m.t2.img}',`);
-        tempSqlBuilder.append(`'${m.t2.shortName}')`);
-        teamMTemp.set(m.t2.id, tempSqlBuilder.value)
-        teamIds.push(m.t2.id)
-    })
-    sqlMatch.append(`${matchValues.join(", ")}`);
-    connection.query({sql: sqlMatch.value, values: []});
-
-    let teamExist = await connection.queryWithLog({
-        sql: `SELECT id FROM teams WHERE id in (${teamIds.join(",")})`,
-        values: []
-    });
-    const teamWillAdd = [];
-    teamMTemp.forEach((v, k) => {
-        if (!teamExist.find(t => t.id === k)) {
-            teamWillAdd.push(v)
+        const [team1, created1] = await Team.findOrCreate({
+            where: {
+                id: m.team1.id
+            },
+            defaults: {
+                ...m.team1
+            }
+        })
+        const [team2, created2] = await Team.findOrCreate({
+            where: {
+                id: m.team2.id
+            },
+            defaults: {
+                ...m.team2
+            }
+        })
+        const match = await Match.create({
+            id: m.id,
+            league: m.league,
+            org: m.org,
+            status: m.status,
+            team1Score: m.team1Score,
+            team2Score: m.team2Score,
+            time: m.time,
+        })
+        if (created1) {
+            await match.setTeam1(team1)
         }
-    })
-    if (teamWillAdd.length > 0) {
-        sqlTeams.append(teamWillAdd.join(", "));
-        await connection.query({sql: sqlTeams.value, values: []});
+        if (created2) {
+            await match.setTeam2(team2)
+        }
+        await match.save({transaction})
     }
 }
 
@@ -134,7 +154,7 @@ function getMatchNeedToUpdate(matches) {
     const temp = [];
     matches.forEach(m => {
         const find = lastMatches.find(t => t.id === m.id)
-        if (find && find.result.toString() !== m.result.toString()) {
+        if (find && find.team1Score != m.team1Score && find.team2Score != m.team2Score) {
             temp.push(m);
         }
     })
@@ -158,7 +178,7 @@ const getMatches = async (dayId) => {
     try {
         let {Stages} = (await axios.get(`https://prod-public-api.livescore.com/v1/api/app/date/soccer/${dayId}/7?MD=1`)).data
         const BASE_IMG_URL = 'https://lsm-static-prod.livescore.com/medium/'
-        let wc = Stages.filter(o => o.CompId === '54')
+        let wc = Stages.filter(o => o.CompId == '54' || o.CompId==108)
         const matches = []
         const matchesIds = [];
         const teamIds = [];
@@ -167,70 +187,90 @@ const getMatches = async (dayId) => {
                 matchesIds.push(match.Eid);
                 teamIds.push(match.T1[0].ID);
                 teamIds.push(match.T2[0].ID);
-                let result = {};
-                if (match.Tr1 && match.Tr2) {
-                    result = {
-                        t1Score: match.Tr1,
-                        t2Score: match.Tr2,
-                        status: match.Eps
-                    }
-                }
                 matches.push({
                     id: match.Eid,
                     org: w.Csnm,
                     league: w.Snm,
                     time: match.Esd,
-                    t1: {
+                    team1: {
                         id: match.T1[0].ID,
                         name: match.T1[0].Nm,
                         shortName: match.T1[0].Abr,
-                        Img: `${BASE_IMG_URL}${match.T1[0].Img}`
+                        img: `${BASE_IMG_URL}${match.T1[0].Img}`
                     },
-                    t2: {
+                    team2: {
                         id: match.T2[0].ID,
                         name: match.T2[0].Nm,
                         shortName: match.T2[0].Abr,
-                        Img: `${BASE_IMG_URL}${match.T2[0].Img}`
+                        img: `${BASE_IMG_URL}${match.T2[0].Img}`
                     },
-                    result
+                    team1Score: match.Tr1,
+                    team2Score: match.Tr2,
+                    status: match.Eps
                 })
             })
         })
         return matches;
     } catch (e) {
-        console.log(e)
         throw new Exception(e.message, EXCEPTION_TYPES.DATA_INVALID).bind("[GetMatches]")
     }
 
 }
 
 const getMatchById = async (id) => {
-    return DbHelper.executeQuery(async connection => {
-        let data = await connection.queryWithLog({
-            sql: `SELECT ${getColumns(["id", "league", "org", "time", "dateId", "status", "t1", "t2", "t1Score", "t2Score"], MatchMapping)} 
-            FROM matches WHERE id = ?`,
-            values: [id]
-        })
+    return DbHelper2.execute(async () => {
+        return await Match.findByPk(id, {
+            include: [
+                {model: Team, as: 'team1'},
+                {model: Team, as: 'team2'},
+                {
+                    model: Predict,
+                    as: 'predicts',
+                    on: {
+                        match_id: {[Op.eq]: sequelize.col('matches.id')}
+                    },
 
-        data = data[0];
-
-        data.t1 = await connection.join({
-            table: "teams",
-            joinColumn: "id",
-            columns: getColumns(["id", "name", "img", "shortName"], TeamMapping),
-            joinValue: data.t1,
-            unique: true
+                    include: [
+                        {
+                            model: User,
+                            as: 'user'
+                        }
+                    ]
+                }
+            ]
         });
-        data.t2 = await connection.join({
-            table: "teams",
-            joinColumn: "id",
-            columns: getColumns(["id", "name", "img", "shortName"], TeamMapping),
-            joinValue: data.t2,
-            unique: true
-        })
-        return data;
-
     })
 }
 
-module.exports = {getMatches, getMatchesForCronJob, getMatchById}
+const getHistoryTeam = async (teamId, page = 0, limit = 10) => {
+    return DbHelper2.execute(async () => {
+        const countAll = await Match.count({
+            where: {
+                [Op.or]: [
+                    {team1_id: teamId},
+                    {team2_id: teamId},
+                ]
+            }
+        })
+        const matches = await Match.findAndCountAll({
+            where: {
+                [Op.or]: [
+                    {team1_id: teamId},
+                    {team2_id: teamId},
+                ]
+            },
+            order: [
+                ['time', 'DESC']
+            ],
+            include: [
+                {association: 'team1'},
+                {association: 'team2'},
+            ],
+            limit,
+            offset: page * limit
+        })
+        return matches;
+    })
+}
+
+module.exports = {getMatches, getMatchesForCronJob, getMatchById, getHistoryTeam}
