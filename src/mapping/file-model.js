@@ -1,46 +1,46 @@
-const {Sequelize, Model, DataTypes} = require("sequelize");
-const {sequelize} = require("@utils/db-helper2")
+const {DataTypes} = require('sequelize');
+const {sequelize} = require('@utils/db-helper2');
 const FILE_TYPES = {
-    AVATAR: 0,
-}
+    AVATAR: 0
+};
 const File = sequelize.define('files', {
     id: {
-        type: DataTypes.INTEGER,
+        type         : DataTypes.INTEGER,
         autoIncrement: true,
-        primaryKey: true,
+        primaryKey   : true
     },
     path: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type     : DataTypes.STRING,
+        allowNull: false
     },
     originalName: {
-        field: "original_name",
-        type: DataTypes.STRING,
+        field    : 'original_name',
+        type     : DataTypes.STRING,
         allowNull: false,
-        unique: false
+        unique   : false
     },
     mimeType: {
-        field: "mimetype",
-        type: DataTypes.STRING,
+        field    : 'mimetype',
+        type     : DataTypes.STRING,
         allowNull: false
     },
     size: {
-        type: DataTypes.INTEGER,
+        type     : DataTypes.INTEGER,
         allowNull: false
     }, destination: {
-        type: DataTypes.STRING,
-        allowNull: false,
-    }, type: {
-        type: DataTypes.INTEGER,
+        type     : DataTypes.STRING,
         allowNull: false
-    },
+    }, type: {
+        type     : DataTypes.INTEGER,
+        allowNull: false
+    }
 }, {
     // Other model options go here
-    timestamps: true,
-    updatedAt: true,
-    createdAt: true,
-    deletedAt: true,
-    defaultScope:{
+    timestamps  : true,
+    updatedAt   : true,
+    createdAt   : true,
+    deletedAt   : true,
+    defaultScope: {
         attributes: {
             exclude: ['user_id']
         }
@@ -48,4 +48,4 @@ const File = sequelize.define('files', {
 });
 module.exports = {
     File, FILE_TYPES
-}
+};

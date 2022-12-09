@@ -1,42 +1,42 @@
 const express = require('express');
 const router = express.Router();
-const {ROLE, authWithAsync} = require("@config/auth-middleware")
-const {getMatches, getMatchById, getHistoryTeam} = require("@service/matches")
-const {ResponseBuilder} = require("@utils/ultil-helper")
+const {authWithAsync} = require('@config/auth-middleware');
+const {getMatches, getMatchById, getHistoryTeam} = require('@service/matches');
+const {ResponseBuilder} = require('@utils/ultil-helper');
 
 /**
  * @API: Get match by day Id
  * */
-router.get('/:dayId', authWithAsync(async function (req, res, next) {
+router.get('/:dayId', authWithAsync(async function(req, res, next) {
     const dayId = req.params.dayId;
-    let data = await getMatches(parseInt(dayId))
+    const data = await getMatches(parseInt(dayId));
     res.send(ResponseBuilder.getInstance()
         .code(200)
         .data(data)
-        .msg("Get matches successfully")
+        .msg('Get matches successfully')
         .build());
 }, []));
 
 
-router.get('/id/:id', authWithAsync(async function (req, res, next) {
+router.get('/id/:id', authWithAsync(async function(req, res, next) {
     const id = req.params.id;
-    let data = await getMatchById(parseInt(id))
+    const data = await getMatchById(parseInt(id));
     res.send(ResponseBuilder.getInstance()
         .code(200)
         .data(data)
-        .msg("Get matches successfully")
+        .msg('Get matches successfully')
         .build());
 }, []));
 
-router.get('/history/:teamId', authWithAsync(async function (req, res, next) {
+router.get('/history/:teamId', authWithAsync(async function(req, res, next) {
     const id = req.params.teamId;
     const page = req.query.page;
     const limit = req.query.limit;
-    let data = await getHistoryTeam(parseInt(id), parseInt(page), parseInt(limit))
+    const data = await getHistoryTeam(parseInt(id), parseInt(page), parseInt(limit));
     res.send(ResponseBuilder.getInstance()
         .code(200)
         .data(data)
-        .msg("Get matches successfully")
+        .msg('Get matches successfully')
         .build());
 }, []));
 

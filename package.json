@@ -15,7 +15,6 @@
     "cuid": "^2.1.8",
     "dayjs": "^1.11.6",
     "dotenv": "^16.0.3",
-    "eslint-config-google": "^0.14.0",
     "express": "~4.16.1",
     "express-request-id": "^3.0.0",
     "http-errors": "~1.6.3",
@@ -35,11 +34,12 @@
     "winston": "^3.8.2"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^7.28.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-plugin-prettier": "^4.0.0",
     "mysql2": "^2.3.3",
+    "prettier": "^2.7.1",
     "winston-daily-rotate-file": "^4.7.1"
   },
   "_moduleAliases": {
@@ -50,7 +50,8 @@
     "@routes": "src/routes/",
     "@config": "src/config/",
     "@annotation": "src/annotation/",
-    "@service": "src/services/"
+    "@service": "src/services/",
+    "@modules": "node_modules/"
   },
   "engines": {
     "node": "14.x"

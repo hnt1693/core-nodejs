@@ -6,9 +6,9 @@ module.exports = {
     },
     extends      : ['eslint:recommended', 'google'],
     overrides    : [],
+    parser       : '@babel/eslint-parser',
     parserOptions: {
-        'sourceType'  : 'module',
-        'ecmaVersion' : 'latest',
+        'ecmaVersion' : 2020,
         'ecmaFeatures': {
             'experimentalObjectRestSpread': true
         },
@@ -32,9 +32,14 @@ module.exports = {
         'operator-linebreak'      : ['error', 'before'],
         'padded-blocks'           : ['error', 'never'],
         'space-before-blocks'     : ['error', 'always'],
-        'max-len'                 : ['error', {code: 100}],
+        'max-len'                 : ['error', {code: 120}],
         'require-jsdoc'           : 0,
+        'no-invalid-this'         : 0,
         'indent'                  : ['error', 4],
-        'no-console'              : 0
+        'no-console'              : 0,
+        'no-prototype-builtins'   : 0,
+        'new-cap'                 : 0,
+        'no-undef'                : 0,
+        'no-useless-catch'        : 0
     }
 };

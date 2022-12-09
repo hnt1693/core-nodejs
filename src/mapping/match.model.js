@@ -1,41 +1,41 @@
-const {Sequelize, Model, DataTypes} = require("sequelize");
-const {sequelize} = require("@utils/db-helper2")
+const {DataTypes} = require('sequelize');
+const {sequelize} = require('@utils/db-helper2');
 
 const FILE_TYPES = {
-    AVATAR: 0,
-}
+    AVATAR: 0
+};
 const Match = sequelize.define('matches', {
     id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
+        type      : DataTypes.INTEGER,
+        primaryKey: true
     },
     league: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type     : DataTypes.STRING,
+        allowNull: false
     },
     org: {
-        type: DataTypes.STRING,
-        allowNull: false,
+        type     : DataTypes.STRING,
+        allowNull: false
     },
     team1Score: {
-        type: DataTypes.INTEGER,
-        allowNull: true,
+        type     : DataTypes.INTEGER,
+        allowNull: true
     },
     team2Score: {
-        type: DataTypes.INTEGER,
+        type     : DataTypes.INTEGER,
         allowNull: true
     },
     status: {
-        type: DataTypes.STRING,
+        type     : DataTypes.STRING,
         allowNull: true
     },
     time: {
-        type: DataTypes.BIGINT,
+        type     : DataTypes.BIGINT,
         allowNull: false
     }
 }, {
     // Other model options go here
-    timestamps: false,
+    timestamps  : false,
     defaultScope: {
         attributes: {
             exclude: ['team1_id', 'team2_id']
@@ -46,4 +46,4 @@ const Match = sequelize.define('matches', {
 
 module.exports = {
     Match, FILE_TYPES
-}
+};
